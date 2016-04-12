@@ -28,48 +28,48 @@ module.exports = function (grunt) {
       serverViews: {
         files: defaultAssets.server.views,
         options: {
-          livereload: true
+          livereload: false
         }
       },
       serverJS: {
         files: _.union(defaultAssets.server.gruntConfig, defaultAssets.server.allJS),
         tasks: ['jshint'],
         options: {
-          livereload: true
+          livereload: false
         }
       },
       clientViews: {
         files: defaultAssets.client.views,
         options: {
-          livereload: true
+          livereload: false
         }
       },
       clientJS: {
         files: defaultAssets.client.js,
         tasks: ['jshint'],
         options: {
-          livereload: true
+          livereload: false
         }
       },
       clientCSS: {
         files: defaultAssets.client.css,
         tasks: ['csslint'],
         options: {
-          livereload: true
+          livereload: false
         }
       },
       clientSCSS: {
         files: defaultAssets.client.sass,
         tasks: ['sass', 'csslint'],
         options: {
-          livereload: true
+          livereload: false
         }
       },
       clientLESS: {
         files: defaultAssets.client.less,
         tasks: ['less', 'csslint'],
         options: {
-          livereload: true
+          livereload: false
         }
       }
     },
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
       dev: {
         script: 'server.js',
         options: {
-          nodeArgs: ['--debug'],
+          nodeArgs: [''],
           ext: 'js,html',
           watch: _.union(defaultAssets.server.gruntConfig, defaultAssets.server.views, defaultAssets.server.allJS, defaultAssets.server.config)
         }
@@ -160,9 +160,9 @@ module.exports = function (grunt) {
     'node-inspector': {
       custom: {
         options: {
-          'web-port': 1337,
+          'web-port': 1338,
           'web-host': 'localhost',
-          'debug-port': 5858,
+          'debug-port': 5859,
           'save-live-edit': true,
           'no-preload': true,
           'stack-trace-limit': 50,
