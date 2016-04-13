@@ -52,6 +52,31 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$stat
       });
     };
 
+    $scope.signout = function (isValid) {
+      $scope.error = null;
+      if (!isValid) {
+        $scope.$broadcast('show-errors-check-validity', 'userForm');
+        return false;
+      }
+      // $scope.authentication.user = null;
+      // $state.go($state.previous.state.name || 'home', $state.previous.params);
+
+      Authentication.user = null;
+
+                // Redirect to signin page
+      $location.path("/");
+
+    //   $http.post('/api/auth/signout', $scope.credentials).success(function (response) {
+    //     // If successful we assign the response to the global user model
+    //     $scope.authentication.user = response;
+
+    //     // And redirect to the previous or home page
+    //     $state.go($state.previous.state.name || 'home', $state.previous.params);
+    //   }).error(function (response) {
+    //     $scope.error = response.message;
+    //   });
+    };
+
     // OAuth provider request
     $scope.callOauthProvider = function (url) {
       if ($state.previous && $state.previous.href) {

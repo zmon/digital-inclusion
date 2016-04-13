@@ -17,6 +17,27 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
       url: '/',
       templateUrl: 'modules/core/client/views/home.client.view.html'
     })
+    .state('tabs', {
+      url: '/tabs',
+      templateUrl: 'modules/core/client/views/tabs.client.view.html'
+    })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'modules/core/client/views/about.client.view.html'
+    })
+    .state('contact', {
+      url: '/contact',
+      templateUrl: 'modules/core/client/views/contact.client.view.html'
+    })
+    .state('add-location', {
+      url: '/add-location',
+      templateUrl: 'modules/core/client/views/add-location.client.view.html'
+    })
+
+    .state('list-isp', {
+      url: '/internet-service-providers',
+      templateUrl: 'modules/core/client/views/list-isp.client.view.html'
+    })
     .state('not-found', {
       url: '/not-found',
       templateUrl: 'modules/core/client/views/404.client.view.html',

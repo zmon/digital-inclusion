@@ -4,7 +4,7 @@ var defaultEnvConfig = require('./default');
 
 module.exports = {
   db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
+    uri: 'mongodb://golf:SiMpli31flyejsave3@candidate.18.mongolayer.com:11302,candidate.41.mongolayer.com:10779/59Online-DB1?replicaSet=set-55b13d3e4f573e6875000f11',
     options: {
       user: '',
       pass: ''
