@@ -2,7 +2,7 @@
       <p ng-include="'/modules/core/client/views/logo.client.view.html'"></p>
 <!--       <a href="/api/auth/signout" target="_self">Signout</a> -->
       <div class="main-container">
-          <div class="main wrapper clearfix">
+          <div class="main wrapper clearfix" ng-app="CustomMap">
             <!-- Header Start -->
 
               <!-- Header End -->
@@ -43,6 +43,13 @@
                                       </h2>
 
                                   </div>
+                                  <section id="customMap" ng-controller="MapController">
+                                    <div ui-map="map" ui-options="mapOptions" class="map-canvas">
+                                    </div>
+                                  </section>
+                                   <div ng-controller="MapController">
+                                    <ui-gmap-google-map center="map.center" options="options" zoom="map.zoom"></ui-gmap-google-map>
+                                  </div>
                               </div>
                               <div class="g1">
                                   <div class="main-links sidebar">
@@ -68,8 +75,7 @@
                                   <div class="item-box clearfix">
                                     <i class="icon-envelope"></i>
                                     <div class="item-data">
-                                      <div id="map" class="auto-mg"></div>
-                                      <div id="panel" class="panel-viewer"></div>
+
                                       <h3><a href=""></a></h3>
                                       <p></p>
                                     </div>

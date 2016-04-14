@@ -4,7 +4,7 @@
 var ApplicationConfiguration = (function () {
   // Init module configuration options
   var applicationModuleName = 'digitalInclusion';
-  var applicationModuleVendorDependencies = ['ngResource', 'ngAnimate', 'ngMaterial', 'ngMessages', 'ui.router', 'ui.bootstrap', 'ui.utils', 'angularFileUpload', 'material.svgAssetsCache'];
+  var applicationModuleVendorDependencies = ['ngResource', 'ngAnimate', 'ngMaterial', 'ngMessages', 'ui.router', 'ui.bootstrap', 'ui.utils', 'angularFileUpload', 'material.svgAssetsCache', 'ui.map'];
 
   // Add a new vertical module
   var registerModule = function (moduleName, dependencies) {
