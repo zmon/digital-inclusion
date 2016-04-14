@@ -7,9 +7,9 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout',
 
     $scope.mapMarkers = [];
     $scope.mapOptions = {
-      center: new google.maps.LatLng(37.782,-122.418),
-      zoom: 4,
-      mapTypeId: google.maps.MapTypeId.SATELLITE
+      center: new google.maps.LatLng(39.1059,-94.57441),
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
     // var cloudLayer = new google.maps.weather.CloudLayer();

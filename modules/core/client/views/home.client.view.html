@@ -44,7 +44,7 @@
 
                                   </div>
                                   <section id="customMap" ng-controller="MapController">
-                                    <div ui-map="map" ui-options="mapOptions" class="map-canvas">
+                                    <div ui-map="map" ui-options="mapOptions" class="map-canvas" ui-event="{'map-click': 'addMarker($event, $params)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }">
                                     </div>
                                   </section>
                                    <div ng-controller="MapController">
