@@ -38,6 +38,11 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
       url: '/internet-service-providers',
       templateUrl: 'modules/core/client/views/list-isp.client.view.html'
     })
+
+    .state('test', {
+      url: '/test',
+      templateUrl: 'modules/core/client/views/test.client.view.html'
+    })
     .state('not-found', {
       url: '/not-found',
       templateUrl: 'modules/core/client/views/404.client.view.html',

@@ -49,6 +49,9 @@
                                   </section>
                                    <div ng-controller="MapController">
                                     <ui-gmap-google-map center="map.center" options="options" zoom="map.zoom"></ui-gmap-google-map>
+                                    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+                                     <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="controlCtrl" index="-1"></ui-gmap-map-control>
+
                                   </div>
                               </div>
                               <div class="g1">
