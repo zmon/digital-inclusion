@@ -138,12 +138,11 @@
     border: .42em solid #2F2F2A;
     padding-bottom: 6em;
     z-index: -1;
-    top: 38.5002975217913em;
+    top: 35.75002975217913em;
     background: transparent;
     height: 12.05em;
     z-index: 999;
     border: none;
-
 }
 
 .another-trap {
@@ -218,18 +217,23 @@ button, input, select, textarea {
     border-bottom: 0;
     height: .1em;
 }
-         .oe {
-            position: relative;
-            left: -.000014em;
-            top: -30.5091em;
-            background: radial-gradient(#F9F6F6,#C5C5C5);
-            height: 9.39em;
-            padding: 1em 1em 1em 1em;
-            width: 36.75em;
-            z-index: -1;
-            box-shadow: 0 0 8px gainsboro;
-            border: .25px solid #D0D0D6;
-        }
+
+.oe {
+    position: relative;
+    left: -.000014em;
+    top: -28.091em;
+    background:#F2F3F5;
+
+    height: 9.39em;
+    padding: 1em 1em 1em 1em;
+    width: 56.075em;
+    z-index: -1;
+    box-shadow: 0 0 5px #656464;
+    border: .05em solid #F3F3F3;
+    border-radius: 8px 8px 8px 8px;
+}
+
+
         a.md-default-theme:not(.md-button), a:not(.md-button) {
             color: rgb(132, 154, 165);
         }
@@ -238,23 +242,21 @@ button, input, select, textarea {
             color: rgb(11, 159, 234);
         }
 
-       #customMap {
-                    position: relative;
-                    overflow: hidden;
-                    margin-left: .1em;
-                    top: 6.5em;
-                    border: 1em solid snow;
-                    box-shadow: 0 0 10px gainsboro;
-                    transform: translateZ(0px);
-                    background-color: rgb(229, 227, 223);
-                 }
-
-
+#customMap {
+    position: relative;
+    overflow: hidden;
+    margin-left: .1em;
+    top: 7.5em;
+    border: .15em solid #A2A2A2;
+    box-shadow: 0 0 10px #797777;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);
+}
 
 .reroute {
     position: absolute;
-    left: 1.3em;
-    top: 3.272em;
+    left: .63em;
+    top: 8.02272em;
     background: radial-gradient(#F3F3ED,#EFECEC);
     width: 16.4em;
     height: 6.25em;
@@ -264,14 +266,18 @@ button, input, select, textarea {
     padding: .5em .5em .5em .5em;
     z-index: 99999;
 }
+
+
 #tab-data-wrap {
     padding: 10px 10px 10px 10px;
     background: #fff;
     background-image: url(modules/core/client/img/kcmo-xl.jpg);
-    border: .1em solid #B5B4B4;
-    box-shadow: inset 0 0px 200px #B9B9B9;
+    border: .1em solid #BFBEBE;
+    /* box-shadow: inset 0 0px 200px #ECE8E8; */
     border-radius: 8px 8px 8px 8px;
-    background: radial-gradient(transparent,#868383);
+    background: radial-gradient(#FFFEFE,#EFEEEE,#FFF7F7);
+    background: #EAEAEA;
+    box-shadow: 0px 6px #313131;
 }
 .info h2, #header h2 {
     text-transform: uppercase;
@@ -282,44 +288,367 @@ button, input, select, textarea {
     font-weight: 700;
     position: relative;
     text-shadow: 1px 1px 1px #C5C5C5;
-    left: -14.35em;
+    left: -21.35em;
+    font-size: 1em;
+}
+.g1 {
+    width: 31.333%;
+    position: relative;
+    top: -6em;
+    background: white;
 }
 .tab a {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
-     display: inline;
+    display: inline;
+    height: 3em;
     /* padding: 2px 10px; */
     /* outline: none; */
     /* color: #888; */
     /* font-weight: 900; */
     /* text-decoration: blink; */
     /* font-weight: 200; */
+    position: relative;
+    top: .1em;
 }
 .act {
     font-weight: 700;
 }
-
+.lead {
+    margin-bottom: 20px;
+    font-size: 31px;
+    font-weight: 900;
+    line-height: 1.4;
+}
 .tab a.active {
     padding-top: 10px;
     color: #BADDF5;
-    color: #114252;
+    color: #767779;
     text-shadow: none;
     background: transparent;
     font-weight: 900;
     box-shadow: none;
     border: none;
-    padding-top: .8em;
-    margin-bottom: -10px;
-    border-bottom: 0;
-    font-size: 125%;
-    border-top: 10px solid #070748;
-    height: 15.1em;
+    padding: 0 3em 0 3em;
+    /* margin-bottom: 10px; */
+    border: 3px solid blue;
+    font-size: 90%;
+    border: 10px solid #767779;
+    border-top: none;
+    /* height: 15.1em; */
+    border-right: none;
+    border-bottom: none;
 }
+.my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: -5px;
+    padding: 0;
+    /* float: left; */
+    list-style: none;
+    /* position: relative; */
+    top: -16.195em;
+}
+
+.my-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 2px;
+    margin-bottom: -16px;
+    height: 6em;
+}
+
+.control-img {
+    width: 10.5%;
+    position: relative;
+    left: 1.519832em;
+    line-height: 12px;
+    margin-top: -3em;
+    margin-bottom: -2em;
+}
+.my-legend ul.legend-labels li span {
+    display: block;
+    float: none;
+    height: 16px;
+    width: 30px;
+    margin-top: -1.4em;
+    line-height: 10px;
+    border: none;
+    font-size: 87.5%;
+    /* border: 1px solid #999; */
+    text-decoration: it;
+    font-style: italic;
+}
+.no {
+    width: 55%;
+    position: relative;
+    top: 5.57em;
+    left: -2.95em;
+}
+
+.my-legend .legend-source {
+    font-size: 60%;
+    color: #999;
+    clear: both;
+    position: relative;
+    top: -17.5em;
+    left: 7.5em;
+}
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 3.5px;
+    margin-left: 6.2em;
+    font-weight: bold;
+    font-size: 90%;
+    color: #A2A2A2;
+    /* padding-bottom: .1em; */
+    position: er;
+    position: relative;
+    top: -1.94em;
+}
+.another-trap {
+    position: relative;
+    left: 47.2em;
+    top: -.87019295103638em;
+    z-index: ;
+}
+
+.trapped {
+    width: 190px;
+    margin: 0 auto;
+    position: absolute;
+    left: 57.965em;
+    border-bottom: .92em solid currentColor;
+    background: radial-gradient(#503E3E,#0C0C0C);
+    border: .42em solid #2F2F2A;
+    padding-bottom: 6em;
+    z-index: -1;
+    top: 37.075002975217913em;
+    background: transparent;
+    height: 12.05em;
+    z-index: 999;
+    border: none;
+}
+
 .bg-1 {
     background-image: url(/modules/core/client/img/kcmo-xl.jpg);
     /* height: 1000px; */
 }
+.reroute {
+    position: absolute;
+    left: .63em;
+    top: 8.02272em;
+    background: radial-gradient(#F3F3ED,#EFECEC);
+    width: 16.4em;
+    height: 6.25em;
+    border: .1em solid #E8E6E6;
+    box-shadow: inset 0 0 200px #EBFFFB;
+    margin-bottom: 8em;
+    padding: .5em .5em .5em .5em;
+    z-index: 99999;
+}
+
+
+.rue {
+    text-shadow: none;
+    background: #E6E6E4;
+    border: 1px solid #C1C1C1;
+    background-image: -webkit-linear-gradient(top, #E5E8E2, #E8E6E6);
+    background-image: -moz-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -ms-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -o-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: linear-gradient(top, #48C6D4, #3EACBA);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: left;
+    width: 11em;
+    padding: .2em 3.35em .2em .35em;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 1px rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(206, 204, 204, 0.1) inset, 0 4px 0 #B5B5B5, 0 4px 2px rgba(103, 101, 101, 0.5);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(59, 68, 6, 0.1) inset, 0 4px 0 #D8D8D0, 0 4px 2px rgba(158, 245, 72, 0.5);
+    height: 1.65em;
+    margin-left: -1.2em;
+    margin-bottom: -1.4em;
+    line-height: 18px;
+    left: -35em;
+    top: -39em;
+    font-size: 89%;
+}
+
+.etabs >li span {
+    display: inline;
+    font-size: 80%;
+}
+
+.info h2, #header h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.02px;
+    margin-bottom: .5em;
+    color: #EDF5F7;
+    color: #B0B8BF;
+    font-weight: 700;
+    position: relative;
+    text-shadow: 1px 1px 1px #D8D8D8;
+    left: -22em;
+    font-size: 1em;
+}
+
+.oe {
+    position: relative;
+    left: -.000014em;
+    top: -28.091em;
+    background: #FFFBF5;
+    height: 9.39em;
+    padding: 1em 1em 1em 1em;
+    width: 56.075em;
+    z-index: -1;
+    box-shadow: 0 0 5px #CCCCCC;
+    border: .05em solid #D0CFCF;
+    border-radius: 8px 8px 8px 8px;
+}
+
+a.md-default-theme:not(.md-button), a:not(.md-button) {
+    color: rgb(39, 46, 49);
+}
+
+#customMap {
+    position: relative;
+    overflow: hidden;
+    margin-left: .1em;
+    top: 7.5em;
+    border: .15em solid #A2A2A2;
+    box-shadow: 0 0 5px #D4D4D4;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);
+}
+#tab-data-wrap {
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+    background-image: url(modules/core/client/img/kcmo-xl.jpg);
+    border: .1em solid #BFBEBE;
+    /* box-shadow: inset 0 0px 200px #ECE8E8; */
+    border-radius: 8px 8px 8px 8px;
+    background: radial-gradient(#FFFEFE,#FDFDFD,#FFF7F7);
+    /* background: #EAEAEA; */
+    box-shadow: 0px 6px #313131;
+}
+footer.ng-scope {
+    position: relative;
+    top: -4.16em;
+    border: 1px solid #E6E6E6;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+.lead {
+    margin-bottom: 20px;
+    font-size: 31px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin: 0 auto 0 auto;
+    margin-left: 10em;
+}
+
+#customMap {
+    position: relative;
+    overflow: hidden;
+    margin-left: .1em;
+    top: 7.5em;
+    border: .15em solid #DEDBDB;
+    box-shadow: 0 0 5px #D4D4D4;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);
+}
+.oe {
+    position: relative;
+    left: -.000014em;
+    top: -28.091em;
+    background: #FFFBF5;
+    height: 9.39em;
+    padding: 1em 1em 1em 1em;
+    width: 56.075em;
+    z-index: -1;
+    box-shadow: 0 0 5px #CCCCCC;
+    border: .05em solid #FBF7F7;
+    border-radius: 8px 8px 8px 8px;
+}
+.super-c {
+    position: absolute;
+    top: 21em;
+    left: 41.5em;
+    height: 25em;
+    width: 18.05em;
+}
+.rue {
+    text-shadow: none;
+    background: #E6E6E4;
+    border: 1px solid #E8E8E8;
+    background-image: -webkit-linear-gradient(top, #F7F9F6, #FBF9F9);
+    background-image: -moz-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -ms-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -o-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: linear-gradient(top, #48C6D4, #3EACBA);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: left;
+    width: 11em;
+    padding: .2em 3.35em .2em .35em;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 1px rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(206, 204, 204, 0.1) inset, 0 4px 0 #B5B5B5, 0 4px 2px rgba(103, 101, 101, 0.5);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(59, 68, 6, 0.1) inset, 0 4px 0 #D8D8D0, 0 4px 2px rgba(158, 245, 72, 0.5);
+    height: 1.65em;
+    margin-left: -1.2em;
+    margin-bottom: -1.4em;
+    line-height: 18px;
+    left: -35em;
+    top: -39em;
+    font-size: 89%;
+}
+#tab-data-wrap {
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+    background-image: url(modules/core/client/img/kcmo-xl.jpg);
+    border: .1em solid #BFBEBE;
+    /* box-shadow: inset 0 0px 200px #ECE8E8; */
+    border-radius: 8px 8px 8px 8px;
+    background: radial-gradient(#FFFEFE,#FDFDFD,#FFF7F7);
+    /* background: #EAEAEA; */
+    background: radial-gradient(snow,#EAE9E9);
+    box-shadow: 0px 6px #E6E6E6;
+}
+
+footer.ng-scope {
+    position: relative;
+    top: -4.16em;
+    border: 1px solid #E6E6E6;
+    width: 90%;
+    box-shadow: none;
+    margin: 0 auto 0 auto;
+}
+.sa-a {
+    width: 56.5em;
+    height: 7.5em;
+    margin-top: -.41em;
+    margin-bottom: -2em;
+}
+
+.oe {
+    position: relative;
+    left: -.000014em;
+    top: -28.091em;
+    background: #FFFDFB;
+    height: 9.39em;
+    padding: 1em 1em 1em 1em;
+    width: 56.075em;
+    z-index: -1;
+    box-shadow: 0 0 5px #CCCCCC;
+    border: .05em solid #FBF7F7;
+    border-radius: 2px 2px 2px 2px;
+}
+
     </style>
 
   </head>
