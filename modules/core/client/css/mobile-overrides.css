@@ -1082,7 +1082,7 @@ transform-origin: 50% 50% 0;
     list-style: none;
     margin-left: 0;
     line-height: 18px;
-    margin-bottom: 2px;
+    margin-bottom: 0;
     height: 6em;
 }
 
@@ -1221,4 +1221,44 @@ span.label-key.a-sh {
 .attrs {
   font-style: italic;
   font-size: 70%;
+}
+
+.main-links ul li {
+    border-bottom: none;
+    padding: 10px 0;
+}
+
+.my-legend .legend-source {
+    font-size: 60%;
+    color: #999;
+    clear: both;
+    position: relative;
+    top: -25.5em;
+    left: 7.5em;
+}
+
+.another-trap {
+    position: relative;
+    left: 41.2em;
+    top: -2.05019295103638em;
+    z-index: ;
+}
+
+.my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: -5px;
+    padding: 0;
+    /* float: left; */
+    list-style: none;
+    /* position: relative; */
+    /* top: .25em; */
+}
+
+.my-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 2px;
+    margin-bottom: -8px;
+    height: 6em;
 }
