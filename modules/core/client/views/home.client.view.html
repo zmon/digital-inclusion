@@ -43,20 +43,13 @@
                                       </h2>
 
                                   </div>
-                                  <section id="customMap" ng-controller="MapController">
-                                    <div ui-map="map" ui-options="mapOptions" class="map-canvas" ui-event="{'map-click': 'addMarker($event, $params)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }">
-                                    </div>
-                                  </section>
-                                   <div ng-controller="MapController">
-                                    <ui-gmap-google-map center="map.center" options="options" zoom="map.zoom"></ui-gmap-google-map>
-                                    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
-                                     <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="controlCtrl" index="-1"></ui-gmap-map-control>
-
-                                  </div>
+                                  <div ng-include="'/modules/core/client/views/map/index.client.view.html'"></div>
                               </div>
                               <div class="g1">
                                   <div class="main-links sidebar">
-                                      <ul>
+                                    <div ng-include="'/modules/core/client/views/partials/legend.client.view.html'"></div>
+
+                                     <!--  <ul>
                                           <li>
                                               <a href="#resume">Legend</a>
                                           </li>
@@ -69,7 +62,7 @@
                                           <li>
                                               <a href="#features"></a>
                                           </li>
-                                      </ul>
+                                      </ul> -->
                                   </div>
                               </div>
                               <div class="break"></div>

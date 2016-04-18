@@ -15,23 +15,23 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout',
     };
 
 
-     var circle = new google.maps.Circle({
-        center: $scope.mapOptions.center,
-        map: map,
-        fillColor: '#0000FF',
-        fillOpacity: 0.5,
-        strokeColor: '#0000FF',
-        strokeOpacity: 1.0,
-        strokeWeight: 2,
-        draggable: true,
-        zIndex: 30
-    });
+    //  var circle = new google.maps.Circle({
+    //     center: $scope.mapOp,
+    //     map: map,
+    //     fillColor: '#0000FF',
+    //     fillOpacity: 0.5,
+    //     strokeColor: '#0000FF',
+    //     strokeOpacity: 1.0,
+    //     strokeWeight: 2,
+    //     draggable: true,
+    //     zIndex: 30
+    // });
 
-    circle.setRadius(18362.55489862987);
+    // circle.setRadius(18362.55489862987);
 
-    map.fitBounds(circle.getBounds());
+    // map.fitBounds(circle.getBounds());
 
-    var labelText = '<div style="color: #FFF">Text goes here</div>';
+    // var labelText = '<div style="color: #FFF">Text goes here</div>';
 
 
     // var cloudLayer = new google.maps.weather.CloudLayer();

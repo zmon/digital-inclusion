@@ -24,26 +24,45 @@
     <!--<meta name="google-site-verification" content="TeNm-HBf1QKXqm8AMyFx2KomPBBUAmoF8cAlqmAmhuc"/>-->
     <link href="{{url}}{{favicon}}" rel="shortcut icon" type="image/x-icon">
     {% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
+    <link href="modules/core/client/css/mobile-overrides.css"/>
+
     <style>
+
       .content {
         margin: 0;
       }
+
       body {
         width: 100%;
         height: 155em;
       }
+
+      .tab {
+            display: inline-block;
+            zoom: 1;
+            background: #F9F9F9;
+            border: solid 1px #C3C3C3;
+            border-bottom: 0px;
+            -moz-border-radius: 4px 4px 0 0;
+            -webkit-border-radius: 4px 4px 0 0;
+            margin-right: 10px;
+            }
+
       #tab-data-wrap {
-        padding: 10px 10px;
-      }
+                        padding: 10px 10px;
+                     }
+
       .active {
         background: lightblue;
       }
+
      .tab a.active {
         padding-top: 10px;
         color: mintcream;
         background: slategray;
         font-weight: 900;
       }
+
       .noauth {
         margin: 0;
         background: linear-gradient(#9DB1C5,#95B7B7);
@@ -63,8 +82,53 @@
         height: 400px;
         width: 600px;
       }
+      .reroute {
+                position: absolute;
+                left: 1.3em;
+                top: 3.2em;
+                background: radial-gradient(ivory,#FFFFFF);
+                width: 16.4em;
+                height: 10.25em;
+                border: .1em solid #999C9C;
+                box-shadow: inset 0 0 200px #B1BBB9;
+                margin-bottom: 8em;
+                padding: .5em .5em .5em .5em;
+                }
+
+       .no {
+                width: 55%;
+                position: relative;
+                top: 6.7em;
+                left: -1.95em;
+            }
+
+
+            .control-img {
+                            width: 10.5%;
+                            position: relative;
+                            left: 2.19832em;
+                            line-height: 12px;
+                            margin-top: .5em;
+                            margin-bottom: -2em;
+                         }
+
+
+        .my-legend ul.legend-labels li span {
+            display: block;
+            float: none;
+            height: 16px;
+            width: 30px;
+            margin-top: -.2em;
+            line-height: 12px;
+            border: none;
+            font-size: 87.5%;
+            /* border: 1px solid #999; */
+            text-decoration: it;
+            font-style: italic;
+        }
 
     </style>
+
   </head>
   <body class="ng-cloak bg-fixed bg-1">
   <!--<header ng-include="'/modules/core/client/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>-->
