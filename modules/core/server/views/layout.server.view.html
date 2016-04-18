@@ -37,16 +37,18 @@
         height: 155em;
       }
 
-      .tab {
-            display: inline-block;
-            zoom: 1;
-            background: #F9F9F9;
-            border: solid 1px #C3C3C3;
-            border-bottom: 0px;
-            -moz-border-radius: 4px 4px 0 0;
-            -webkit-border-radius: 4px 4px 0 0;
-            margin-right: 10px;
-            }
+.tab {
+    display: inline-block;
+    zoom: 1;
+    background: #F3F1F1;
+    border: solid 1px #C3C3C3;
+    border-bottom: .5px solid #DCDCDC;
+    position: relative;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    margin-right: 10px;
+    top: -.025em;
+}
 
       #tab-data-wrap {
                         padding: 10px 10px;
@@ -212,7 +214,7 @@ button, input, select, textarea {
     box-shadow: inset 0 0 100px lightblue;
     border: 1px solid #A9DFF1;
     margin-bottom: -1px;
-    border-bottom: 5px solid #A9DFF1;
+    border-bottom: 0;
 }
          .oe {
             position: relative;
@@ -221,7 +223,7 @@ button, input, select, textarea {
             background: radial-gradient(#F9F6F6,#C5C5C5);
             height: 9.39em;
             padding: 1em 1em 1em 1em;
-            width: 56em;
+            width: 36.75em;
             z-index: -1;
             box-shadow: 0 0 8px gainsboro;
             border: .25px solid #D0D0D6;
@@ -245,15 +247,7 @@ button, input, select, textarea {
                     background-color: rgb(229, 227, 223);
                  }
 
-.info h2, #header h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: .3em;
-    color: #EDF5F7;
-    position: relative;
-    text-shadow: 1px 1px 1px #172344;
-    left: -14.35em;
-}
+
 
 .reroute {
     position: absolute;
@@ -271,10 +265,21 @@ button, input, select, textarea {
 #tab-data-wrap {
     padding: 10px 10px 10px 10px;
     background: #fff;
-    background: transparent;
-    border: .41em solid #f1f1f1;
+    background-image: url(modules/core/client/img/kcmo-xl.jpg);
+    border: .1em solid #B5B4B4;
     box-shadow: inset 0 0px 360px #F5D3CE;
     border-radius: 8px 8px 8px 8px;
+    background: radial-gradient(transparent,black);
+}
+.info h2, #header h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.02px;
+    margin-bottom: .3em;
+    color: #EDF5F7;
+    color: slategray;
+    position: relative;
+    text-shadow: 1px 1px 1px #C5C5C5;
+    left: -14.35em;
 }
     </style>
 
