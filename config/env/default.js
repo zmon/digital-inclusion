@@ -3,7 +3,7 @@
 module.exports = {
   app: {
     title: 'staging1',
-    description: 'Full-Stack JavaScript',
+    description: 'End-to-End JS',
     keywords: 'mongodb, express, angularjs, node.js, mongoose, passport',
     googleAnalyticsTrackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'GOOGLE_ANALYTICS_TRACKING_ID'
   },

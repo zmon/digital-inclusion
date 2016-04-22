@@ -14,6 +14,7 @@ module.exports = function () {
       passwordField: 'password'
     },
     function (username, password, done) {
+      console.log("finding username in local strategy");
       User.findOne({
         username: username.toLowerCase()
       }, function (err, user) {

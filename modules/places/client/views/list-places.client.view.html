@@ -1,0 +1,20 @@
+<section ng-controller="PlacesController" ng-init="find()">
+  <div class="page-header">
+    <h1>Places</h1>
+  </div>
+  <div class="list-group">
+    <a ng-repeat="place in places" ui-sref="places.view({placeId: place._id})" class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="place.created | date:'mediumDate'"></span>
+        by
+        <span ng-bind="place.user.displayName"></span>
+      </small>
+      <h4 class="list-group-item-heading" ng-bind="place.title"></h4>
+      <p class="list-group-item-text" ng-bind="place.desc"></p>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" ng-if="places.$resolved && !places.length">
+    No places yet, why don't you <a ui-sref="places.create">create one</a>?
+  </div>
+</section>

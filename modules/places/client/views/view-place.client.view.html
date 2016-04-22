@@ -1,0 +1,22 @@
+<section ng-controller="PlacesController" ng-init="findOne()">
+  <div class="page-header">
+    <h1 ng-bind="place.title"></h1>
+  </div>
+  <div class="pull-right" ng-show="authentication.user._id == place.user._id">
+    <a class="btn btn-primary" ui-sref="places.edit({placeId: place._id})">
+      <i class="glyphicon glyphicon-edit"></i>
+    </a>
+    <a class="btn btn-primary" ng-click="remove();">
+      <i class="glyphicon glyphicon-trash"></i>
+    </a>
+  </div>
+  <small>
+    <em class="text-muted">
+      Posted on
+      <span ng-bind="place.created | date:'mediumDate'"></span>
+      by
+      <span ng-bind="place.user.displayName"></span>
+    </em>
+  </small>
+  <p class="lead" ng-bind="place.title"></p>
+</section>

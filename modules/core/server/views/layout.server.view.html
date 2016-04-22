@@ -26,8 +26,8 @@
     {% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
     <link href="modules/core/client/css/mobile-overrides.css"/>
 
+    <link href="modules/core/client/css/responsive.css"/>
     <style>
-
       .content {
         margin: 0;
       }
@@ -439,7 +439,7 @@ button, input, select, textarea {
 .reroute {
     position: absolute;
     left: .63em;
-    top: 8.02272em;
+    top: 8.42272em;
     background: radial-gradient(#F3F3ED,#EFECEC);
     width: 16.4em;
     height: 6.25em;
@@ -554,7 +554,7 @@ footer.ng-scope {
 #customMap {
     position: relative;
     overflow: hidden;
-    margin-left: .1em;
+    margin-left: .31em;
     top: 7.5em;
     border: .15em solid #DEDBDB;
     box-shadow: 0 0 5px #D4D4D4;
@@ -576,10 +576,11 @@ footer.ng-scope {
 }
 .super-c {
     position: absolute;
-    top: 21em;
+    top: 20.51em;
     left: 41.5em;
-    height: 25em;
-    width: 18.05em;
+    height: 25.275em;
+    width: 18.35em;
+    /* background: lawngreen; */
 }
 .rue {
     text-shadow: none;
@@ -680,6 +681,7 @@ footer.ng-scope {
     box-shadow: 0 0 5px #CCCCCC;
     border: .05em solid #CCCCCC;
     border-radius: 2px 2px 2px 2px;
+    background: radial-gradient(snow,#EFEFEF);
 }
 
 #tab-data-wrap {
@@ -688,25 +690,921 @@ footer.ng-scope {
     background-image: url(modules/core/client/img/kcmo-xl.jpg);
     border: .1em solid #BFBEBE;
     /* box-shadow: inset 0 0px 200px #ECE8E8; */
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 0 0 8px 8px;
     background: radial-gradient(#FFFEFE,#FDFDFD,#FFF7F7);
     /* background: #EAEAEA; */
+    height: 43.5em;
     background: radial-gradient(snow,#EAE9E9);
     box-shadow: 0px 6px #E6E6E6;
 }
+.etabs {
+    margin: 0;
+    padding: 2.5px 9.5px 0 0;
+    background: radial-gradient(snow,#ECEBEB);
+    text-align: center;
+    width: 99.5%;
+    /* height: 5em; */
+    margin-left: auto;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+}
+.tab {
+    display: inline-block;
+    zoom: 1;
+    background: radial-gradient(#FFFFFF,#EDF6FF);
+    background: radial-gradient(#FFFFE8,#FFFFF7);
+    border: solid 1px #DADADA;
+    border: 1px solid #FFFFDF;
+    border-bottom: .5px solid #DCDCDC;
+    border-bottom: .5px solid #F9F9C7;
+    position: relative;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 0 0 0 0;
+    margin-right: 0;
+    margin-bottom: -4px;
+    left: .6em;
+    top: -.13em;
+}
+.etabs {
+    margin: 0;
+    padding: 2.5px 9.5px 0 0;
+    background: radial-gradient(#FCFFEA,#D5DABC);
+    text-align: center;
+    width: 99.95%;
+    /* height: 5em; */
+    margin-left: auto;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+}
+.info h2, #header h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.02px;
+    margin-bottom: .5em;
+    color: #EDF5F7;
+    color: #858688;
+    font-weight: 700;
+    position: relative;
+    text-shadow: 1px 1px 1px #D8D8D8;
+    left: -21.2em;
+    font-size: 1em;
+    top: .5em;
+}
+.super-c {
+    position: absolute;
+    top: 20.51em;
+    left: 41.5em;
+    height: 25.275em;
+    width: 18.35em;
+    /* background: lawngreen; */
+}
+
+.sa-a {
+    width: 56.75em;
+    height: 5.25em;
+    margin-top: -.41em;
+    margin-bottom: -2em;
+    background: radial-gradient(snow,#EFEFEF);
+    box-shadow: 0 0 10px gainsboro;
+    border: 1px solid #E0DFDF;
+    margin-left: .83em;
+}
+
+#portfolio {
+    position: relative;
+    top: 6.55em;
+}
+.cont-box {
+    position: relative;
+    top: 4em;
+}
+.contact-side {
+    position: relative;
+    top: -.15em;
+}
+.meter {
+    height: 24px;
+    position: relative;
+    border: 1px solid #f1f1f1;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 15.75em;
+    margin-bottom: 1em;
+}
+
+.attrs {
+    font-style: italic;
+    font-size: 70%;
+    /* margin-top: 1.3em; */
+    position: relative;
+    top: .5em;
+}
+.super-c {
+    position: absolute;
+    top: 20.51em;
+    left: 41.5em;
+    height: 25.275em;
+    width: 18.35em;
+    background: radial-gradient(snow,#E6ECE0);
+     background: radial-gradient(snow,#EFEFEF);
+     background: radial-gradient(#FDFCEE,#FFFFF4);
+    border: 1px solid #DADADA;
+    box-shadow: 0 0 10px gainsboro;
+}
+#tab-data-wrap {
+    padding: 2px 2px 2px 2px;
+    background: #fff;
+    background-image: url(modules/core/client/img/kcmo-xl.jpg);
+    border: .1em solid #BFBEBE;
+    /* box-shadow: inset 0 0px 200px #ECE8E8; */
+    border-radius: 0 0 8px 8px;
+    background: radial-gradient(#FFFEFE,#FDFDFD,#FFF7F7);
+    /* background: #EAEAEA; */
+    height: 43.5em;
+    background: radial-gradient(snow,#EAE9E9);
+    box-shadow: 0px 6px #E6E6E6;
+    background: radial-gradient(snow,#E6ECE0);
+}
+html body {
+    max-height: 1100px;
+}
+
+span.act {
+    color: #3A3206;
+}
+
+.tab a.active {
+    padding-top: 10px;
+    color: #BADDF5;
+    color: #565A35;
+    text-shadow: none;
+    background: transparent;
+    font-weight: 900;
+    box-shadow: none;
+    border: none;
+    padding: 0 3em 0 3em;
+    /* margin-bottom: 10px; */
+    border: 3px solid blue;
+    font-size: 90%;
+    border: 4px solid #899055;
+    border-top: none;
+    /* height: 15.1em; */
+    /* border-right: none; */
+    border-bottom: none;
+}
+.oe {
+    position: relative;
+    left: .25000014em;
+    top: -27.91em;
+    background: none;
+    background-image: url(/modules/core/client/img/metal-bg.png);
+    background-size: cover;
+    height: 9.39em;
+    padding: 1em 1em 1em 1em;
+    width: 56.825em;
+    z-index: -1;
+    box-shadow: 0 0 5px #CCCCCC;
+    border: .05em solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    background: radial-gradient(#ECF2F5,#E6E8E8);
+}
+.super-c {
+    position: absolute;
+    top: 20.51em;
+    left: 41.45em;
+    height: 25.275em;
+    width: 18.35em;
+    background: radial-gradient(snow,#E6ECE0);
+    background: radial-gradient(snow,#EFEFEF);
+    background: radial-gradient(#F9F9F5,#F5F5F0);
+    border: 1px solid #DADADA;
+    background: radial-gradient(#FCFEFF,#EAEAEA);
+    box-shadow: 0 0 10px gainsboro;
+}
+.reroute {
+    position: absolute;
+    left: .63em;
+    top: 8.42272em;
+    background: radial-gradient(#F3F3ED,#EFECEC);
+    width: 16.4em;
+    height: 6.25em;
+    border: .1em solid #E8E6E6;
+    box-shadow: inset 0 0 200px #F4FDFB;
+    margin-bottom: 8em;
+    padding: .5em .5em .5em .5em;
+    z-index: 99999;
+}
+.rue {
+    text-shadow: none;
+    background: #E6E6E4;
+    border: 1px solid #E8E8E8;
+    background-image: -webkit-linear-gradient(top, #F7F9F6, #FBF9F9);
+    background-image: -moz-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -ms-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -o-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: linear-gradient(top, #48C6D4, #3EACBA);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: left;
+    width: 11em;
+    padding: .2em 3.35em .2em .35em;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9) inset, 0 -1px 0 rgba(206, 204, 204, 0.1) inset, 0 2.5px 0 #B5B5B5, 0 1px 1px rgba(103, 101, 101, 0.05);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(59, 68, 6, 0.1) inset, 0 4px 0 #D8D8D0, 0 4px 2px rgba(158, 245, 72, 0.5);
+    height: 1.65em;
+    margin-left: -1.2em;
+    margin-bottom: -1.4em;
+    line-height: 18px;
+    left: -35em;
+    top: -39em;
+    font-size: 89%;
+}
+.oe {
+    position: relative;
+    left: .25000014em;
+    top: -27.91em;
+    background: none;
+    background-image: url(/modules/core/client/img/metal-bg.png);
+    background-size: cover;
+    height: 9.39em;
+    padding: 1em 1em 1em 1em;
+    width: 56.825em;
+    z-index: -1;
+    box-shadow: 0 0 5px #CCCCCC;
+    border: .05em solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+       background: radial-gradient(#FCFEFF,#EAEAEA);
+}
+
+ span.act {
+    color: #908D7B;
+}
+
+.tab {
+    display: inline-block;
+    zoom: 1;
+    background: radial-gradient(#FFFFFF,#EDF6FF);
+    background: radial-gradient(#CACACA,#C5C5C5);
+    background: radial-gradient(#FFFFF6,#F4F5F3);
+    border: solid 1px #DADADA;
+    border: 1px solid #C7C7C7;
+    border-bottom: .5px solid #DCDCDC;
+    border-bottom: .5px solid #D2D2D2;
+    position: relative;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 0 0 0 0;
+    margin-right: 0;
+    margin-bottom: -4px;
+    left: .6em;
+    top: -.13em;
+}
+
+.etabs {
+    margin: 0;
+    padding: 2.5px 9.5px 0 0;
+    background: radial-gradient(#FFFFFF,#E8ECD4);
+    text-align: center;
+    width: 99.95%;
+    /* height: 5em; */
+    margin-left: auto;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+}
+
+
+
+
+.tab {
+    display: inline-block;
+    zoom: 1;
+    background: radial-gradient(#FFFFFF,#EDF6FF);
+    background: radial-gradient(#CACACA,#C5C5C5);
+    background: radial-gradient(#8D9C87,#747D6C);
+    background: transparent;
+    border: solid 1px #DADADA;
+    border: 1px solid #4B5A46;
+    border-bottom: .5px solid #DCDCDC;
+    border-bottom: .5px solid #727D13;
+    position: relative;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 0 0 0 0;
+    margin-right: 0;
+    margin-bottom: -4px;
+    left: .6em;
+    top: -.13em;
+}
+.tab a {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline;
+    height: 1em;
+    padding: 3px 10px 0 12px;
+    /* outline: none; */
+    background: radial-gradient(#8D9C87,#747D6C);
+    /* color: #888; */
+    /* font-weight: 900; */
+    /* text-decoration: blink; */
+    /* font-weight: 200; */
+    background: radial-gradient(#EFFFE8,#C3CCBC);
+    position: relative;
+    top: .1em;
+}
+.etabs {
+    margin: 0;
+    padding: 2.5px 9.5px 0 0;
+    background: radial-gradient(#2D2C2C,#3B3C36);
+    text-align: center;
+    width: 99.95%;
+    /* height: 5em; */
+    margin-left: auto;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+}
+
+span.act {
+    color: #887F41;
+}
+
+.tab a.active {
+    padding-top: 10px;
+    color: #BADDF5;
+    color: #565A35;
+    color: #667110;
+    text-shadow: none;
+    background: radial-gradient(#E5FF19,#FFF931);
+    font-weight: 900;
+    box-shadow: none;
+    border: none;
+    padding: .2em 3em .01em 3em;
+    /* margin-bottom: 10px; */
+    border: 3px solid blue;
+    font-size: 90%;
+    border: 10px solid #AABF0D;
+    border-top: none;
+    /* height: 15.1em; */
+    /* border-right: none; */
+    border-bottom: none;
+}
+
+
+
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.sa-a {
+    display:none;
+}
+
+.etabs {
+    margin: 0;
+    padding: 2.5px 9.5px 0 0;
+    background: radial-gradient(#FFFAFA,#B6B7B3);
+    text-align: center;
+    width: 99.95%;
+    /* height: 5em; */
+    margin-left: auto;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+}
+#customMap {
+    position: relative;
+    overflow: hidden;
+    margin-left: .31em;
+    height: 420px;
+    top: 7.5em;
+    border: .15em solid #DEDBDB;
+    box-shadow: 0 0 5px #D4D4D4;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);
+}
+
+.tab {
+    border: none;
+}
+.tab a {border: 1px solid #BFBEBE;background: radial-gradient(#EFFFE8,#D1FFAE);}
+.etabs {
+    margin: 0;
+    padding: 2.5px 9.5px 0 0;
+    background: radial-gradient(#BCBDA5,#5A5D4C);
+    text-align: center;
+    width: 99.95%;
+    /* height: 5em; */
+    margin-left: auto;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+}
+
+input {
+    display: inline;
+}
+.omg {
+  display: inline;
+  margin-top: -.25em;
+}
+.form-group.omg.omg1 {
+    position: relative;
+    top: 1em;
+}
+.form-group.omg.omg2 {
+    position: relative;
+    top: 2em;
+}
+.form-group.omg.omg3 {
+    position: relative;
+    top: 3em;
+}
+.form-group.omg.omg4 {
+    position: relative;
+    top: 4em;
+}
+.form-group.omg.omg5 {
+    position: relative;
+    top: 5em;
+}
+.form-group.omg.omg6 {
+    position: relative;
+    top: 6em;
+}
+fieldset {
+    background: antiquewhite;
+    height: 43.5em;
+    width: 27.5em;
+    position: relative;
+    top: -1em;
+}
+.wai {
+    position: absolute;
+    background: pink;
+}
+input#firstName {
+    width: 12.5em;
+}
+
+input#lastName {
+    width: 12.5em;
+}
+
+input#email {
+    width: 12.5em;
+}
+
+input#username {
+    width: 12.5em;
+}
+
+input#password {
+    width: 12.5em;
+}
+
+
+.reroute {
+    z-index: 0;
+}
+
+
+@media (max-width: 860px) {
+.oe {
+    position: relative;
+    left: .25000014em;
+    top: -24.5em;
+    background: none;
+    background-image: url(/modules/core/client/img/metal-bg.png);
+    background-size: cover;
+    height: 9.39em;
+    padding: 1em 1em 1em 1em;
+    width: 43.1825em;
+    z-index: -1;
+    box-shadow: 0 0 5px #CCCCCC;
+    border: .05em solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    background: radial-gradient(#FCFEFF,#EAEAEA);
+}
+    .rue {
+        width: 8.69em;
+    }
+    .trapped {
+    width: 190px;
+    margin: 0 auto;
+    position: absolute;
+    left: 54.4965em;
+    border-bottom: .92em solid currentColor;
+    background: radial-gradient(#503E3E,#0C0C0C);
+    border: .42em solid #2F2F2A;
+    padding-bottom: 6em;
+    z-index: -1;
+    top: 37.075002975217913em;
+    background: transparent;
+    height: 12.05em;
+    z-index: 999;
+    border: none;
+}
+.another-trap {
+    position: relative;
+    left: 46.2em;
+    top: -.87019295103638em;
+    z-index: ;
+}
+
+.super-c {
+    position: relative;
+    top: -28em;
+    left: 30.65em;
+    height: 22em;
+    width: 11.75em;
+    background: radial-gradient(snow,#E6ECE0);
+    background: radial-gradient(snow,#EFEFEF);
+    background: radial-gradient(#F9F9F5,#F5F5F0);
+    border: 1px solid #DADADA;
+    background: radial-gradient(#FCFEFF,#EAEAEA);
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.sa-a {
+    width: 43.1em;
+    height: 5.25em;
+    margin-top: -.41em;
+    margin-bottom: -2em;
+    background: radial-gradient(snow,#EFEFEF);
+    box-shadow: 0 0 10px gainsboro;
+    border: 1px solid #E0DFDF;
+    margin-left: .83em;
+    display: none;
+}
+
+#customMap {
+    position: relative;
+    overflow: hidden;
+    width: 420px;
+    margin-left: 1.931em;
+    height: 350px;
+    top: 8.5em;
+    border: .15em solid #DEDBDB;
+    box-shadow: 0 0 5px #D4D4D4;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);
+}
+
+}
+span.act {
+    color: #000000;
+    position: relative;
+    top: -.2em;
+}
+.etabs {
+    margin: 0;
+    padding: 2.5px 9.5px 0 0;
+    background: radial-gradient(#21211C,#181912);
+    text-align: center;
+    width: 99.95%;
+    /* height: 5em; */
+    margin-left: auto;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+}
+.navbar{display:none;}
+.tab a {
+    border: none;
+    background: none;
+}
+
+.lead {
+    margin-bottom: 20px;
+    /* font-size: 16px; */
+    font-weight: 900;
+    font-size: .9em;
+    line-height: 1.4;
+    margin: 0 auto 0 auto;
+    margin-left: 26.5em;
+}
+
+.etabs {
+    margin: 0;
+    padding: 2.5px 9.5px 0 0;
+    background: radial-gradient(#DCDCD8,#CDCEC7);
+    text-align: center;
+    width: 99.95%;
+    /* height: 5em; */
+    margin-left: auto;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+}
+
+.tab a.active {
+    padding-top: 22px;
+    color: #BADDF5;
+    color: #565A35;
+    color: #667110;
+    text-shadow: none;
+    background: radial-gradient(#31FF7A,#2DFDEA);
+    font-weight: 900;
+    box-shadow: none;
+    border: none;
+    padding: .4em 3em .32em 3em;
+    /* margin-bottom: 10px; */
+    border: 3px solid blue;
+    font-size: 90%;
+    border: 1px solid #62BF0D;
+    /* border-top: none; */
+    /* height: 15.1em; */
+    height: .07em;
+    /* border-right: none; */
+    /* border-bottom: none; */
+}
+
+span.act {
+    color: #989898;
+    position: relative;
+    top: .05em;
+}
+
+.etabs >li span {
+    display: inline;
+    font-size: 70%;
+}
+.wrapper {
+    margin: auto;
+
+}
+.main-links {
+    background: transparent;
+}
+.super-c {
+    display: none;
+}
+.reroute {
+    position: absolute;
+    left: -1.63em;
+    top: .842272em;
+    background: radial-gradient(#F3F3ED,#EFECEC);
+    width: 16.4em;
+    height: 6.25em;
+    border: .1em solid #E8E6E6;
+    box-shadow: inset 0 0 200px #F4FDFB;
+    margin-bottom: 8em;
+    padding: .5em .5em .5em .5em;
+    z-index: 99999;
+}
+
+
+.style{background-color:rgb(208, 147, 5);}
+#customMap {
+    position: relative;
+    overflow: hidden;
+    margin-left: -.035em;
+    height: 420px;
+    width: 888px;
+    top: 7.5em;
+    border: .15em solid #B7B6B6;
+    box-shadow: 0 0 5px #D4D4D4;
+    transform: translateZ(0px);
+    border-right: none;
+    background-color: rgb(229, 227, 223);
+    border-left: 1px solid #7B7B7B;
+    border-right: 1px solid #7B7B7B;
+}
+
+.reroute {
+    position: absolute;
+    left: -1.63em;
+    top: 1.398842272em;
+    background: radial-gradient(#F3F3ED,#EFECEC);
+    width: 16.4em;
+    height: 6.25em;
+    border: .1em solid #E8E6E6;
+    box-shadow: inset 0 0 200px #F4FDFB;
+    margin-bottom: 8em;
+    padding: .5em .5em .5em .5em;
+    z-index: 99999;
+}
+#tab-data-wrap {
+    padding: 2px 2px 2px 2px;
+    background: #fff;
+    background-image: url(modules/core/client/img/kcmo-xl.jpg);
+    border: .1em solid #BFBEBE;
+    /* box-shadow: inset 0 0px 200px #ECE8E8; */
+    border-radius: 0 0 8px 8px;
+    background: radial-gradient(#FFFEFE,#FDFDFD,#FFF7F7);
+    /* background: #EAEAEA; */
+    height: 43.5em;
+    background: radial-gradient(snow,#EAE9E9);
+    box-shadow: 0px 6px #E6E6E6;
+    background: radial-gradient(snow,silver);
+}
+.info h2, #header h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.02px;
+    margin-bottom: .5em;
+    color: #EDF5F7;
+    color: #EBECEC;
+    color: #E4E4E4;
+    font-weight: 700;
+    color: #F1EFEF;
+    position: relative;
+    text-shadow: 1px 1px 1px #757575;
+    left: -21.2em;
+    text-shadow: 1.5px 1px 1px dimgrey;
+    font-size: 1em;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: silver;
+    top: .5em;
+}
+#customMap {
+    position: relative;
+    overflow: hidden;
+    margin-left: -.035em;
+    height: 420px;
+    width: 888px;
+    top: 7.5em;
+    border: .1em solid #A2A2A2;
+    box-shadow: 0 0 5px #D4D4D4;
+    transform: translateZ(0px);
+    border-right: none;
+    background-color: rgb(229, 227, 223);
+    border-left: 1px solid #A0A0A0;
+    border-right: 1px solid #A9A7A7;
+}
+.sidebar {border-left: none;}
+
+.reroute {
+    position: absolute;
+    left: -5.3em;
+    top: 1.398842272em;
+    background: radial-gradient(#D0D0CF,#BBBBA7);
+    width: 16.4em;
+    height: 6.25em;
+    border: .1em solid #E8E6E6;
+    box-shadow: inset 0 0 200px #F4FDFB;
+    margin-bottom: 8em;
+    padding: .5em .5em .5em .5em;
+    z-index: 99999;
+}
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 3.5px;
+    margin-left: 6.2em;
+    font-weight: bold;
+    font-size: 90%;
+    color: #8E8D8D;
+    /* padding-bottom: .1em; */
+    position: er;
+    position: relative;
+    top: -1.94em;
+}
+.info h2, #header h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.02px;
+    margin-bottom: .5em;
+    color: #EDF5F7;
+    color: #EBECEC;
+    color: #E4E4E4;
+    font-weight: 700;
+    color: #F1EFEF;
+    position: relative;
+    text-shadow: 1px 1px 1px #757575;
+    left: -18.2em;
+    text-shadow: 1.5px 1px 1px dimgrey;
+    font-size: 1em;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: silver;
+    top: .5em;
+}
+#customMap {
+    position: relative;
+    overflow: hidden;
+    margin-left: 4.5em;
+    height: 420px;
+    width: 740px;
+    top: 7.5em;
+    border: .1em solid #A2A2A2;
+    box-shadow: 0 0 3px #312D2D;
+    transform: translateZ(0px);
+    border-right: none;
+    background-color: rgb(229, 227, 223);
+    border-left: 1px solid #A0A0A0;
+    border-right: 1px solid #A9A7A7;
+}
+
+#customMap {
+    position: relative;
+    overflow: hidden;
+    margin-left: 4.5em;
+    height: 420px;
+    width: 740px;
+    top: 7.5em;
+    border: .05em solid #A2A2A2;
+    box-shadow: 0 0 1px #737373;
+    transform: translateZ(0px);
+    border-right: none;
+    background-color: rgb(229, 227, 223);
+    border-left: 1px solid #A0A0A0;
+    border-right: 1px solid #A9A7A7;
+}
+
+.reroute {
+    position: absolute;
+    left: -5.3em;
+    top: 1.398842272em;
+    background: radial-gradient(#D0D0CF,#BBBBA7);
+    width: 16.4em;
+    height: 6.25em;
+    border: .1em solid #B1B1B1;
+    box-shadow: inset 0 0 200px #F4FDFB;
+    margin-bottom: 8em;
+    padding: .5em .5em .5em .5em;
+    z-index: 99999;
+}
+
+
+span.acat {
+    -webkit-text-stroke-width: .21px;
+    -webkit-text-stroke-color: limegreen;
+    /* background-color: #ACDA1E; */
+}
+
+
+
+
+.tab a.active {
+    padding-top: 22px;
+    color: #BADDF5;
+    color: #565A35;
+    /* color: #9AF79D; */
+    /* text-shadow: 0 0 1px #443A06; */
+    background: radial-gradient(#31FF7A,#2DFDEA);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: 900;
+    box-shadow: none;
+    border: none;
+    padding: .4em 3em .32em 3em;
+    /* margin-bottom: 10px; */
+    border: 3px solid blue;
+    font-size: 90%;
+    border: 1px solid #62BF0D;
+    /* border-top: none; */
+    /* height: 15.1em; */
+    height: .07em;
+    /* border-right: none; */
+    /* border-bottom: none; */
+}
+
+.linkcss-a{
+    text-decoration: underline;
+
+}
+.linkcss-a:hover {
+    cursor: pointer;
+}
+.l-a-s a:hover {
+    cursor: pointer;
+}
+.attrs {
+    font-style: italic;
+    font-size: 60%;
+    /* margin-top: 1.3em; */
+    position: relative;
+    top: 2.5em;
+}
     </style>
+
+  <link href="modules/core/client/css/mobile-1024.css"/>
 
   </head>
   <body class="ng-cloak bg-fixed bg-1">
-  <!--<header ng-include="'/modules/core/client/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>-->
+
+
+
+    <header ng-include="'/modules/core/client/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
+
+    <section class="content">
+      <section class="container">
+        {% block content %}{% endblock %}
+      </section>
+    </section>
 
 
 
 
+    <script type="text/javascript">
+        var user = {{ user | json | safe }};
+    </script>
+
+       <!--Load The Socket.io File-->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+
+
+
+<!-- load runtime dependencies from required and optional vendors -->
     <script src="/modules/core/client/scripts/lodash.compat.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
-    <!--<script src="/dist/application.js"></script>-->
+    <!-- -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.1/ui-bootstrap.min.js"></script>
@@ -718,65 +1616,121 @@ footer.ng-scope {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/1.4.0/angular-file-upload.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
     <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc2/angular-material.js"></script>
-    <!--<script src="/modules/core/client/scripts/angular-google-maps.js"></script>-->
 
 
+
+    <!--Application JavaScript Files-->
+    <!-- {% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %} -->
+
+
+
+
+
+
+       <!-- -->
+    <script src="/modules/core/client/scripts/es5-shim.js"></script>
+
+    <script src="/modules/core/client/scripts/event.js"></script>
+    <script src="/modules/core/client/scripts/ui-map.js"></script>
+    <script src="/modules/core/client/lib/ng-table.js"></script>
+
+
+    <!-- load application config giles -->
     <script src="/modules/core/client/app/config.js"></script>
+    <!-- initialize client web application -->
     <script src="/modules/core/client/app/init.js"></script>
+
+
     <script src="/modules/core/client/core.client.module.js"></script>
+
+    <!-- -->
     <script src="/modules/core/client/services/interceptors/auth.interceptor.client.service.js"></script>
     <script src="/modules/core/client/services/socket.io.client.service.js"></script>
+    <!-- -->
     <script src="/modules/core/client/services/menus.client.service.js"></script>
-    <script src="/modules/core/client/config/core.client.routes.js"></script>
-    <script src="/modules/core/client/config/core-admin.client.routes.js"></script>
+
+
+
     <script src="/modules/core/client/config/core-admin.client.menus.js"></script>
+    <script src="/modules/core/client/config/core-admin.client.routes.js"></script>
+    <script src="/modules/core/client/config/core.client.routes.js"></script>
+
+
+
     <script src="/modules/core/client/controllers/header.client.controller.js"></script>
     <script src="/modules/core/client/controllers/home.client.controller.js"></script>
     <script src="/modules/core/client/controllers/tabset.client.controller.js"></script>
     <script src="/modules/core/client/controllers/map.client.controller.js"></script>
     <script src="/modules/core/client/directives/show-errors.client.directives.js"></script>
 
-    <script src="/modules/core/client/scripts/es5-shim.js"></script>
+
+
+        <!--
+                    a)
+                    run user client module configuration files
+    -->
 
 
 
 
-    <script src="/modules/core/client/scripts/event.js"></script>
-    <script src="/modules/core/client/scripts/ui-map.js"></script>
-<!--<script src="/modules/core/client/scripts/map.js"></script>-->
-
-<!--<script src="/modules/core/client/directives/custom-map.client.directives.js"></script>-->
-
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8JLiD8m3R3_0cnjdaNy2hQ26irjAxA7E&sensor=false&callback=onGoogleReady" async defer></script>
-
-
-
+        <!--            Step 3)
+                                      export user module             -->
 
     <script src="/modules/users/client/users.client.module.js"></script>
     <script src="/modules/users/client/config/users.client.config.js"></script>
-    <script src="/modules/users/client/config/users.client.routes.js"></script>
+    <script src="/modules/users/client/services/authentication.client.service.js"></script>
+    <script src="/modules/users/client/services/users.client.service.js"></script>
+
+
     <script src="/modules/users/client/config/users-admin.client.routes.js"></script>
     <script src="/modules/users/client/config/users-admin.client.menus.js"></script>
-    <script src="/modules/users/client/controllers/password.client.controller.js"></script>
+
+    <script src="/modules/users/client/config/users.client.routes.js"></script>
+    <!-- -->
+
+
+
+    <!--            then b) =>
+
+                            load user client module controllers                     -->
+
+
+
     <script src="/modules/users/client/controllers/admin/user.client.controller.js"></script>
-    <script src="/modules/users/client/controllers/authentication.client.controller.js"></script>
     <script src="/modules/users/client/controllers/admin/list-users.client.controller.js"></script>
+     <script src="/modules/users/client/controllers/authentication.client.controller.js"></script>
+    <script src="/modules/users/client/controllers/password.client.controller.js"></script>
+
+
+
     <script src="/modules/users/client/controllers/settings/settings.client.controller.js"></script>
     <script src="/modules/users/client/controllers/settings/edit-profile.client.controller.js"></script>
     <script src="/modules/users/client/controllers/settings/manage-social-accounts.client.controller.js"></script>
     <script src="/modules/users/client/controllers/settings/change-password.client.controller.js"></script>
     <script src="/modules/users/client/controllers/settings/change-profile-picture.client.controller.js"></script>
+    <!-- -->
     <script src="/modules/users/client/directives/users.client.directive.js"></script>
-    <script src="/modules/users/client/services/users.client.service.js"></script>
-    <script src="/modules/users/client/services/authentication.client.service.js"></script>
-    <script type="text/javascript">
-        var user = {{ user | json | safe }};
-    </script>
-    <!--Load The Socket.io File-->
-    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-    <!--Application JavaScript Files-->
-    <!-- {% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %} -->
+
+
+
+
+
+
+
+    <!-- google maps api js v.3 : requires libraries => geometry, places, geocoding, streetview -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8JLiD8m3R3_0cnjdaNy2hQ26irjAxA7E&sensor=false&callback=onGoogleReady" async defer></script>
+
+    <!-- -->
+
+
+
+
+
+
+
+
+
     {% if livereload %}
     <!--Livereload script rendered -->
     <script type="text/javascript" src="{{host}}:35719/livereload.js"></script>
@@ -784,15 +1738,12 @@ footer.ng-scope {
 
 
 
-     <!-- <section id="customMap" ng-controller="MapController">
-      <div ui-map="map" ui-options="mapOptions" class="map-canvas">
-      </div>
-    </section> -->
-    <section class="content">
-      <section class="container">
-        {% block content %}{% endblock %}
-      </section>
-    </section>
+
+
+
+
+
+
 
   </body>
 </html>

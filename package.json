@@ -52,6 +52,7 @@
     "mongoose": "^4.0.6",
     "morgan": "^1.6.1",
     "multer": "0.1.8",
+    "ng-table": "^0.8.3",
     "node-pre-gyp": "0.6.4",
     "nodemailer": "^1.4.0",
     "passport": "~0.2.2",

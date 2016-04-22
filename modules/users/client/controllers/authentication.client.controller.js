@@ -22,12 +22,19 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$stat
       }
 
       $http.post('/api/auth/signup', $scope.credentials).success(function (response) {
+        console.log();
+        console.log("post /api/auth/signup");
+        console.log(response);
+        console.log();
         // If successful we assign the response to the global user model
         $scope.authentication.user = response;
 
         // And redirect to the previous or home page
         $state.go($state.previous.state.name || 'home', $state.previous.params);
       }).error(function (response) {
+        console.log("error -- see response");
+        console.log(response);
+        console.log();
         $scope.error = response.message;
       });
     };
@@ -50,31 +57,6 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$stat
       }).error(function (response) {
         $scope.error = response.message;
       });
-    };
-
-    $scope.signout = function (isValid) {
-      $scope.error = null;
-      if (!isValid) {
-        $scope.$broadcast('show-errors-check-validity', 'userForm');
-        return false;
-      }
-      // $scope.authentication.user = null;
-      // $state.go($state.previous.state.name || 'home', $state.previous.params);
-
-      Authentication.user = null;
-
-                // Redirect to signin page
-      $location.path("/");
-
-    //   $http.post('/api/auth/signout', $scope.credentials).success(function (response) {
-    //     // If successful we assign the response to the global user model
-    //     $scope.authentication.user = response;
-
-    //     // And redirect to the previous or home page
-    //     $state.go($state.previous.state.name || 'home', $state.previous.params);
-    //   }).error(function (response) {
-    //     $scope.error = response.message;
-    //   });
     };
 
     // OAuth provider request

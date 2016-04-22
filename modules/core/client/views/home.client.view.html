@@ -1,6 +1,8 @@
 <section ng-controller="HomeController">
       <p ng-include="'/modules/core/client/views/logo.client.view.html'"></p>
-<!--       <a href="/api/auth/signout" target="_self">Signout</a> -->
+
+
+
       <div class="main-container">
           <div class="main wrapper clearfix" ng-app="CustomMap">
             <!-- Header Start -->
@@ -9,27 +11,10 @@
               <!-- Main Tab Container -->
               <div id="tab-container" class="tab-container">
                 <!-- Tab List -->
-                  <ul class='etabs'>
-                      <li class='tab' id="tab-about">
-                        <a ng-href="/" class="active"><i class="icon-user"></i><span class="act"> Home</span></a>
-                      </li>
 
-                      <li class='tab'>
-                        <a ng-href="/add-location"><i class="icon-heart"></i><span class="act"> Suggest Location</span></a>
-                      </li>
 
-                      <li class='tab'>
-                        <a ng-href="/internet-service-providers"><i class="icon-heart"></i><span class="act"> Internet Providers</span></a>
-                      </li>
+                <section ng-include="'/modules/core/client/views/partials/tabs.client.view.html'"></section>
 
-                      <li class='tab'>
-                        <a ng-href="/contact"><i class="icon-file-text"></i><span> Contact</span></a>
-                      </li>
-
-                      <li class='tab'>
-                        <a ng-href="/about"><i class="icon-envelope"></i><span> About</span></a>
-                      </li>
-                  </ul>
                 <!-- End Tab List -->
                   <div id="tab-data-wrap">
                     <!-- About Tab Data -->
@@ -43,7 +28,7 @@
                                       </h2>
 
                                   </div>
-                                  <div ng-include="'/modules/core/client/views/map/index.client.view.html'"></div>
+                                  <div ng-include="'/modules/core/client/views/map/canvas.client.view.html'"></div>
                               </div>
                               <div class="g1">
                                   <div class="main-links sidebar">
@@ -91,7 +76,9 @@
                                     <i class="icon-twitter"></i>
                                     <div class="item-data">
                                       <h3><a href="http://twitter.com">@@</a></h3>
+                                      <h5>on</h5>
                                       <p>###</p>
+                                      <p>ag</p>
                                     </div>
                                   </div>
                                 </div>
