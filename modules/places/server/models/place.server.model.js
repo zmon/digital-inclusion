@@ -18,16 +18,25 @@ var PlaceSchema = new Schema({
     type: String,
     default: '',
     trim: true,
-    required: 'Title cannot be blank'
+    required: 'Must provide title or place name for location'
   },
-  shortName: {
+  caption: {
     type: String,
     default: '',
     trim: true
   },
-  desc: {
+  description: {
     type: String,
     default: '',
+    trim: true
+  },
+  category: {
+    type: String,
+    default: '',
+    trim: true
+  },
+  url: {
+    type: String,
     trim: true
   },
   address1: {
@@ -40,11 +49,8 @@ var PlaceSchema = new Schema({
     default: '',
     trim: true
   },
-  hours: {
+  hoursOpen: {
     type: Array
-  },
-  geolocation: {
-    type: Object
   },
   city: {
     type: String,
@@ -56,13 +62,21 @@ var PlaceSchema = new Schema({
     default: 'MO',
     trim: true
   },
-  zipCode: {
+  zip: {
     type: Number
   },
   phone: {
+    type: String,
+    default: '',
+    trim: true
+  },
+  lat: {
     type: Number
   },
-  contactPerson: {
+  lng: {
+    type: Number
+  },
+  contactName: {
     type: String,
     default: '',
     trim: true
@@ -72,28 +86,22 @@ var PlaceSchema = new Schema({
     default: '',
     trim: true
   },
-  contactType: {
-    type: String,
-    default: '',
-    trim: true
-  },
-  latitude: {
-    type: Number
-  },
-  longitude: {
-    type: Number
-  },
   offersWifi: {
     type: Boolean
   },
   offersTraining: {
     type: Boolean
   },
-  wifi: {
-    type: Object
+  wifiTerms: {
+    type: String,
+    default: '',
+    trim: true
   },
-  trainingCourses: {
-    type: Object
+  computerReseller: {
+    type: Boolean
+  },
+  iconMatcher: {
+    type: String
   },
   user: {
     type: Schema.ObjectId,

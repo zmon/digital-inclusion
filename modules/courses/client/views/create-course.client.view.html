@@ -1,0 +1,208 @@
+<section ng-controller="CoursesController">
+  <!-- <div class="page-header">
+    <h1>New Course</h1>
+  </div> -->
+  <div class="col-md-12">
+    <form name="courseForm" class="form-horizontal" ng-submit="create(courseForm.$valid)" novalidate>
+      <fieldset class="mini-form">
+
+        <h5>Add New Course</h5>
+        <div class="well courseDetails">
+          <h6>Listing Details</h6>
+          <div class="form-group" show-errors>
+            <label for="title">Title</label>
+            <input name="title" type="text" ng-model="title" id="title" class="form-control" placeholder="Official name of training course" required>
+            <div ng-messages="courseForm.title.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Course title is required.</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="shortDescription">Caption</label>
+            <input name="shortDescription" ng-model="shortDescription" id="shortDescription" class="form-control" placeholder="Short Description (90 characters or less)">
+          </div>
+          <div class="form-group">
+            <label for="fullDescription">Full Description</label>
+            <textarea name="fullDescription" ng-model="fullDescription" id="fullDescription" class="form-control" cols="30" rows="8" placeholder="Full listing details (180 characters or less)"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="cost">Cost</label>
+            <input name="cost" type="text" ng-model="cost" id="cost" class="form-control" placeholder="How much does this course cost?">
+          </div>
+          <div class="form-group">
+            <label for="signupNotes">Sign-Up Details</label>
+            <input name="signupNotes" type="text" ng-model="signupNotes" class="form-control" id="signupNotes" placeholder="Please provide information on how to sign up for course">
+          </div>
+
+          <div class="form-group">
+            <label for="url">External Site Link</label>
+            <input name="url" type="text" ng-model="url" id="url" class="form-control" placeholder="Website URL">
+          </div>
+
+          <div class="form-group">
+            <label for="keyDetails">Additional Listing Details</label>
+            <input name="keyDetails" type="text" ng-model="keyDetails" id="keyDetails" class="form-control" placeholder="Please provide any additional details relevant to course listing">
+          </div>
+          <br>
+        </div>
+
+        <div class="well locDetails">
+          <h6>Course Location</h6>
+          <div class="form-group" show-errors>
+            <label for="locationName">Location Name</label>
+            <input name="locationName" type="text" ng-model="locationName" id="locationName" class="form-control" placeholder="Building or location name" required>
+            <div ng-messages="courseForm.locationName.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Course location name is required.</p>
+            </div>
+          </div>
+
+          <div class="form-group" show-errors>
+            <label for="address1">Address Line 1</label>
+            <input name="address1" type="text" ng-model="address1" id="address1" class="form-control" placeholder="Building or location name" required>
+            <div ng-messages="courseForm.address1.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Address is required.</p>
+            </div>
+          </div>
+
+          <div class="form-group" show-errors>
+            <label for="address2">Address Line 2</label>
+            <input name="address2" type="text" ng-model="address2" id="address2" class="form-control" placeholder="Room No., Apt. or Suite ">
+          </div>
+
+          <div class="form-group" show-errors>
+            <label for="city">City</label>
+            <input name="city" type="text" ng-model="city" id="city" class="form-control" placeholder="City" required>
+            <div ng-messages="courseForm.city.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">City is required.</p>
+            </div>
+          </div>
+
+          <div class="form-group" show-errors>
+            <label for="state">State</label>
+            <input name="state" type="text" ng-model="state" id="state" class="form-control" placeholder="State" required>
+            <div ng-messages="courseForm.state.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">State is required.</p>
+            </div>
+          </div>
+
+          <div class="form-group" show-errors>
+            <label for="zipCode">Zip Code</label>
+            <input name="zipCode" type="text" ng-model="zipCode" id="zipCode" class="form-control" placeholder="Zip code" required>
+            <div ng-messages="courseForm.zipCode.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Zip code is required.</p>
+            </div>
+          </div>
+
+        </div>
+
+<div class="well contact-details">
+  <h6>Contact Information</h6>
+   <div class="form-group" show-errors>
+      <label for="contactName">Name</label>
+      <input name="contactName" type="text" ng-model="contactName" id="contactName" class="form-control" placeholder="Contact name" required>
+      <div ng-messages="courseForm.contactName.$error" role="alert">
+        <p class="help-block error-text" ng-message="required">Contact name is required.</p>
+      </div>
+    </div>
+    <div class="form-group" show-errors>
+      <label for="contactPhone">Phone</label>
+      <input name="contactPhone" type="text" ng-model="contactPhone" id="contactPhone" class="form-control" placeholder="Contact phone">
+    </div>
+    <div class="form-group" show-errors>
+      <label for="contactEmail">Email</label>
+      <input name="contactEmail" type="text" ng-model="contactEmail" id="contactEmail" class="form-control" placeholder="Contact email">
+    </div>
+
+</div>
+
+
+        <div class="well schedule-details">
+          <h6>Course Schedule</h6>
+
+          <h5><strong>Is this course offered in the daytime or evening?</strong></h5>
+          <!-- <div class="form-group"> -->
+            <!-- <label for="daytime"></label> -->
+         <!--    <br>
+            <span class="xtr">Daytime</span>
+            <input name="daytime" type="checkbox" ng-model="daytime" id="daytime" class="form-control">
+
+          </div>
+          <div class="form-group">
+            <span class="xtr">Evening</span>
+            <input name="evening" type="checkbox" ng-model="evening" id="evening" class="form-control">
+          </div>
+ -->
+
+          <div class="form-group">
+           <!--  <span class="xtr">Evening</span> -->
+           <!-- <label for="dateTimeInterval">Select: Time of Day</label> -->
+            <!-- <input name="dateTimeInterval" type="text" ng-model="dateTimeInterval" id="dateTimeInterval" class="form-control"> -->
+            <select name="dateTimeInterval" ng-model="dateTimeInterval">
+              <option value="day">Daytime Course</option>
+              <option value="evening">Evening Course</option>
+            </select>
+          </div>
+
+
+
+          <h5><strong>On what dates will this course be meeting?</strong></h5>
+          <div class="form-group" show-errors>
+            <label for="datesScheduled">Please list all officially scheduled course meeting dates</label>
+            <input name="datesScheduled" type="text" ng-model="datesScheduled" id="datesScheduled" class="form-control">
+          </div>
+
+
+
+
+          <br>
+          <h5><strong>At what daily times during the week does this course meet?</strong></h5>
+          <div class="form-group" show-errors>
+            <label for="sundayHours">Sunday</label>
+            <input name="sundayHours" type="text" ng-model="sundayHours" id="sundayHours" class="form-control hid">
+          </div>
+          <div class="form-group" show-errors>
+            <label for="mondayHours">Monday</label>
+            <input name="mondayHours" type="text" ng-model="mondayHours" id="mondayHours" class="form-control hid">
+          </div>
+          <div class="form-group" show-errors>
+            <label for="tuesdayHours">Tuesday</label>
+            <input name="tuesdayHours" type="text" ng-model="tuesdayHours" id="tuesdayHours" class="form-control hid">
+          </div>
+          <div class="form-group" show-errors>
+            <label for="wednesdayHours">Wednesday</label>
+            <input name="wednesdayHours" type="text" ng-model="wednesdayHours" id="wednesdayHours" class="form-control hid">
+          </div>
+          <div class="form-group" show-errors>
+            <label for="thursdayHours">Thursday</label>
+            <input name="thursdayHours" type="text" ng-model="thursdayHours" id="thursdayHours" class="form-control hid">
+          </div>
+          <div class="form-group" show-errors>
+            <label for="fridayHours">Friday</label>
+            <input name="fridayHours" type="text" ng-model="fridayHours" id="fridayHours" class="form-control hid">
+          </div>
+          <div class="form-group" show-errors>
+            <label for="saturdayHours">Saturday</label>
+            <input name="saturdayHours" type="text" ng-model="saturdayHours" id="saturdayHours" class="form-control hid">
+          </div>
+
+
+          <br>
+          <h5><strong>Additional Information</strong></h5>
+          <div class="form-group">
+            <label for="scheduleNotes">Miscellaneous Notes</label>
+            <textarea name="scheduleNotes" ng-model="scheduleNotes" id="scheduleNotes" class="form-control hid" type="text" cols="30" rows="8" placeholder="Please provide any additional information to clarify course schedule for users"></textarea>
+          </div>
+
+          <br>
+        </div>
+
+
+        <div class="form-group">
+          <input type="submit" class="btn btn-default">
+        </div>
+        <div ng-show="error" class="text-danger">
+          <strong ng-bind="error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
