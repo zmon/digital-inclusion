@@ -12,24 +12,11 @@ angular.module('core.map').controller('GeoController', ['$scope', 'Authenticatio
 
 
 
-    var sprintCenter = new google.maps.LatLng(39.097951,-94.616262);
-    var kcDigDrv = new google.maps.LatLng(39.101983,-94.584735);
-
-
-
-
+    // var sprintCenter = new google.maps.LatLng(39.097951,-94.616262);
+    // var kcDigDrv = new google.maps.LatLng(39.101983,-94.584735);
 
 
 
 
   }
 ]);
-
-// 'use strict';
-
-// angular.module('core').controller('HomeController', ['$scope', 'Authentication',
-//   function ($scope, Authentication) {
-//     // This provides Authentication context.
-//     $scope.authentication = Authentication;
-//   }
-// ]);

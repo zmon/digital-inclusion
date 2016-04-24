@@ -51,8 +51,16 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$
 
             $scope.mapOptions = {
               center: new google.maps.LatLng(39.1059,-94.57441),
-              zoom: 12,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
+              zoom: 15,
+              // mapTypeId: google.maps.MapTypeId.ROADMAP,
+              mapTypeControl: true,
+              mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                mapTypeIds: [
+                  google.maps.MapTypeId.ROADMAP,
+                  google.maps.MapTypeId.TERRAIN
+                ]
+              }
             };
 
             var initialLocation;
@@ -62,7 +70,10 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$
                 browserSupportFlag = true;
                 navigator.geolocation.getCurrentPosition(function(position) {
                   initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+                  console.log("Log $initialLocation$");
+                  console.log(position.coords.latitude + " " + position.coords.longitude);
                   $scope.map.setCenter(initialLocation);
+                  setVisitorMarker(position.coords);
                 }, function() {
                   handleNoGeolocation(browserSupportFlag);
                 });
@@ -94,13 +105,13 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$
             var setIcon = function(obj) {
                 if (obj.iconMatcher === "day") {
                     console.log('day');
-                    return { path: 'M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z', fillColor: 'orange', fillOpacity: 0.8, scale: 1.25, strokeColor: 'orange', strokeWeight: 2 };
+                    return { path: 'M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z', fillColor: 'orange', fillOpacity: .9, scale: 1.45, strokeColor: 'orange', strokeWeight: 1.41 };
                 } else if (obj.iconMatcher === "evening") {
                     console.log('evening');
                     return {path: 'M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z', fillColor: 'navy', fillOpacity: 0.8, scale: 1.25, strokeColor: 'navy', strokeWeight: 2};
                 } else if (obj.iconMatcher === "publicWifi") {
                     console.log('pubWifi');
-                    return {path: 'M6.337,7.247c-0.391-0.391-1.023-0.391-1.414,0l0.708,0.708L6.337,7.247z', fillColor: 'green', fillOpacity: 0.8, scale: 15, strokeColor: 'green', strokeWeight: .52};
+                    return {path: 'M6.337,7.247c-0.391-0.391-1.023-0.391-1.414,0l0.708,0.708L6.337,7.247z', fillColor: 'green', fillOpacity: 0.8, scale: 25, strokeColor: 'darkgreen', strokeWeight: 1.52};
                 } else if (obj.iconMatcher === "customerWifi") {
                     console.logI(" ");
                     return {path: 'M6.337,7.247c-0.391-0.391-1.023-0.391-1.414,0l0.708,0.708L6.337,7.247z', fillColor: 'black', fillOpacity: 0.8, scale: 15, strokeColor: 'black', strokeWeight: .52};
@@ -111,9 +122,22 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$
                     console.log("computer resale");
                     return {path: 'M267.922,351.734V384h-25.719v-30.406c-19.516-0.609-39.047-6.25-50.203-13.469l8.375-29.766c12.406,7.531,29.438,13.781,48.344,13.781c19.812,0,33.141-9.703,33.141-24.438c0-14.391-10.828-23.156-34.078-31.641c-32.219-11.906-53.609-27.25-53.609-56.094c0-26.938,18.609-47.938,49.891-53.562V128h25.406v28.828c19.516,0.625,32.859,5.641,42.781,10.656l-8.375,28.828c-7.438-3.75-21.078-10.969-42.141-10.969c-21.703,0-29.453,11.281-29.453,21.938c0,12.844,11.156,20.359,37.812,30.719C304.797,251.156,320,268.062,320,296.281C320,322.922,301.703,346.094,267.922,351.734z', fillColor: 'black', fillOpacity: 1, scale: .085, strokeColor: 'black', strokeWeight: .82};
                 } else {
-                    console.log("no matches");
+                    console.log("no matches -> assume site visitor");
+                    // return {path:'M11 11l1.256 5 3.744-10-10 3.75 5 1.25zm1-11c-5.522 0-10 4.395-10 9.815 0 5.505 4.375 9.268 10 14.185 5.625-4.917 10-8.68 10-14.185 0-5.42-4.478-9.815-10-9.815zm0 18c-4.419 0-8-3.582-8-8s3.581-8 8-8 8 3.582 8 8-3.581 8-8 8z', fillColor: 'pink', scale: 1.25, strokeWeight: 1, strokeColor: 'black'};
+                    return {path:"M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z", fillColor: "cyan", fillOpacity: 1, scale: .84, strokeColor: 'violet', strokeWeight: 2.0};
                 }
             }
+
+            var siteVisitor;
+            var setVisitorMarker = function(loc){
+              console.log('loc');
+              var marker = new google.maps.Marker({
+                    map: $scope.map,
+                    position: new google.maps.LatLng(loc.latitude, loc.longitude),
+                    icon: setIcon('_')
+                });
+              $scope.mapMarkers.push(marker);
+            };
 
              var createMarker = function (info) {
                 console.log("Log createMarker(info)");

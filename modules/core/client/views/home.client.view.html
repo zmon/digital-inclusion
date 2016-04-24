@@ -1,96 +1,50 @@
 <section ng-controller="HomeController">
-      <p ng-include="'/modules/core/client/views/logo.client.view.html'"></p>
-
-
-
-      <div class="main-container">
-          <div class="main wrapper clearfix" ng-app="CustomMap">
-            <!-- Header Start -->
-
-              <!-- Header End -->
-              <!-- Main Tab Container -->
-              <div id="tab-container" class="tab-container">
-                <!-- Tab List -->
-
-
-                <section ng-include="'/modules/core/client/views/partials/tabs.client.view.html'"></section>
-
-                <!-- End Tab List -->
-                  <div id="tab-data-wrap">
-                    <!-- About Tab Data -->
-                      <div id="about">
-                          <section class="clearfix">
-                              <div class="g2">
-
-                                  <div class="info">
-                                      <h2>
-                                          Local Map of Free WiFi Services
-                                      </h2>
-
-                                  </div>
-                                  <div ng-include="'/modules/core/client/views/map/canvas.client.view.html'"></div>
-                              </div>
-                              <div class="g1">
-                                  <div class="main-links sidebar">
-                                    <div ng-include="'/modules/core/client/views/partials/legend.client.view.html'"></div>
-
-                                     <!--  <ul>
-                                          <li>
-                                              <a href="#resume">Legend</a>
-                                          </li>
-                                          <li>
-                                              <a href="#portfolio"></a>
-                                          </li>
-                                          <li>
-                                              <a href="#contact"></a>
-                                          </li>
-                                          <li>
-                                              <a href="#features"></a>
-                                          </li>
-                                      </ul> -->
-                                  </div>
-                              </div>
-                              <div class="break"></div>
-                              <div class="contact-info">
-                                <div class="g1 sa-a">
-                                  <div class="item-box clearfix">
-                                    <i class="icon-envelope"></i>
-                                    <div class="item-data">
-
-                                      <h3><a href=""></a></h3>
-                                      <p></p>
-                                    </div>
-                                  </div>
-                                </div>
-                               <!--  <div class="g1">
-                                  <div class="item-box clearfix">
-                                    <i class="icon-facebook"></i>
-                                    <div class="item-data">
-                                      <h3><a href="">link</a></h3>
-                                      <p>to somewhere</p>
-                                    </div>
-                                  </div>
-                                </div> -->
-                                <div class="g1 super-c">
-                                  <div class="item-box clearfix">
-                                    <i class="icon-twitter"></i>
-                                    <div class="item-data">
-                                      <h3><a href="http://twitter.com">@@</a></h3>
-                                      <h5>on</h5>
-                                      <p>###</p>
-                                      <p>ag</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </section><!-- content -->
-                      </div>
-                    <!-- End About Tab Data -->
-
-                  </div>
+  <p ng-include="'/modules/core/client/views/logo.client.view.html'"></p>
+  <div class="main-container">
+    <div class="main wrapper clearfix" ng-app="CustomMap">
+      <div id="tab-container" class="tab-container">
+        <section ng-include="'/modules/core/client/views/partials/tabs.client.view.html'"></section>
+        <div id="tab-data-wrap">
+          <div id="about">
+            <section class="clearfix">
+              <div class="g2">
+                <div class="info">
+                  <h2>Local Services</h2>
+                </div>
+                <div ng-include="'/modules/core/client/views/map/canvas.client.view.html'"></div>
               </div>
-              <!-- End Tab Container -->
-              <section ng-include="'/modules/core/client/views/footer.client.view.html'"></section>
-          </div><!-- #main -->
-      </div><!-- #main-container -->
-
+              <div class="g1">
+                <div class="main-links sidebar">
+                  <div ng-include="'/modules/core/client/views/partials/legend.client.view.html'"></div>
+                </div>
+              </div>
+              <div class="break"></div>
+              <div class="contact-info">
+                <div class="g1 sa-a">
+                  <div class="item-box clearfix">
+                    <i class="icon-envelope"></i>
+                    <div class="item-data">
+                      <h3><a href=""></a></h3>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="g1 super-c">
+                  <div class="item-box clearfix">
+                    <i class="icon-twitter"></i>
+                    <div class="item-data">
+                      <h3><a href="http://twitter.com"></a></h3>
+                      <h5></h5>
+                      <p></p>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    <section ng-include="'/modules/core/client/views/footer.client.view.html'"></section>
+  </div>
+</div>
