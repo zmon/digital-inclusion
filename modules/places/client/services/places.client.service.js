@@ -13,7 +13,7 @@ angular.module('places').factory('Places', ['$resource',
   }
 ]);
 
-angular.module('places').factory('placeIndexService', function($http) {
+angular.module('places').factory('getPlacesService', function($http) {
   var getPlaces = function(callback) {
     $http.get('/api/places').success(function(data) {
       callback(data);

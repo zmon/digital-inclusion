@@ -32,10 +32,10 @@
         restrict: 'A',
         //doesn't work as E for unknown reason
         link: function (scope, elm, attrs) {
-          console.log(attrs);
+          // console.log(attrs);
           var opts = angular.extend({}, options, scope.$eval(attrs.uiOptions));
-          console.log("opts:");
-          console.log(opts);
+          // console.log("opts:");
+          // console.log(opts);
           var map = new window.google.maps.Map(elm[0], opts);
           var model = $parse(attrs.uiMap);
 

@@ -14,7 +14,7 @@ angular.module('courses').factory('Courses', ['$resource',
 ]);
 
 
-angular.module('courses').factory('courseIndexService', function($http) {
+angular.module('courses').factory('getCoursesService', function($http) {
   var getCourses = function(callback) {
     $http.get('/api/courses').success(function(data) {
       callback(data);

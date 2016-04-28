@@ -4,9 +4,51 @@
 //   angular.bootstrap(document.getElementById("customMap"), ['core.map']);
 // }
 
-angular.module('core.map').controller('GeoController', ['$scope', 'Authentication',
+angular.module('core.map').controller('GeolocationController', ['$scope', 'Authentication',
   function ($scope, Authentication) {
     $scope.authentication = Authentication;
+
+
+
+    // var siteVisitor, id, options;
+
+    // function success(pos) {
+    //   var crd = pos.coords;
+
+    //   if (siteVisitor.latitude === crd.latitude && siteVisitor.longitude === crd.longitude) {
+    //     console.log('Congratulations, you reached the siteVisitor');
+    //     navigator.geolocation.clearWatch(id);
+    //   }
+    // }
+
+    // function error(err) {
+    //   console.warn('ERROR(' + err.code + '): ' + err.message);
+    // }
+
+    // siteVisitor = {
+    //   latitude : 0,
+    //   longitude: 0
+    // };
+
+    // options = {
+    //   enableHighAccuracy: false,
+    //   timeout: 5000,
+    //   maximumAge: 0
+    // };
+
+    // id = navigator.geolocation.watchPosition(success, error, options);
+
+
+
+
+
+
+
+
+
+
+
+
     // var browserSupportFlag =  new Boolean();
     // var setIcon = function(obj) {
     //   if (obj.iconMatcher === "day") {
