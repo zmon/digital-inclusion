@@ -1,9 +1,9 @@
-<section ng-controller="HomeController">
-  <p ng-include="'/modules/core/client/views/logo.client.view.html'"></p>
+<main ng-controller="HomeController">
+  <aside ng-include="'/modules/core/client/views/logo.client.view.html'"></aside>
   <div class="main-container">
     <div class="main wrapper clearfix" ng-app="CustomMap">
       <div id="tab-container" class="tab-container">
-        <section ng-include="'/modules/core/client/views/partials/tabs.client.view.html'"></section>
+        <section ng-include="'/modules/core/client/views/partials/tab/home.client.view.html'"></section>
         <div id="tab-data-wrap">
           <div id="about">
             <section class="clearfix">
@@ -11,11 +11,12 @@
                 <div class="info">
                   <h2>Local Services</h2>
                 </div>
-                <div ng-include="'/modules/core/client/views/map/canvas.client.view.html'"></div>
+                <div ng-include="'/modules/core/client/views/partials/map/canvas.client.view.html'"></div>
+                <div ng-include="'/modules/core/client/views/partials/map/controls.client.view.html'"></div>
               </div>
               <div class="g1">
                 <div class="main-links sidebar">
-                  <div ng-include="'/modules/core/client/views/partials/legend.client.view.html'"></div>
+                  <div ng-include="'/modules/core/client/views/partials/map/legend.client.view.html'"></div>
                 </div>
               </div>
               <div class="break"></div>
@@ -24,8 +25,8 @@
                   <div class="item-box clearfix">
                     <i class="icon-envelope"></i>
                     <div class="item-data">
-                      <h3><a href=""></a></h3>
-                      <p></p>
+                      <h3><a href="">?</a></h3>
+                      <p>?</p>
                     </div>
                   </div>
                 </div>
@@ -47,4 +48,4 @@
       </div>
     <section ng-include="'/modules/core/client/views/footer.client.view.html'"></section>
   </div>
-</div>
+</main>

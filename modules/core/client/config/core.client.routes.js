@@ -29,9 +29,9 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
       url: '/contact',
       templateUrl: 'modules/core/client/views/contact.client.view.html'
     })
-    .state('add-location', {
-      url: '/add-location',
-      templateUrl: 'modules/core/client/views/add-location.client.view.html'
+    .state('add-services', {
+      url: '/add-services',
+      templateUrl: 'modules/core/client/views/add-services.client.view.html'
     })
 
     .state('list-isp', {

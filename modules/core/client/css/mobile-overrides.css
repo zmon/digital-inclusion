@@ -162,14 +162,13 @@
 
 }
 body {
-  background: url('../images/kcmo-xl.jpg');
+  /*background: url('../images/kcmo-xl.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
+  background: none;
 }
 @media (max-width: 1000px) {
-  body {
-    background: pink;
-  }
+
 }
 
 @media (min-width: 1001px) {

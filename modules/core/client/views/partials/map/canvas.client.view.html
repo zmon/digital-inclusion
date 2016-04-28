@@ -1,0 +1,19 @@
+ <article ng-controller="GeoController">
+
+  <section id="customMap" ng-controller="MapController">
+
+    <div ui-map="map" ui-options="mapOptions" class="map-canvas" ui-event="{'map-click': 'addMarker($event, $params)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }"></div>
+
+    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+
+    <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="controlCtrl" index="1"></ui-gmap-map-control>
+
+    <!--  <div id="class" ng-repeat="marker in mapMarkers | orderBy : 'title'">
+         <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+    </div> -->
+
+
+  </section>
+  <section ng-include="'/modules/core/client/views/partials/map/panel.client.view.html'"></section>
+
+</article>

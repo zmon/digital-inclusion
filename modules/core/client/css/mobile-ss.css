@@ -1,0 +1,12 @@
+@media(max-width: 768px) {
+  .content {
+    padding: 0;
+    margin: 0;
+  }
+  main.ng-scope {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -2.5em;
+}
+}
