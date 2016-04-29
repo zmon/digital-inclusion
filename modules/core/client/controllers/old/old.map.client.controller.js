@@ -134,10 +134,11 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$
 
             var setVisitorMarker = function(loc){
               console.log('loc');
+              console.log(loc);
               var marker = new google.maps.Marker({
                     map: $scope.map,
                     position: new google.maps.LatLng(loc.latitude, loc.longitude),
-                    icon: setIcon('_')
+                    icon: setIcon(loc)
                 });
               $scope.mapMarkers.push(marker);
             };

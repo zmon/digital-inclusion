@@ -130,7 +130,7 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$
             map: $scope.map,
             position: new google.maps.LatLng(info.lat, info.lng),
             title: info.title,
-            icon: setIcon(info),
+            icon: setIcon(info.iconMatcher),
             caption: info.caption
           });
 
