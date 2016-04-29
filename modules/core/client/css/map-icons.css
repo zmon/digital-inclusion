@@ -12,11 +12,24 @@
 .map-icon-label .map-icon {
 	display: block;
 	font-size: 24px;
-	color: #FFFFFF;
+
 	width: 48px;
 	line-height: 48px;
 	text-align: center;
 	white-space: nowrap;
+}
+
+.mil-green {
+	color:limegreen;
+}
+.mil-black {
+	color:black;
+}
+.mil-orange {
+	color:orange;
+}
+.mil-blue{
+	color:navy;
 }
 
 .map-icon {
