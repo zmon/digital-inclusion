@@ -1,18 +1,23 @@
 'use strict';
 
 function onGoogleReady() {
-  // console.log("init");
   angular.bootstrap(document.getElementById("customMap"), ['core.map']);
 }
 
-angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$http', '$state', '$stateParams', 'Authentication', 'getCoursesService',  'getPlacesService', '$location',
+angular.module('core.map', ['ngResource']).controller('MapController', ['$scope', '$timeout', '$http', '$state', '$stateParams', 'Authentication', 'getCoursesService',  'getPlacesService', '$location',
     function ($scope, $timeout, $http, $state, $stateParams, Authentication, getCoursesService, getPlacesService, $location) {
+
+
+
+
 
         var ctrl = this;
 
         var showMarkers = function(markers) {
 
         };
+
+
 
         var MAP_PIN = 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z';
         var SQUARE_PIN = 'M22-48h-44v43h16l6 5 6-5h16z';
@@ -177,49 +182,249 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$
         }
 
 
+        // $scope.loadGeoJsonString = function(geoString) {
+        //   var geojson = JSON.parse(geoString);
+        //   map.data.addGeoJson(geojson);
+        //   zoom(map);
+        // };
+// Create a <script> tag and set the USGS URL as the source.
+    // var script = document.createElement('script');
+
+    // script.src = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp';
+    // document.getElementsByTagName('head')[0].appendChild(script);
+
+
+            $scope.clickMe = function(clickEvent) {
+              // $scope.clickEvent = simpleKeys(clickEvent);
+              console.log(clickEvent);
+            };
+
+
+             // * return a copy of an object with only non-object keys
+             // * we need this to avoid circular references
+
+            // function simpleKeys (original) {
+            //   return Object.keys(original).reduce(function (obj, key) {
+            //     obj[key] = typeof original[key] === 'object' ? '{ ... }' : original[key];
+            //     return obj;
+            //   }, {});
+            // }
+
         $scope.showMap = function (position) {
             $scope.lat = position.coords.latitude;
             $scope.lng = position.coords.longitude;
             $scope.accuracy = position.coords.accuracy;
             $scope.mapOptions = {
                 center: {lat: $scope.lat, lng: $scope.lng},
-                zoom: 14,
+                zoom: 10,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             $scope.map = new google.maps.Map(document.getElementById('customMap'), $scope.mapOptions);
+            console.log("****$scope.map");
+            console.log($scope.map);
             $scope.visitor = new google.maps.Marker({
                                                       map: $scope.map,
                                                       position: new google.maps.LatLng($scope.lat, $scope.lng)
                                                    });
-            getCoursesService.getCourses(function(courses) {
-              $scope.courses = courses;
-                var i;
-                for (i = 0; i < $scope.courses.length; i++){
-                    console.log('8883838838338383838');
-                    console.log($scope.courses[i]);
-                    if ($scope.courses[i].iconMatcher==='day'){
-                        console.log("if a");
-                        createDayCourseMarker($scope.courses[i]);
-                    } else if ($scope.courses[i].iconMatcher==='evening') {
-                        console.log("else if b");
-                        createEveningCourseMarker($scope.courses[i]);
-                    } else {
-                        console.log('noooomathch');
+
+            // $scope.map.data.loadGeoJson('./map-data/data.json');
+            // getCoursesService.getCourses(function(courses) {
+            //   $scope.courses = courses;
+            //     var i;
+            //     for (i = 0; i < $scope.courses.length; i++){
+            //         console.log('8883838838338383838');
+            //         console.log($scope.courses[i]);
+            //         if ($scope.courses[i].iconMatcher==='day'){
+            //             console.log("if a");
+            //             createDayCourseMarker($scope.courses[i]);
+            //         } else if ($scope.courses[i].iconMatcher==='evening') {
+            //             console.log("else if b");
+            //             createEveningCourseMarker($scope.courses[i]);
+            //         } else {
+            //             console.log('noooomathch');
+            //         }
+
+            //     }
+            // });
+
+            // getPlacesService.getPlaces(function(places) {
+            //     $scope.places = places;
+            //     var i;
+            //     for (i=0;i<$scope.places.length;i++){
+            //         createPublicWifiMarker($scope.places[i]);
+            //     }
+            // });
+
+             // $timeout(function() {
+             //    cloudLayer.setMap($scope.myMap);
+             //  }, 1000);
+             //  $scope.addMarker = function($event, $params) {
+             //    $scope.myMarkers.push(new google.maps.Marker({ map: $scope.myMap, position: $params[0]. latLng }));
+             //  };
+             //  $scope.eventBinding = {'map-click': 'addMarker($event, $params)'};
+
+       //  $scope.master = {};
+
+       // $scope.update = function(map) {
+       //    $scope.master = angular.copy(map);
+       //  };
+
+       //  $scope.reset = function() {
+       //    $scope.map = angular.copy($scope.master);
+       //  };
+
+           //  $scope.reset();
+           // $scope.clickMe = function(clickEvent) {
+           //    $scope.clickEvent = simpleKeys(clickEvent);
+           //    console.log(clickEvent);
+           //  };
+
+
+           //   // * return a copy of an object with only non-object keys
+           //   // * we need this to avoid circular references
+
+           //  function simpleKeys (original) {
+           //    return Object.keys(original).reduce(function (obj, key) {
+           //      obj[key] = typeof original[key] === 'object' ? '{ ... }' : original[key];
+           //      return obj;
+           //    }, {});
+           //  }
+
+           $scope.trialOne = function(event) {
+                // $scope.clickEvent = simpleKeys(clickEvent);
+                console.log(event);
+
+
+              /*
+               * return a copy of an object with only non-object keys
+               * we need this to avoid circular references
+               */
+              // function simpleKeys (original) {
+              //   return Object.keys(original).reduce(function (obj, key) {
+              //     obj[key] = typeof original[key] === 'object' ? '{ ... }' : original[key];
+              //     return obj;
+              //   }, {});
+            }
+
+
+
+           var image = {
+                        url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                        // This marker is 20 pixels wide by 32 pixels high.
+                        size: new google.maps.Size(20, 32),
+                        // The origin for this image is (0, 0).
+                        origin: new google.maps.Point(0, 0),
+                        // The anchor for this image is the base of the flagpole at (0, 32).
+                        anchor: new google.maps.Point(0, 32)
+                       };
+
+           $scope.freeWifiToggle = $scope.map.data.loadGeoJson("modules/core/client/map-data/freeWifi.json");
+           // $scope.map.data.loadGeoJson("modules/core/client/map-data/dayClasses.json");
+           // $scope.map.data.loadGeoJson("modules/core/client/map-data/nightClasses.json");
+           // $scope.map.data.loadGeoJson("modules/core/client/map-data/customerWifi.json");
+           // $scope.map.data.loadGeoJson("modules/core/client/map-data/computerAccess.json");
+           $scope.map.data.loadGeoJson("modules/core/client/map-data/computerRetail.json");
+           $scope.map.data.loadGeoJson("modules/core/client/map-data/internetService.json");
+           // $scope.map.data.setStyle(function(feature) {
+           //      return {icon:feature.getProperty('icon')};
+           // });
+           $scope.map.data.setStyle(function(feature) {
+                console.log("^^%%$$$  a a aa a a a a ");
+
+                var cat = feature.H.category;
+                console.log(cat);
+                var iconUrl;
+                if (cat === "library") {
+                   iconUrl = "modules/core/client/img/wifiFree-2.png";
+                } else if (cat === "dayClass") {
+                    iconUrl = "modules/core/client/img/userOrange.png";
+                } else if (cat === "nightClass") {
+                    iconUrl = "modules/core/client/img/userBlue.png";
+                } else if (cat === "wifiFree") {
+                   iconUrl = "modules/core/client/img/wifiFree-2.png";
+                } else if (cat === "wifiCustomer") {
+                    iconUrl = "modules/core/client/img/wifiCustomerOnly.png";
+                } else if (cat === "computerAccess") {
+                    iconUrl = "modules/core/client/img/computerAccess.png";
+                } else if (cat === "computerRetail") {
+                    iconUrl = "modules/core/client/img/computerRetail.png";
+                } else if (cat === "serviceVendor") {
+                    iconUrl = "modules/core/client/img/internetService.png";
+                } else {
+                    iconUrl = "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+                };
+                // var iconUrl = "modules/core/client/img/wifiFree-2.png";
+                var iconoriginx = null;
+                var iconoriginy = null;
+                var iconSize = new google.maps.Size(30, 30);
+                var iconAnchor = new google.maps.Point(15, 30);
+                var iconScaledSize = new google.maps.Size(30, 30);
+                if (feature.getProperty('iconoriginy')) {
+                    iconoriginy = feature.getProperty('iconoriginy');
+                    iconoriginx = feature.getProperty('iconoriginx');
+
+                    var iconOrigin = new google.maps.Point(iconoriginx,iconoriginy);
+
                     }
+                    return ({
+                        icon: {
+                            url: iconUrl,
+                            size: iconSize,
+                            anchor: iconAnchor,
+                            origin: iconOrigin,
+                            scaledSize: iconScaledSize
+                        }
+                    });
+                });
 
-                }
+
+
+
+
+
+
+
+
+
+
+
+
+           // $scope.map.data.setStyle(function(feature) {
+           //      return {icon:feature.getProperty('size')};
+           // });
+           // $scope.map.data.setStyle(function(feature) {
+           //      return {anchor:feature.getProperty('iconAnchor')};
+           // });
+           // console.log("$scope.geojson");
+           // console.log($scope.map.data);
+
+           // $scope.map.data.addListener('mouseover', function(event) {
+           //    console.log("docsss");
+           //    console.log(document);
+           //    document.getElementById('info-box').textContent =
+           //        event.feature.getProperty('letter');
+           //  });
+
+           $scope.map.data.addListener('click', function(event) {
+                //show an infowindow on click
+                // console.log(event.feature.H);
+                // infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">'+
+                //                             event.feature.H.name +"<br/>Feature Value = Zone " + event.feature.getProperty("value") + "</div>");
+                var anchor = new google.maps.MVCObject();
+                anchor.set("position",event.latLng);
+                // infoWindow.open($scope.map,anchor);
+                document.getElementById('info-box0').textContent = event.feature.H.category;
+                document.getElementById('info-box2').textContent = event.feature.H.name;
+                document.getElementById('info-box3').textContent = event.feature.H.street;
             });
 
-            getPlacesService.getPlaces(function(places) {
-                $scope.places = places;
-                var i;
-                for (i=0;i<$scope.places.length;i++){
-                    createPublicWifiMarker($scope.places[i]);
-                }
-            });
+
 
             $scope.$apply();
-        }
+        };
+
+
+
 
         $scope.showError = function (error) {
             switch (error.code) {
@@ -412,6 +617,9 @@ angular.module('core.map').controller('MapController', ['$scope', '$timeout', '$
         }
 
         $scope.getLocation();
+
+
+
 
     }
 ]);

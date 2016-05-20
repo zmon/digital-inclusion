@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="163 -164 512 512" style="enable-background:new 163 -164 512 512;" xml:space="preserve">
+<filter  width="200%" height="200%" id="f1" x="0" y="0">
+	<feOffset  result="offOut" in="SourceAlpha" dx="20" dy="20"></feOffset>
+	<feGaussianBlur  result="blurOut" in="offOut" stdDeviation="10"></feGaussianBlur>
+	<feBlend  in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
+</filter>
+<image style="overflow:visible;filter:url(#f1);" width="427" height="134" xlink:href="C96EB13864CCC917.png"  transform="matrix(1 0 0 1 199.7979 -59.9515)">
+</image>
+<image style="overflow:visible;filter:url(#f1);" width="277" height="105" xlink:href="C96EB13864CCC912.png"  transform="matrix(1 0 0 1 274.4671 33.814)">
+</image>
+<image style="overflow:visible;filter:url(#f1);" width="127" height="127" xlink:href="C96EB13864CCC911.png"  transform="matrix(1 0 0 1 349.7316 116.7766)">
+</image>
+</svg>
+

@@ -1,0 +1,18 @@
+// {
+//   "type":"FeatureCollection",
+//   "features":[
+//               {
+//                 "type": "Feature",
+//                 "geometry": {"type": "Point", "coordinates":[-94.607027,39.05066]},
+//                 "properties": {
+//                   "name": "Google Fiber",
+//                   "icon": {
+//                     "url":"http://maps.google.com/mapfiles/dir_0.png"
+//                     },
+//                   "iconAnchor": [-94.607027,39.05066],
+//                   "category": "Internet Vendor",
+//                   "street": "1814 Westport Rd, Kansas City, MO, 64111"
+//                 }
+//               }
+//             ]
+// }

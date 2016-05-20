@@ -1,6 +1,19 @@
  <article>
+  <aside class="sirlin">
+    <div class="trapped">
+      <a class="push_button rue day" ng-click="clickMe($event)"><span class="arb">Day Courses</span></a>
+      <a href="#" class="push_button rue"><span class="arb">Evening Courses</span></a>
+    </div>
+    <div class="another-trap">
+      <a href="#" class="push_button rue"><span class="arb">Free WiFi</span></a>
+      <a href="#" class="push_button rue"><span class="arb">Customer Only</span></a>
 
-  <section id="customMap" ng-controller="MapController">
+    </div>
+  </aside>
+
+  <div ng-include="'/modules/core/client/views/partials/map/legend.client.view.html'"></div>
+
+  <section id="customMap">
 
     <div ui-map="map" ui-options="mapOptions" class="map-canvas" ui-event="{'map-click': 'addMarker($event, $params)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }"></div>
 

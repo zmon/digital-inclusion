@@ -1,0 +1,1 @@
+hotspots.client.service.js

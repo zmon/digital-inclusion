@@ -1,0 +1,15 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+              {
+                "type":"Feature",
+                "geometry":{"type":"Point","coordinates":[-94.2732334,39.0502423]},
+                "properties":{"name":"Mid-Continent Public Library - Blue Springs North Branch","category":"library","street":"850 Northwest Hunter Drive"}
+                },
+              {
+                "type":"Feature",
+                "geometry":{"type":"Point","coordinates":[-94.2724222,38.9970765]},
+                "properties":{"name":"Mid-Continent Public Library - Blue Springs South Branch","category":"library","street":"2220 S. 7 Hwy., Blue Springs, MO, 64014"}
+              }
+            ]
+}
