@@ -216,16 +216,54 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             $scope.accuracy = position.coords.accuracy;
             $scope.mapOptions = {
                 center: {lat: $scope.lat, lng: $scope.lng},
-                zoom: 10,
+                zoom: 15,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             $scope.map = new google.maps.Map(document.getElementById('customMap'), $scope.mapOptions);
             console.log("****$scope.map");
             console.log($scope.map);
-            $scope.visitor = new google.maps.Marker({
-                                                      map: $scope.map,
-                                                      position: new google.maps.LatLng($scope.lat, $scope.lng)
-                                                   });
+               var iconoriginx = null;
+                var iconoriginy = null;
+                var iconSize = new google.maps.Size(30, 30);
+                var iconAnchor = new google.maps.Point(15, 30);
+            // var iconScaledSize = ;
+
+
+            // var rico: {
+            //         path: MAP_PIN,
+            //         fillColor: 'transparent',
+            //         fillOpacity: 1,
+            //         strokeColor: 'orange',
+            //         strokeWeight: 0.75
+            //     },
+            //     map_icon_label: '<span class="map-icon map-icon-library"></span>'
+
+            // var cl = {
+            //           url: '/modules/core/client/img/lm.ico',
+            //           size: new google.maps.Size(32, 32),
+            //           origin: new google.maps.Point(0, 0),
+            //           anchor: new google.maps.Point(0, 6),
+            //           scaledSize: new google.maps.Size(30, 30)
+            //          };
+
+            // $scope.visitor = new Marker({
+            //                               map: $scope.map,
+            //                               position: new google.maps.LatLng($scope.lat, $scope.lng),
+            //                               icon: rico
+            //                            });
+
+            $scope.visitor = new Marker({
+                map: $scope.map,
+                position: new google.maps.LatLng($scope.lat, $scope.lng),
+                icon: {
+                    path: MAP_PIN,
+                    fillColor: '#EAF0F0',
+                    fillOpacity: 1,
+                    strokeColor: '#B8BDBD',
+                    strokeWeight: 1.165
+                },
+                map_icon_label: '<span class="map-icon"></span>'
+            });
 
             // $scope.map.data.loadGeoJson('./map-data/data.json');
             // getCoursesService.getCourses(function(courses) {
@@ -290,31 +328,13 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
            //    }, {});
            //  }
 
-           $scope.trialOne = function(event) {
-                // $scope.clickEvent = simpleKeys(clickEvent);
-                console.log(event);
-
-
-              /*
-               * return a copy of an object with only non-object keys
-               * we need this to avoid circular references
-               */
-              // function simpleKeys (original) {
-              //   return Object.keys(original).reduce(function (obj, key) {
-              //     obj[key] = typeof original[key] === 'object' ? '{ ... }' : original[key];
-              //     return obj;
-              //   }, {});
-            }
 
 
 
            var image = {
                         url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-                        // This marker is 20 pixels wide by 32 pixels high.
                         size: new google.maps.Size(20, 32),
-                        // The origin for this image is (0, 0).
                         origin: new google.maps.Point(0, 0),
-                        // The anchor for this image is the base of the flagpole at (0, 32).
                         anchor: new google.maps.Point(0, 32)
                        };
 
@@ -377,18 +397,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
                     });
                 });
 
-
-
-
-
-
-
-
-
-
-
-
-
            // $scope.map.data.setStyle(function(feature) {
            //      return {icon:feature.getProperty('size')};
            // });
@@ -417,8 +425,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
                 document.getElementById('info-box2').textContent = event.feature.H.name;
                 document.getElementById('info-box3').textContent = event.feature.H.street;
             });
-
-
 
             $scope.$apply();
         };
@@ -523,12 +529,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             });
             $scope.mapMarkers.push(marker);
         }
-        var image =   {
-                        url: './img/wifi-free.svg',
-                        size: new google.maps.Size(20, 32),
-                        origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(0, 32)
-                      };
+
 
         var html ='<i class="material-icons">wifi</i>';
         // map_icon_label: '<span class="map-icon map-icon-point-of-interest"></span>'
