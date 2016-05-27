@@ -22,6 +22,9 @@
 .mil-green {
 	color:limegreen;
 }
+.milb{
+	color: #450CE8;
+}
 .mil-black {
 	color:black;
 }
@@ -524,6 +527,7 @@
 
 .map-icon-postal-code:before {
 	content: "\e877";
+
 }
 
 .map-icon-rafting:before {

@@ -1,0 +1,15 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+              {
+                "type":"Feature",
+                "geometry":{"type":"Point","coordinates":[-94.5829627,39.0997983]},
+                "properties":{"name":"Kaldi's Coffee","category":"freeWifi","street":"1201 Main Street, Kansas City, MO 64105"}
+                },
+              {
+                "type":"Feature",
+                "geometry":{"type":"Point","coordinates":[-94.5850388,39.0875832]},
+                "properties":{"name":"Grünauer","category":"freeWifi","street":"101 W 22nd St, Kansas City, MO 64108, USA"}
+              }
+            ]
+}

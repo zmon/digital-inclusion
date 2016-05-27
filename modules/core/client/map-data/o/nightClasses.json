@@ -1,0 +1,10 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+              {
+                "type":"Feature",
+                "geometry":{"type":"Point","coordinates":[-94.571033,39.070339]},
+                "properties":{"name":"Connecting for Good","category":"computerTraining-night","street":"3101 Troost Ave,Kansas City,MO,64110,United States"}
+                }
+            ]
+}

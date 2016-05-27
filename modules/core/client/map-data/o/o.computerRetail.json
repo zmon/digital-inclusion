@@ -1,0 +1,20 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+              {
+                "type": "Feature",
+                "geometry": {"type": "Point", "coordinates":[-94.7093595,39.0139212]},
+                "properties": {
+                  "name": "Goodwill Shawnee",
+                  "icon": {
+                    "url":"http://maps.google.com/mapfiles/dir_0.png"
+                    },
+                  "iconAnchor": [-94.7093595,39.0139212],
+                  "category": "computerRetail",
+                  "street": "10611 Shawnee Mission Parkway,Shawnee,KS,66203",
+                  "phone": "913.962.7500",
+                  "url": "http://mokangoodwill.org/"
+                }
+              }
+            ]
+}{"results":[{"address_components":[{"long_name":"64105","short_name":"64105","types":["postal_code"]},{"long_name":"Kansas City","short_name":"KCMO","types":["locality","political"]},{"long_name":"Missouri","short_name":"MO","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Kansas City, MO 64105, USA","geometry":{"bounds":{"northeast":{"lat":39.1144088,"lng":-94.581316},"southwest":{"lat":39.0844898,"lng":-94.60735389999999}},"location":{"lat":39.1045785,"lng":-94.58952939999999},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":39.1144088,"lng":-94.581316},"southwest":{"lat":39.096038,"lng":-94.60735389999999}}},"partial_match":true,"place_id":"ChIJD1pzC1fwwIcRT2anr_BGscc","types":["postal_code"]}],"status":"OK"}

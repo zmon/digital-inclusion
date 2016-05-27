@@ -1,21 +1,196 @@
 'use strict';
 
+var showMarkers = {
+                    trainingClasses: new Boolean(),
+                    computerRetail: new Boolean(),
+                    freeWifi: new Boolean(),
+                    customerWifi: new Boolean()
+                  };
+// showMarkers.
+// showMarkers.freeWifi = new Boolean();
+// showMarkers.nightClasses = new Boolean();
+
 function onGoogleReady() {
   angular.bootstrap(document.getElementById("customMap"), ['core.map']);
+  showMarkers.freeWifi = true;
 }
 
 angular.module('core.map', ['ngResource']).controller('MapController', ['$scope', '$timeout', '$http', '$state', '$stateParams', 'Authentication', 'getCoursesService',  'getPlacesService', '$location',
     function ($scope, $timeout, $http, $state, $stateParams, Authentication, getCoursesService, getPlacesService, $location) {
+      console.log("init toggle vals:");
+      console.log(showMarkers.trainingClasses);
+      console.log(showMarkers.computerRetail);
+      console.log(showMarkers.freeWifi);
+      console.log(showMarkers.customerWifi);
+      var fuckShitUp = angular.element(document.getElementById("tgz4"));
+      console.log("no $$ y r u a loser " + fuckShitUp);
+      // set button background colors with css classes
+      var pattern1 = new RegExp("norm");
+      var pattern2 = new RegExp("highlighted");
+
+      fuckShitUp.on('click', function(event) {
+        console.log('looking up');
+        // parent
+        var cqP = event.toElement.className;
+        // child
+        var cqC = event.target.parentElement.className;
+        // console.log("event");
+        // console.log(event);
+
+        // console.log(cqC);
+        if (pattern1.test(cqP) || pattern1.test(cqC)) {
+          console.log("maybe then");
+          fuckShitUp.removeClass('norm');
+          fuckShitUp.addClass('highlighted');
+        } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
+          console.log("then again maybe");
+          fuckShitUp.removeClass('highlighted');
+          fuckShitUp.addClass('norm');
+        } else {
+          console.log("throw err or do something else");
+        }
+      });
+
+
+      var suckShitUp = angular.element(document.getElementById("tgz3"));
+      suckShitUp.on('click', function(event) {
+        console.log('fucking shit up');
+        // parent
+        var cqP = event.toElement.className;
+        console.log("cqP");
+        console.log(event);
+        // child
+        var cqC = event.target.parentElement.className;
+        // console.log("event");
+        // console.log(event);
+
+        // console.log(cqC);
+        if (pattern1.test(cqP) || pattern1.test(cqC)) {
+          console.log("maybe then");
+          suckShitUp.removeClass('norm');
+          suckShitUp.addClass('highlighted');
+        } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
+          console.log("then again maybe");
+          suckShitUp.removeClass('highlighted');
+          suckShitUp.addClass('norm');
+        } else {
+          console.log("throw err or do something else");
+        }
+      });
+
+      var muckShitUp = angular.element(document.getElementById("tgz2"));
+      muckShitUp.on('click', function(event) {
+        console.log('fucking shit up');
+        // parent
+        var cqP = event.toElement.className;
+        console.log("cqP");
+        console.log(event);
+        // child
+        var cqC = event.target.parentElement.className;
+        // console.log("event");
+        // console.log(event);
+
+        // console.log(cqC);
+        if (pattern1.test(cqP) || pattern1.test(cqC)) {
+          console.log("maybe then");
+          muckShitUp.removeClass('norm');
+          muckShitUp.addClass('highlighted');
+        } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
+          console.log("then again maybe");
+          muckShitUp.removeClass('highlighted');
+          muckShitUp.addClass('norm');
+        } else {
+          console.log("throw err or do something else");
+        }
+      });
+
+      var lookUp = angular.element(document.getElementById("tgz1"));
+      lookUp.on('click', function(event) {
+        console.log('fucking shit up');
+        // parent
+        var cqP = event.toElement.className;
+        console.log("cqP");
+        console.log(event);
+        // child
+        var cqC = event.target.parentElement.className;
+        // console.log("event");
+        // console.log(event);
+
+        // console.log(cqC);
+        if (pattern1.test(cqP) || pattern1.test(cqC)) {
+          console.log("maybe then");
+          lookUp.removeClass('norm');
+          lookUp.addClass('highlighted');
+        } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
+          console.log("then again maybe");
+          lookUp.removeClass('highlighted');
+          lookUp.addClass('norm');
+        } else {
+          console.log("throw err or do something else");
+        }
+      });
 
 
 
 
+
+      // function ajaxResultPost(data, type, res) {
+      //     var scope = angular.element(
+      //     document.
+      //     getElementById("MainWrap")).
+      //     scope();
+      //     scope.$apply(function () {
+      //         scope.updateCustomRequest(data, type, res);
+      //     });
+      // }
 
         var ctrl = this;
+        ctrl.clickity = function(log) {
+          console.log("nohihi :(");
+        }
+        // '
+        // .norm {
+        //   bavckground: #F0EFEF;
+        // }
+        // .highlighted {
+        //   background: #DDF0FF;
+        // }
+        // ';
+        var proverreactive = "norm";
+        // var overreactive = '#DDF0FF';
+        var overreactive = "highlighted";
+        // element.removeClass(thisCss);
+        // element.addClass(cssSetter);
 
-        var showMarkers = function(markers) {
-
+        $scope.whippingBoy = function(fnName) {
+          console.log(fnName);
+          if (fnName === "freeWifi") {
+            console.log("Case: freeWifi");
+          } else if (fnName === "customerWifi") {
+            console.log("Case: customerWifi")
+          } else if (fnName === "dayClasses") {
+            console.log("Case: dayClasses")
+          } else if (fnName === "eveningClasses") {
+            console.log("Case: eveningClasses");
+            console.log(fuckShitUp);
+            // fuckShitUp.removeClass(proverreactive);
+            // fuckShitUp.addClass(overreactive);
+          }
         };
+
+
+
+
+        $scope.hello = function(name) {
+          console.log(name);
+            // alert('Hello ' + (name || 'world') + '!');
+        }
+
+
+
+        // var showMarkers = function(markers) {
+
+        // };
 
 
 
@@ -182,6 +357,28 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
         }
 
 
+           $scope.clickMe = function(clickEvent) {
+              console.log("poidfuh");
+              // $scope.clickEvent = simpleKeys(clickEvent);
+              console.log(clickEvent);
+            };
+            $scope.pickMe = function(clickEvent) {
+              // $scope.clickEvent = simpleKeys(clickEvent);
+              console.log(clickEvent);
+            };
+
+
+             // * return a copy of an object with only non-object keys
+             // * we need this to avoid circular references
+
+            // function simpleKeys (original) {
+            //   return Object.keys(original).reduce(function (obj, key) {
+            //     obj[key] = typeof original[key] === 'object' ? '{ '...' }' : original[key];
+            //     return obj;
+            //   }, {});
+            // }
+
+
         // $scope.loadGeoJsonString = function(geoString) {
         //   var geojson = JSON.parse(geoString);
         //   map.data.addGeoJson(geojson);
@@ -194,10 +391,10 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
     // document.getElementsByTagName('head')[0].appendChild(script);
 
 
-            $scope.clickMe = function(clickEvent) {
-              // $scope.clickEvent = simpleKeys(clickEvent);
-              console.log(clickEvent);
-            };
+            // $scope.clickMe = function(clickEvent) {
+            //   // $scope.clickEvent = simpleKeys(clickEvent);
+            //   console.log(clickEvent);
+            // };
 
 
              // * return a copy of an object with only non-object keys
@@ -216,7 +413,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             $scope.accuracy = position.coords.accuracy;
             $scope.mapOptions = {
                 center: {lat: $scope.lat, lng: $scope.lng},
-                zoom: 15,
+                zoom: 10,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             $scope.map = new google.maps.Map(document.getElementById('customMap'), $scope.mapOptions);
@@ -312,21 +509,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
        //  };
 
            //  $scope.reset();
-           // $scope.clickMe = function(clickEvent) {
-           //    $scope.clickEvent = simpleKeys(clickEvent);
-           //    console.log(clickEvent);
-           //  };
 
-
-           //   // * return a copy of an object with only non-object keys
-           //   // * we need this to avoid circular references
-
-           //  function simpleKeys (original) {
-           //    return Object.keys(original).reduce(function (obj, key) {
-           //      obj[key] = typeof original[key] === 'object' ? '{ ... }' : original[key];
-           //      return obj;
-           //    }, {});
-           //  }
 
 
 
@@ -338,7 +521,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
                         anchor: new google.maps.Point(0, 32)
                        };
 
-           $scope.freeWifiToggle = $scope.map.data.loadGeoJson("modules/core/client/map-data/freeWifi.json");
+           $scope.togFreeWifi = $scope.map.data.loadGeoJson("modules/core/client/map-data/freeWifi.json");
            // $scope.map.data.loadGeoJson("modules/core/client/map-data/dayClasses.json");
            // $scope.map.data.loadGeoJson("modules/core/client/map-data/nightClasses.json");
            // $scope.map.data.loadGeoJson("modules/core/client/map-data/customerWifi.json");
@@ -412,6 +595,14 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
            //    document.getElementById('info-box').textContent =
            //        event.feature.getProperty('letter');
            //  });
+
+
+          // ng-if="googleReady"
+          // showMarkers.dayClasses = true
+                                                    // listener responds
+                                                    // appropriately
+
+
 
            $scope.map.data.addListener('click', function(event) {
                 //show an infowindow on click
