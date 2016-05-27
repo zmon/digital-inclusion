@@ -28,22 +28,22 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
                           computerRetail: []
                        };
 
-      console.log("init toggle vals:");
-      console.log(showMarkers.trainingClasses);
-      console.log(showMarkers.computerRetail);
-      console.log(showMarkers.freeWifi);
-      console.log(showMarkers.publicComputers);
+      // console.log("init toggle vals:");
+      // console.log(showMarkers.trainingClasses);
+      // console.log(showMarkers.computerRetail);
+      // console.log(showMarkers.freeWifi);
+      // console.log(showMarkers.publicComputers);
       var pattern1 = new RegExp("norm");
       var pattern2 = new RegExp("highlighted");
 
 
       var t2 = angular.element(document.getElementById("tgz2"));
       t2.on('click', function(event) {
-        console.log('looking up');
+        // console.log('looking up');
         var cqP = event.toElement.className;
         var cqC = event.target.parentElement.className;
         if (pattern1.test(cqP) || pattern1.test(cqC)) {
-          console.log("maiuybe then?");
+          // console.log("maiuybe then?");
           t2.removeClass('norm');
           t2.addClass('highlighted');
           showMarkers.computerTraining = true;
@@ -51,7 +51,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
               $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/computerTraining-day.json");
               $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/computerTraining-evening.json");
            } else if (!showMarkers.computerTraining) {
-            console.log("donut hi");
+            // console.log("donut hi");
            }
         } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
           t2.removeClass('highlighted');
@@ -63,7 +63,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
               // oLay()
            }
         } else {
-          console.log("throw err or do something else");
+          // console.log("throw err or do something else");
         }
       });
 
@@ -92,47 +92,47 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
               crayCray("publicComputers");
            }
         } else {
-          console.log("throw err");
+          // console.log("throw err");
         }
       });
 
 
       var t4 = angular.element(document.getElementById("tgz4"));
       t4.on('click', function(event) {
-        console.log('fucking shit up');
+        // console.log('fucking shit up');
         // parent
         var cqP = event.toElement.className;
-        console.log("cqP");
-        console.log(event);
+        // console.log("cqP");
+        // console.log(event);
         // child
         var cqC = event.target.parentElement.className;
-        // console.log("event");
-        // console.log(event);
-        // console.log(cqC);
+        console.log("event");
+        console.log(event);
+        console.log(cqC);
         if (pattern1.test(cqP) || pattern1.test(cqC)) {
-          console.log("CGHOmaiyybe 8then");
+          // console.log("CGHOmaiyybe 8then");
           t4.removeClass('norm');
           t4.addClass('highlighted');
           showMarkers.computerRetail = true;
           if (showMarkers.computerRetail) {
               $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/computerRetail.json");
            } else if (!showMarkers.computerRetail) {
-            console.log("do not show that shit");
+            // console.log("do not show that shit");
            }
         } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
-          console.log("then again maybe");
+          // console.log("then again maybe");
           t4.removeClass('highlighted');
           t4.addClass('norm');
           showMarkers.computerRetail = false;
           if (showMarkers.computerRetail) {
-              console.log("DONT EVEN BIDDDDD");
+              // console.log("DONT EVEN BIDDDDD");
               // $scope.map.data.loadGeoJson("modules/core/client/map-data/freeWifi.json");
            } else if (!showMarkers.computerRetail) {
-              console.log("ubtrduash");
+              // console.log("ubtrduash");
               rayRay();
            }
         } else {
-          console.log("throw err or do something else");
+          // console.log("throw err or do something else");
         }
       });
 
@@ -152,19 +152,19 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
            }
         } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
-          console.log("then again maybe");
+          // console.log("then again maybe");
           t1.removeClass('highlighted');
           t1.addClass('norm');
           showMarkers.freeWifi = false;
           if (showMarkers.freeWifi) {
-              console.log("4");
+              // console.log("4");
               // $scope.map.data.loadGeoJson("modules/core/client/map-data/freeWifi.json");
            } else if (!showMarkers.freeWifi) {
-              console.log("5");
+              // console.log("5");
               cBay();
            }
         } else {
-          console.log("throw err or do something else");
+          // console.log("throw err or do something else");
         }
       });
 
@@ -172,9 +172,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
 
         var ctrl = this;
-        ctrl.clickity = function(log) {
-          console.log("nohihi :(");
-        }
 
 
 
@@ -194,17 +191,17 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
         // element.addClass(cssSetter);
 
         $scope.whippingBoy = function(fnName) {
-          console.log(fnName);
+          // console.log(fnName);
           if (fnName === "freeWifi") {
-            console.log("Case: freeWifi");
+            // console.log("Case: freeWifi");
             // callback()
           } else if (fnName === "customerWifi") {
-            console.log("Case: customerWifi")
+            // console.log("Case: customerWifi")
           } else if (fnName === "dayClasses") {
-            console.log("Case: dayClasses")
+            // console.log("Case: dayClasses")
           } else if (fnName === "eveningClasses") {
-            console.log("Case: eveningClasses");
-            console.log(t4);
+            // console.log("Case: eveningClasses");
+            // console.log(t4);
             // t4.removeClass(proverreactive);
             // t4.addClass(overreactive);
           }
@@ -294,7 +291,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
         // var checkVisibility = function(status) {
         //   if (!status.publicComputers) {
-        //     console.log("peaceful shadows");
+            // console.log("peaceful shadows");
         //     div.style.display = 'hidden';
         //   }
         // }
@@ -370,7 +367,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
 
        $scope.clickMe = function(clickEvent) {
-          console.log("poidfuh");
+
           // $scope.clickEvent = simpleKeys(clickEvent);
           console.log(clickEvent);
         };
@@ -381,9 +378,9 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
 
         var crayCray = function(type) {
-          console.log("calling crayCray(type) with arg: " + type);
+
           $scope.map.data.forEach(function (feature) {
-              console.log("bizzy crayCray");
+
               console.log(type);
               var str = feature.H.category;
               console.log(str);
@@ -418,7 +415,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
         }
 
         var cBay = function() {
-          console.log("");
+          // console.log("");
           $scope.map.data.forEach(function(feature) {
             var a = feature.H.category;
             var b = "freeWifi-public";
@@ -427,7 +424,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
               console.log("6");
               $scope.map.data.remove(feature);
             } else {
-              console.log("fail");
+              // console.log("fail");
             }
           })
         }
@@ -444,14 +441,14 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             } else if (a==c) {
               $scope.map.data.remove(feature);
             } else {
-              console.log('fail');
+              // console.log('fail');
             }
           })
         }
 
 
         var eYotz = function() {
-          console.log("otch");
+          // console.log("otch");
           $scope.map.data.setStyle(function(feature) {
               var cat = feature.H.category;
               var iconUrl;
@@ -475,8 +472,8 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
               } else {
                   iconUrl = "modules/core/client/img/internetService.png";
               };
-              console.log("markers.publicComputers");
-              console.log($scope.markers.publicComputers);
+              // console.log("markers.publicComputers");
+              // console.log($scope.markers.publicComputers);
               var iconoriginx = null;
               var iconoriginy = null;
               var iconSize = new google.maps.Size(30, 30);
@@ -510,10 +507,10 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             $scope.map = new google.maps.Map(document.getElementById('customMap'), $scope.mapOptions);
-            console.log("****$scope.map");
-            console.log($scope.map.gm_bindings_);
-            // console.log("markers.freeWifi");
-            // console.log(markers.freeWifi);
+            // console.log("****$scope.map");
+            // console.log($scope.map.gm_bindings_);
+            console.log("markers.freeWifi");
+            console.log(markers.freeWifi);
             var iconoriginx = null;
             var iconoriginy = null;
             var iconSize = new google.maps.Size(30, 30);
@@ -542,18 +539,18 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
            // if (showMarkers.publicComputers) {
            //    $scope.map.data.loadGeoJson("modules/core/client/map-data/freeWifi.json");
            // } else if (!showMarkers.publicComputers) {
-           //  console.log("do not show that shit");
+
            // }
 
            // $scope.map.data.loadGeoJson("modules/core/client/map-data/computerRetail.json");
            $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/ispList.json");
-           console.log("mofo");
-           console.log($scope.map.controls);
+           // console.log("mofo");
+           // console.log($scope.map.controls);
            var callback = function(feature) {
             $scope.map.data.remove(feature);
            };
 
-           // console.log($scope.map.data.forEach(callback(thingy)));
+           console.log($scope.map.data.forEach(callback(thingy)));
 
            // $scope.map.data.setStyle(function(feature) {
            //      return {icon:feature.getProperty('icon')};
@@ -588,8 +585,8 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
            //    } else {
            //        iconUrl = "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
            //    };
-           //    console.log("markers.publicComputers");
-           //    console.log($scope.markers.publicComputers);
+              console.log("markers.publicComputers");
+              console.log($scope.markers.publicComputers);
            //    var iconoriginx = null;
            //    var iconoriginy = null;
            //    var iconSize = new google.maps.Size(30, 30);
@@ -632,12 +629,11 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
            // $scope.map.data.setStyle(function(feature) {
            //      return {anchor:feature.getProperty('iconAnchor')};
            // });
-           // console.log("$scope.geojson");
-           // console.log($scope.map.data);
+
 
            // $scope.map.data.addListener('mouseover', function(event) {
-           //    console.log("docsss");
-           //    console.log(document);
+
+
               // alert('foo ' + ('foo') + '!');
 
               // document.getElementById('info-box').textContent =
@@ -669,8 +665,8 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
         };
 
         $scope.checkV = function(data) {
-          console.log("v check");
-          console.log(data);
+          // console.log("v check");
+          // console.log(data);
         }
 
 
@@ -694,11 +690,11 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
         $scope.getLocation = function () {
             if (navigator.geolocation) {
-                console.log("supported");
+                // console.log("supported");
                 navigator.geolocation.getCurrentPosition($scope.showMap, $scope.showError);
             }
             else {
-                console.log("not supported");
+                // console.log("not supported");
                 $scope.error = "Geolocation is not supported by this browser.";
             }
         }
