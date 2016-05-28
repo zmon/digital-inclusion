@@ -165,7 +165,7 @@ var callback = function(arr) {
 
 
 
-var limit = 46;
+var limit = 27;
 
 var delayPublish = function(num) {
   if (num === limit) {

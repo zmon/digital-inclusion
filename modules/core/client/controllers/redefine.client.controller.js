@@ -304,7 +304,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             var div = this.div;
             var checkVisibility = function(status) {
               if (!status.publicComputers) {
-                console.log("peaceful shadows");
+                // console.log("peaceful shadows");
                 return 'none';
               }
             }
@@ -381,35 +381,35 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
           $scope.map.data.forEach(function (feature) {
 
-              console.log(type);
+              // console.log(type);
               var str = feature.H.category;
-              console.log(str);
+              // console.log(str);
               // if type == tmpStr
               var tmpStr = "computerAccess";
               var sv = "computerRetail";
 
               if (str === tmpStr) {
-                console.log("remove this");
+                // console.log("remove this");
                 // console.l
                 $scope.map.data.remove(feature);
               } else {
-                console.log("do not remove this");
+                // console.log("do not remove this");
               }
               // $scope.map.data.remove(feature);
           });
         }
 
         var rayRay = function() {
-          console.log("calling fn ");
+          // console.log("calling fn ");
           $scope.map.data.forEach(function(feature) {
-            console.log("7");
+            // console.log("7");
             var good = feature.H.category;
             var tea = "computerRetail";
             if (good === tea) {
-              console.log("8");
+              // console.log("8");
               $scope.map.data.remove(feature);
             } else {
-              console.log("9");
+              // console.log("9");
             }
           })
         }
@@ -421,7 +421,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             var b = "freeWifi-public";
             var c = "freeWifi-customer";
             if (a == b || a == c) {
-              console.log("6");
+              // console.log("6");
               $scope.map.data.remove(feature);
             } else {
               // console.log("fail");
@@ -495,22 +495,23 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
                       }
                   });
               });
+
         }
 
         $scope.showMap = function (position) {
+
             $scope.lat = position.coords.latitude;
             $scope.lng = position.coords.longitude;
             $scope.accuracy = position.coords.accuracy;
+
             $scope.mapOptions = {
                 center: {lat: $scope.lat, lng: $scope.lng},
                 zoom: 12,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
+
             $scope.map = new google.maps.Map(document.getElementById('customMap'), $scope.mapOptions);
-            // console.log("****$scope.map");
-            // console.log($scope.map.gm_bindings_);
-            console.log("markers.freeWifi");
-            console.log(markers.freeWifi);
+
             var iconoriginx = null;
             var iconoriginy = null;
             var iconSize = new google.maps.Size(30, 30);
@@ -546,11 +547,11 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
            $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/ispList.json");
            // console.log("mofo");
            // console.log($scope.map.controls);
-           var callback = function(feature) {
-            $scope.map.data.remove(feature);
-           };
+           // var callback = function(feature) {
+           //  $scope.map.data.remove(feature);
+           // };
 
-           console.log($scope.map.data.forEach(callback(thingy)));
+           // console.log($scope.map.data.forEach(callback(thingy)));
 
            // $scope.map.data.setStyle(function(feature) {
            //      return {icon:feature.getProperty('icon')};
@@ -664,6 +665,8 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             $scope.$apply();
         };
 
+        // $scope.showMap();
+
         $scope.checkV = function(data) {
           // console.log("v check");
           // console.log(data);
@@ -690,7 +693,8 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
         $scope.getLocation = function () {
             if (navigator.geolocation) {
-                // console.log("supported");
+                console.log("supported");
+                console.log()
                 navigator.geolocation.getCurrentPosition($scope.showMap, $scope.showError);
             }
             else {
