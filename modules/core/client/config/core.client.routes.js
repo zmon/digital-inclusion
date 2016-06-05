@@ -29,19 +29,19 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
       url: '/contact',
       templateUrl: 'modules/core/client/views/contact.client.view.html'
     })
-    .state('add-services', {
-      url: '/add-services',
-      templateUrl: 'modules/core/client/views/add-services.client.view.html'
+    .state('map-resources', {
+      url: '/map-resources',
+      templateUrl: 'modules/core/client/views/map-resources.client.view.html'
     })
 
-    .state('list-isp', {
-      url: '/internet-service-providers',
-      templateUrl: 'modules/core/client/views/list-isp.client.view.html'
+    .state('isps', {
+      url: '/isps',
+      templateUrl: 'modules/core/client/views/isps.client.view.html'
     })
 
-    .state('test', {
-      url: '/test',
-      templateUrl: 'modules/core/client/views/test.client.view.html'
+    .state('training', {
+      url: '/training',
+      templateUrl: 'modules/core/client/views/training.client.view.html'
     })
     .state('not-found', {
       url: '/not-found',

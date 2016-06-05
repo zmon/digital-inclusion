@@ -11,27 +11,7 @@
         <!-- Main Tab Container -->
         <div id="tab-container" class="tab-container">
           <!-- Tab List -->
-            <ul class='etabs'>
-                <li class='tab' id="tab-about">
-                  <a ng-href="/"><i class="icon-user"></i><span> Home</span></a>
-                </li>
-
-                <li class='tab'>
-                  <a ng-href="/add-location"><i class="icon-heart"></i><span> Add to Map</span></a>
-                </li>
-
-                <li class='tab'>
-                  <a ng-href="/internet-service-providers"><i class="icon-heart"></i><span> Get Internet Service</span></a>
-                </li>
-
-                <li class='tab'>
-                  <a ng-href="/contact"><i class="icon-file-text"></i><span> Contact</span></a>
-                </li>
-
-                <li class='tab'>
-                  <a ng-href="/about" class="active"><i class="icon-envelope"></i><span> About</span></a>
-                </li>
-            </ul>
+            <section ng-include="'/modules/core/client/views/partials/tab/about.client.view.html'"></section>
           <!-- End Tab List -->
             <div id="tab-data-wrap">
 
@@ -66,8 +46,8 @@
                               <i class="icon-user"></i>
                             </div>
                             <div class="sny-icon-content">
-                              <h4>?</h4>
-                              <p>.</p>
+                              <h4></h4>
+                              <p></p>
                             </div>
                          </div>
                        </div>
