@@ -4,6 +4,7 @@ module.exports = {
   app: {
     title: 'Digital Inclusion',
     description: 'End-to-End JS',
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
     keywords: 'mongodb, express, angularjs, node.js, mongoose, passport',
     googleAnalyticsTrackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'GOOGLE_ANALYTICS_TRACKING_ID'
   },

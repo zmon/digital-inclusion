@@ -9,10 +9,328 @@
             <section class="clearfix">
               <div class="g2">
                 <div class="info">
-                  <h2>Add Resource</h2>
+                  <h4 class="re-act">Map Resources</h4>
+                  <!-- <p ng-show="showStatus">Created</p></div> -->
                 </div>
-                
-                <!-- <div ng-include="'/modules/core/client/views/partials/map/controls.client.view.html'"></div> -->
+                 <div ng-controller="ModalController" class="gtb">
+                   <script type="text/ng-template" id="aModal.html">
+                      <div class="modal-header">
+                          <h3 class="modal-title">New Location: Public WiFi Hotspot</h3>
+                      </div>
+                      <div class="modal-body">
+                          <!-- <ul>
+                              <li ng-repeat="item in items">
+                                  <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item.name }}</a>
+                              </li>
+                          </ul> -->
+                          <!-- Selected: <b>{{ selected.item.name }}</b> -->
+                          <!-- <div class="form-group"><label for=""></label><input name="" type="" ng-model=""></div> -->
+
+                          <section class="pdty" ng-controller="PlacesController">
+                            <form name='placeForm' class='afor form-horizontal' ng-submit='create(placeForm.$valid, 
+                            "public", "wifi")' novalidate>
+                              <div class='form-group rba' show-errors><label for='title'>Location Name</label><input name='title' type='text' ng-model='title' id='title' class='form-control' required><div ng-messages='placeForm.title.$error' role='alert'></div></div>
+                              <div class="form-group rba xrc"><label for="address1" class="yu2">Street Address</label><input name="address1" type="text" ng-model="address1" id="address1" class="form-control pmu"><div ng-messages="placeForm.address1.$error" role='alert'></div></div>
+                              <div class="form-group rba xrc"><input name="address2" type="text" ng-model="address2" class="form-control pmu"></div>
+                              <div class="form-group rba xrd"><label for="city">City</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <div class="form-group rba xre"><label for="state">State</label><input name="state" type="text" ng-model="state" class="form-control cru"></div>
+                              <div class="form-group rba xrf"><label for="zip">Zip</label><input name="zip" type="text" ng-model="zip" class="form-control cru"></div>
+                              <aside class="afor2">
+                                <div class="form-group pv1">
+                                  
+                                  <label for="phone" class="py1">Phone</label>
+                                  <input type="text" name="phone" ng-model="phone" class="form-control">
+                                </div>
+                                <div class="form-group pv2">
+                                  
+                                  <label for="url" class="py1">Website</label>
+                                  <input type="text" name="url" ng-model="url" class="form-control">
+                                </div>
+                                <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control py7' cols='30' rows='6'></textarea></div>
+                               <!--  <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control' cols='30' rows='6'></textarea></div>
+
+ -->
+                              </aside>
+                              <div class="form-group mnc">
+                                <input class="btn tree btn-redo" type="submit" ng-click="ok(); showme=true">
+                                <button class="btn btn-armed btn-cn" type="button" ng-click="cancel()">Cancel</button>
+                              </div>
+
+                           </form>  
+                          </section>
+                        </div>
+                         <div class="modal-footer"></div>
+                     
+                  </script>
+                  <script type="text/ng-template" id="bModal.html">
+                      <div class="modal-header">
+                          <h3 class="modal-title">Add Location: Customer WiFi Hotspot</h3>
+                      </div>
+                      <div class="modal-body">
+                          <!-- <ul>
+                              <li ng-repeat="item in items">
+                                  <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item.name }}</a>
+                              </li>
+                          </ul> -->
+                          <!-- Selected: <b>{{ selected.item.name }}</b> -->
+                          <!-- <div class="form-group"><label for=""></label><input name="" type="" ng-model=""></div> -->
+
+                          <section class="pdty" ng-controller="PlacesController">
+                            <form name='placeForm' class='afor form-horizontal' ng-submit='create(placeForm.$valid, "customer", "wifi")' novalidate>
+                              <div class='form-group rba' show-errors><label for='title'>Location Name</label><input name='title' type='text' ng-model='title' id='title' class='form-control' required><div ng-messages='placeForm.title.$error' role='alert'></div></div>
+                              <div class="form-group rba xrc"><label for="address1" class="yu2">Street Address</label><input name="address1" type="text" ng-model="address1" id="address1" class="form-control pmu"><div ng-messages="placeForm.address1.$error" role='alert'></div></div>
+                              <div class="form-group rba xrc"><input name="address2" type="text" ng-model="address2" class="form-control pmu"></div>
+                              <div class="form-group rba xrd"><label for="city">City</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <div class="form-group rba xre"><label for="state">State</label><input name="state" type="text" ng-model="state" class="form-control cru"></div>
+                              <div class="form-group rba xrf"><label for="zip">Zip</label><input name="zip" type="text" ng-model="zip" class="form-control cru"></div>
+                              <div class="form-group invi">
+                                
+                                <input name="wifiTerms" type="text" ng-model="wifiTerms" value="customer">
+                              </div>
+                              <aside class="afor2">
+                                <div class="form-group pv1">
+                                  
+                                  <label for="phone" class="py1">Phone</label>
+                                  <input type="text" name="phone" ng-model="phone" class="form-control">
+                                </div>
+                                <div class="form-group pv2">
+                                  
+                                  <label for="url" class="py1">Website</label>
+                                  <input type="text" name="url" ng-model="url" class="form-control">
+                                </div>
+                                <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control py7' cols='30' rows='6'></textarea></div>
+                               <!--  <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control' cols='30' rows='6'></textarea></div>
+
+ -->
+                              </aside>
+                              <div class="form-group mnc">
+                                <input class="btn tree btn-redo" type="submit" ng-click="ok(); showme=true">
+                                <button class="btn btn-armed btn-cn" type="button" ng-click="cancel()">Cancel</button>
+                              </div>
+
+                           </form>  
+                          </section>
+                        </div>
+                         <div class="modal-footer"></div>
+                      <!-- <div class="modal-body"> -->
+                        
+                          <!-- Selected: <b>{{ selected.item.name }}</b> -->
+                    <!--       <article ng-show="formA" class="rf"><section ng-controller="PlacesController"><form name='placeForm' class='afor form-horizontal' ng-submit='create(placeForm.$valid)' novalidate><div class'form-group' show-errors><label for='title'>Title</label><input name='title' type='text' ng-model='title' id='title' class='form-control' required><div ng-messages='placeForm.title.$error' role='alert'></div></div><div class='form-group'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control' cols='30' rows='6'></textarea></div><div class='form-group'></div><div ng-show='error' class='text-danger'><strong ng-bind='error'></strong></div>
+                        <div class="form-group">
+                          <input class="btn tree btn-redo btn-armed" type="submit" ng-click="ok(); showme=true">Submit</button>
+                        </div>
+                          <button class="btn btn-armed btn-cn" type="button" ng-click="cancel()">Cancel</button>
+                          </form></section></article>
+                      </div> -->
+                  </script>
+                  <script type="text/ng-template" id="cModal.html">
+                      <div class="modal-header">
+                          <h3 class="modal-title">Add Location: Public Access Computers</h3>
+                      </div>
+                      <div class="modal-body">
+                          <!-- <ul>
+                              <li ng-repeat="item in items">
+                                  <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item.name }}</a>
+                              </li>
+                          </ul> -->
+                          <!-- Selected: <b>{{ selected.item.name }}</b> -->
+                          <!-- <div class="form-group"><label for=""></label><input name="" type="" ng-model=""></div> -->
+
+                          <section class="pdty" ng-controller="PlacesController">
+                            <form name='placeForm' class='afor form-horizontal' ng-submit='create(placeForm.$valid, null, "computers"), null, "computers"' novalidate>
+                              <div class='form-group rba' show-errors><label for='title'>Location Name</label><input name='title' type='text' ng-model='title' id='title' class='form-control' required><div ng-messages='placeForm.title.$error' role='alert'></div></div>
+                              <div class="form-group rba xrc"><label for="address1" class="yu2">Street Address</label><input name="address1" type="text" ng-model="address1" id="address1" class="form-control pmu"><div ng-messages="placeForm.address1.$error" role='alert'></div></div>
+                              <div class="form-group rba xrc"><input name="address2" type="text" ng-model="address2" class="form-control pmu"></div>
+                              <div class="form-group rba xrd"><label for="city">City</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <div class="form-group rba xre"><label for="state">State</label><input name="state" type="text" ng-model="state" class="form-control cru"></div>
+                              <div class="form-group rba xrf"><label for="zip">Zip</label><input name="zip" type="text" ng-model="zip" class="form-control cru"></div>
+                              <aside class="afor2">
+                                <div class="form-group pv1">
+                                  
+                                  <label for="phone" class="py1">Phone</label>
+                                  <input type="text" name="phone" ng-model="phone" class="form-control">
+                                </div>
+                                <div class="form-group pv2">
+                                  
+                                  <label for="url" class="py1">Website</label>
+                                  <input type="text" name="url" ng-model="url" class="form-control">
+                                </div>
+                                <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control py7' cols='30' rows='6'></textarea></div>
+                               <!--  <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control' cols='30' rows='6'></textarea></div>
+
+ -->
+                              </aside>
+                              <div class="form-group mnc">
+                                <input class="btn tree btn-redo" type="submit" ng-click="ok(); showme=true">
+                                <button class="btn btn-armed btn-cn" type="button" ng-click="cancel()">Cancel</button>
+                              </div>
+
+                           </form>  
+                          </section>
+                        </div>
+                         <div class="modal-footer"></div>
+                  </script>
+                  <script type="text/ng-template" id="dModal.html">
+                      <div class="modal-header">
+                          <h3 class="modal-title">Add Location: Low Cost or Refurbished Computers</h3>
+                      </div>
+                      <div class="modal-body">
+                          <!-- <ul>
+                              <li ng-repeat="item in items">
+                                  <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item.name }}</a>
+                              </li>
+                          </ul> -->
+                          <!-- Selected: <b>{{ selected.item.name }}</b> -->
+                          <!-- <div class="form-group"><label for=""></label><input name="" type="" ng-model=""></div> -->
+
+                          <section class="pdty" ng-controller="PlacesController">
+                            <form name='placeForm' class='afor form-horizontal' ng-submit='create(placeForm.$valid, null, "retail")' novalidate>
+                              <div class='form-group rba' show-errors><label for='title'>Location Name</label><input name='title' type='text' ng-model='title' id='title' class='form-control' required><div ng-messages='placeForm.title.$error' role='alert'></div></div>
+                              <div class="form-group rba xrc"><label for="address1" class="yu2">Street Address</label><input name="address1" type="text" ng-model="address1" id="address1" class="form-control pmu"><div ng-messages="placeForm.address1.$error" role='alert'></div></div>
+                              <div class="form-group rba xrc"><input name="address2" type="text" ng-model="address2" class="form-control pmu"></div>
+                              <div class="form-group rba xrd"><label for="city">City</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <div class="form-group rba xre"><label for="state">State</label><input name="state" type="text" ng-model="state" class="form-control cru"></div>
+                              <div class="form-group rba xrf"><label for="zip">Zip</label><input name="zip" type="text" ng-model="zip" class="form-control cru"></div>
+                              <aside class="afor2">
+                                <div class="form-group pv1">
+                                  
+                                  <label for="phone" class="py1">Phone</label>
+                                  <input type="text" name="phone" ng-model="phone" class="form-control">
+                                </div>
+                                <div class="form-group pv2">
+                                  
+                                  <label for="url" class="py1">Website</label>
+                                  <input type="text" name="url" ng-model="url" class="form-control">
+                                </div>
+                                <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control py7' cols='30' rows='6'></textarea></div>
+                               <!--  <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control' cols='30' rows='6'></textarea></div>
+
+ -->
+                              </aside>
+                              <div class="form-group mnc">
+                                <input class="btn tree btn-redo" type="submit" ng-click="ok(); showme=true">
+                                <button class="btn btn-armed btn-cn" type="button" ng-click="cancel()">Cancel</button>
+                              </div>
+
+                           </form>  
+                          </section>
+                        </div>
+                         <div class="modal-footer"></div>
+                  </script>
+                  <script type="text/ng-template" id="eModal.html">
+                      <div class="modal-header">
+                          <h3 class="modal-title">New Location: Daytime Courses</h3>
+                      </div>
+                       <div class="modal-body">
+                          <!-- <ul>
+                              <li ng-repeat="item in items">
+                                  <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item.name }}</a>
+                              </li>
+                          </ul> -->
+                          <!-- Selected: <b>{{ selected.item.name }}</b> -->
+                          <!-- <div class="form-group"><label for=""></label><input name="" type="" ng-model=""></div> -->
+
+                          <section class="pdty" ng-controller="PlacesController">
+                            <form name='placeForm' class='afor form-horizontal' ng-submit='create(placeForm.$valid, null, "class-day")' novalidate>
+                              <div class='form-group rba' show-errors><label for='title'>Location Name</label><input name='title' type='text' ng-model='title' id='title' class='form-control' required><div ng-messages='placeForm.title.$error' role='alert'></div></div>
+                              <div class="form-group rba xrc"><label for="address1" class="yu2">Street Address</label><input name="address1" type="text" ng-model="address1" id="address1" class="form-control pmu"><div ng-messages="placeForm.address1.$error" role='alert'></div></div>
+                              <div class="form-group rba xrc"><input name="address2" type="text" ng-model="address2" class="form-control pmu"></div>
+                              <div class="form-group rba xrd"><label for="city">City</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <div class="form-group rba xre"><label for="city">State</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <div class="form-group rba xrf"><label for="city">Zip</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <aside class="afor2">
+                                <div class="form-group pv1">
+                                  
+                                  <label for="phone" class="py1">Phone</label>
+                                  <input type="text" name="phone" ng-model="phone" class="form-control">
+                                </div>
+                                <div class="form-group pv2">
+                                  
+                                  <label for="url" class="py1">Website</label>
+                                  <input type="text" name="url" ng-model="url" class="form-control">
+                                </div>
+                                <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control py7' cols='30' rows='6'></textarea></div>
+
+
+                              </aside>
+                              <div class="form-group mnc">
+                                <input class="btn tree btn-redo" type="submit" ng-click="ok(); showme=true">
+                                <button class="btn btn-armed btn-cn" type="button" ng-click="cancel()">Cancel</button>
+                              </div>
+
+                           </form>  
+                          </section>
+                        </div>
+                         <div class="modal-footer"></div>
+                  </script>
+                  <script type="text/ng-template" id="fModal.html">
+                      <div class="modal-header">
+                          <h3 class="modal-title">New Location: Evening Courses</h3>
+                      </div>
+                    <div class="modal-body">
+                          <!-- <ul>
+                              <li ng-repeat="item in items">
+                                  <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item.name }}</a>
+                              </li>
+                          </ul> -->
+                          <!-- Selected: <b>{{ selected.item.name }}</b> -->
+                          <!-- <div class="form-group"><label for=""></label><input name="" type="" ng-model=""></div> -->
+
+                          <section class="pdty" ng-controller="PlacesController">
+                            <form name='placeForm' class='afor form-horizontal' ng-submit='create(placeForm.$valid, null, "class-evening")' novalidate>
+                              <div class='form-group rba' show-errors><label for='title'>Location Name</label><input name='title' type='text' ng-model='title' id='title' class='form-control' required><div ng-messages='placeForm.title.$error' role='alert'></div></div>
+                              <div class="form-group rba xrc"><label for="address1" class="yu2">Street Address</label><input name="address1" type="text" ng-model="address1" id="address1" class="form-control pmu"><div ng-messages="placeForm.address1.$error" role='alert'></div></div>
+                              <div class="form-group rba xrc"><input name="address2" type="text" ng-model="address2" class="form-control pmu"></div>
+                              <div class="form-group rba xrd"><label for="city">City</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <div class="form-group rba xre"><label for="city">State</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <div class="form-group rba xrf"><label for="city">Zip</label><input name="city" type="text" ng-model="city" class="form-control cru"></div>
+                              <aside class="afor2">
+                                <div class="form-group pv1">
+                                  
+                                  <label for="phone" class="py1">Phone</label>
+                                  <input type="text" name="phone" ng-model="phone" class="form-control">
+                                </div>
+                                <div class="form-group pv2">
+                                  
+                                  <label for="url" class="py1">Website</label>
+                                  <input type="text" name="url" ng-model="url" class="form-control">
+                                </div>
+                                 <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control py7' cols='30' rows='6'></textarea></div>
+
+                               <!--  <div class='form-group pv3'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control' cols='30' rows='6'></textarea></div>
+
+ -->
+                              </aside>
+                              <div class="form-group mnc">
+                                <input class="btn tree btn-redo" type="submit" ng-click="ok(); showme=true">
+                                <button class="btn btn-armed btn-cn" type="button" ng-click="cancel()">Cancel</button>
+                              </div>
+
+                           </form>  
+                          </section>
+                        </div>
+                         <div class="modal-footer"></div>
+                  </script>
+                  <div class="spcwr">
+                  <p class="blbs">Hotspots</p>
+                  <button type="button" class="btn btn-rearm btn-default block-btn" ng-click="openA()">Public WiFi</button>
+                  <button type="button" class="btn btn-rearm btn-default block-btn" ng-click="openB()">Customer WiFi</button>
+                  <br>
+                  <p class="blbs">Computers</p>
+                  <button type="button" class="btn btn-rearm btn-default block-btn" ng-click="openC()">Public Access</button>
+                  <button type="button" class="btn btn-rearm btn-default block-btn" ng-click="openD()">Low Cost /<br>Refurbished</button>
+                  <br>
+                  <p class="blbs">Learning</p>
+                  <button type="button" class="btn btn-rearm btn-default block-btn" ng-click="openE()">Daytime</button>
+                  <button type="button" class="btn btn-rearm btn-default block-btn" ng-click="openF()">Evening</button>
+
+                  </div>
+                  <!-- <button type="button" class="btn btn-default" ng-click="open('lg')">Large modal</button>
+                  <button type="button" class="btn btn-default" ng-click="open('sm')">Small modal</button> -->
+                  <!-- <button type="button" class="btn btn-default" ng-click="toggleAnimation()">Toggle Animation ({{ animationsEnabled }})</button> -->
+                  <!-- <div ng-show="selected">Selection from a modal: {{ selected }}</div> -->
+              </div>
+                              
               </div>
               <div class="g1">
                 <div class="main-links sidebar">
@@ -24,7 +342,7 @@
                 <div class="g1 sa-a">
                   <div class="item-box clearfix">
                     <i class="icon-envelope"></i>
-                    <div class="item-data">
+                    <div class="item-data">rf
                       <h3><a href=""></a></h3>
                       <p></p>
                     </div>

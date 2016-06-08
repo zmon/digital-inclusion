@@ -6,10 +6,10 @@
 var config = require('../config'),
   express = require('express'),
   morgan = require('morgan'),
+  logger = require('./logger'),
   bodyParser = require('body-parser'),
   session = require('express-session'),
   MongoStore = require('connect-mongo')(session),
-  multer = require('multer'),
   favicon = require('serve-favicon'),
   compress = require('compression'),
   methodOverride = require('method-override'),
@@ -17,7 +17,9 @@ var config = require('../config'),
   helmet = require('helmet'),
   flash = require('connect-flash'),
   consolidate = require('consolidate'),
-  path = require('path');
+  path = require('path'),
+  _ = require('lodash'),
+  lusca = require('lusca');
 
 /**
  * Initialize local variables
@@ -90,10 +92,10 @@ module.exports.initMiddleware = function (app) {
   app.use(flash());
 
   // Add multipart handling middleware
-  app.use(multer({
-    dest: './uploads/',
-    inMemory: true
-  }));
+  // app.use(multer({
+  //   dest: './uploads/',
+  //   inMemory: true
+  // }));
 };
 
 /**
@@ -128,6 +130,9 @@ module.exports.initSession = function (app, db) {
       collection: config.sessionCollection
     })
   }));
+
+  // Add Lusca CSRF Middleware
+  app.use(lusca(config.csrf));
 };
 
 /**
