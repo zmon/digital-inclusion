@@ -1,40 +1,33 @@
 var                              fs           = require('fs-extra'),
-                                 path         = "modules/core/client/map-data/import/original.csv",
-                                 dst1         = "modules/core/client/map-data/freeWifi-public.json",
-                                 m1           = "modules/core/client/map-data/freeWifi-public-map.json",
-                                 dst2         = "modules/core/client/map-data/freeWifi-customer.json",
-                                 m2           = "modules/core/client/map-data/freeWifi-customer-map.json",
-                                 dst3         = "modules/core/client/map-data/computerTraining-day.json",
-                                 m3           = "modules/core/client/map-data/computerTraining-day-map.json",
-                                 dst4         = "modules/core/client/map-data/computerTraining-night.json",
-                                 m4           = "modules/core/client/map-data/computerTraining-night-map.json",
-                                 dst5         = "modules/core/client/map-data/computerAccess.json",
-                                 m5           = "modules/core/client/map-data/computerAccess-map.json",
-                                 dst6         = "modules/core/client/map-data/computerRetail.json",
-                                 m6           = "modules/core/client/map-data/computerRetail-map.json",
-                                 dst7         = "modules/core/client/map-data/ispList.json",
-                                 m7           = "modules/core/client/map-data/ispList-map.json",
-                                 f1           = "modules/core/client/map-data/export/freeWifi-public.json",
-                                 f2           = "modules/core/client/map-data/export/freeWifi-customer.json",
-                                 f3           = "modules/core/client/map-data/export/computerTraining-day.json",
-                                 f4           = "modules/core/client/map-data/export/computerTraining-night.json",
-                                 f5           = "modules/core/client/map-data/export/computerAccess.json",
-                                 f6           = "modules/core/client/map-data/export/computerRetail.json",
-                                 f7           = "modules/core/client/map-data/export/ispList.json",
+                                 path         = "../modules/core/client/map-data/import/isp.csv",
+                                 dst1         = "../modules/core/client/map-data/freeWifi-public.json",
+                                 dst2         = "../modules/core/client/map-data/freeWifi-customer.json",
+                                 dst3         = "../modules/core/client/map-data/computerTraining-day.json",
+                                 dst4         = "../modules/core/client/map-data/computerTraining-night.json",
+                                 dst5         = "../modules/core/client/map-data/computerAccess.json",
+                                 dst6         = "../modules/core/client/map-data/computerRetail.json",
+                                 dst7         = "../modules/core/client/map-data/ispList.json",
+                                 f1           = "../modules/core/client/map-data/export/freeWifi-public.json",
+                                 f2           = "../modules/core/client/map-data/export/freeWifi-customer.json",
+                                 f3           = "../modules/core/client/map-data/export/computerTraining-day.json",
+                                 f4           = "../modules/core/client/map-data/export/computerTraining-night.json",
+                                 f5           = "../modules/core/client/map-data/export/computerAccess.json",
+                                 f6           = "../modules/core/client/map-data/export/computerRetail.json",
+                                 f7           = "../modules/core/client/map-data/export/ispList.json",
                                  readLine     = require('readline'),
                                  lineByLine   = require('line-by-line'),
                                  async        = require('async'),
                                  forEach      = require('async-foreach').forEach,
                                  GeoJSON      = require('geojson'),
                                  csv          = require('fast-csv'),
-                                 jsontool     = require('jsontool'),
+                                 jsontool     = require('json'),
                                  csvString    = require('csv-string'),
                                  geocoder     = require('geocoder'),
                                  upstream     = fs.createReadStream(path),
                                  stringify    = require('stringify-stream'),
                                  GooglePlaces = require('googleplaces'),
                                  googlePlaces = new GooglePlaces("AIzaSyBP-nR1enubXspfTSfSit1tYwT4ZSwRi-s", "json"),
-                                 finalPath    = fs.createReadStream('modules/core/client/map-data/data.json'),
+                                 finalPath    = fs.createReadStream('../modules/core/client/map-data/data.json'),
                                  lineReader   = require('readline').createInterface({
                                                                               input: upstream
                                                                             }),
@@ -67,7 +60,6 @@ var                              fs           = require('fs-extra'),
                                         bar,
                                         ready;
 
-console.log("y");
 
 
 
@@ -103,33 +95,33 @@ console.log("y");
 //     dateFormat:'YYYY.MM.DD'
 // };
 var ri = 0;
-lineReader.on('line', function(line) {
+// lineReader.on('line', function(line) {
   // console.log('**function-scope: lineReader on event-triggered callback: printing line to console');
-  ri += 1;
-  console.log(ri + ": " + line);
+//   ri += 1;
+//   console.log(ri + ": " + line);
 
-  tmp1.push(line);
-  callback(tmp1, ri);
+//   tmp1.push(line);
+//   callback(tmp1, ri);
 
-});
+// });
 
-lineReader2.on('line', function(line) {
-  console.log("linereader2");
-    var ck = delayPublish(c);
-    if (ck) {
-      console.log('then treue');
-    } else {
-      console.log("then flase");
-      console.log('writing to current');
-    console.log(line);
-    }
-});
+// lineReader2.on('line', function(line) {
+//   console.log("linereader2");
+//     var ck = delayPublish(c);
+//     if (ck) {
+//       console.log('then treue');
+//     } else {
+//       console.log("then flase");
+//       console.log('writing to current');
+//     console.log(line);
+//     }
+// });
 
 
-lineReader3.eachLine('modules/core/client/map-data/data.json', function(line) {
-  console.log("^^^^^^^");
-  console.log(line);
-});
+// lineReader3.eachLine('modules/core/client/map-data/data.json', function(line) {
+//   console.log("^^^^^^^");
+//   console.log(line);
+// });
 
 
 
@@ -165,7 +157,7 @@ var callback = function(arr) {
 
 
 
-var limit = 27;
+var limit = 2;
 
 var delayPublish = function(num) {
   if (num === limit) {
@@ -201,6 +193,7 @@ var encode = function(index, obj) {
 var geocode = function(arr) {
   forEach(arr, function(item, index) {
     var parsedJson = JSON.parse(item);
+    console.log("parsed");
     console.log(parsedJson);
     var td = parsedJson.pri;
     parsedJson.readableAddress = (parsedJson.thoroughfare + ", " + parsedJson.locality + ", " + parsedJson.administrativeArea + ", " + parsedJson.postalCode);
