@@ -1,4 +1,5 @@
 'use strict';
+
 var showMarkers = {
                     trainingClasses: new Boolean(),
                     computerRetail: new Boolean(),
@@ -8,8 +9,6 @@ var showMarkers = {
 
 var tmp = {};
 
-// showMarkers.freeWifi = new Boolean();
-// showMarkers.nightClasses = new Boolean();
 function onGoogleReady() {
   angular.bootstrap(document.getElementById("customMap"), ['core.map']);
   showMarkers.freeWifi = true;
@@ -28,11 +27,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
                           computerRetail: []
                        };
 
-      // console.log("init toggle vals:");
-      // console.log(showMarkers.trainingClasses);
-      // console.log(showMarkers.computerRetail);
-      // console.log(showMarkers.freeWifi);
-      // console.log(showMarkers.publicComputers);
       var pattern1 = new RegExp("norm");
       var pattern2 = new RegExp("highlighted");
 
@@ -43,7 +37,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
         var cqP = event.toElement.className;
         var cqC = event.target.parentElement.className;
         if (pattern1.test(cqP) || pattern1.test(cqC)) {
-          // console.log("maiuybe then?");
           t2.removeClass('norm');
           t2.addClass('highlighted');
           showMarkers.computerTraining = true;
@@ -51,7 +44,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
               $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/computerTraining-day.json");
               $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/computerTraining-evening.json");
            } else if (!showMarkers.computerTraining) {
-            // console.log("donut hi");
            }
         } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
           t2.removeClass('highlighted');
@@ -59,8 +51,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
           showMarkers.computerTraining = false;
           if (showMarkers.computerTraining) {
            } else if (!showMarkers.computerTraining) {
-              fBay();
-              // oLay()
+              clickTrain();
            }
         } else {
           // console.log("throw err or do something else");
@@ -89,7 +80,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
           showMarkers.publicComputers = false;
           if (showMarkers.publicComputers) {
            } else if (!showMarkers.publicComputers) {
-              crayCray("publicComputers");
+              clickPCs("publicComputers");
            }
         } else {
           // console.log("throw err");
@@ -99,37 +90,27 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
       var t4 = angular.element(document.getElementById("tgz4"));
       t4.on('click', function(event) {
-        // console.log('fucking shit up');
-        // parent
+
         var cqP = event.toElement.className;
-        // console.log("cqP");
-        // console.log(event);
-        // child
         var cqC = event.target.parentElement.className;
         console.log("event");
         console.log(event);
         console.log(cqC);
         if (pattern1.test(cqP) || pattern1.test(cqC)) {
-          // console.log("CGHOmaiyybe 8then");
           t4.removeClass('norm');
           t4.addClass('highlighted');
           showMarkers.computerRetail = true;
           if (showMarkers.computerRetail) {
               $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/computerRetail.json");
            } else if (!showMarkers.computerRetail) {
-            // console.log("do not show that shit");
            }
         } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
-          // console.log("then again maybe");
           t4.removeClass('highlighted');
           t4.addClass('norm');
           showMarkers.computerRetail = false;
           if (showMarkers.computerRetail) {
-              // console.log("DONT EVEN BIDDDDD");
-              // $scope.map.data.loadGeoJson("modules/core/client/map-data/freeWifi.json");
            } else if (!showMarkers.computerRetail) {
-              // console.log("ubtrduash");
-              rayRay();
+              clickRetail();
            }
         } else {
           // console.log("throw err or do something else");
@@ -152,7 +133,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
            }
         } else if (pattern2.test(cqP) || pattern2.test(cqC)) {
-          // console.log("then again maybe");
           t1.removeClass('highlighted');
           t1.addClass('norm');
           showMarkers.freeWifi = false;
@@ -161,7 +141,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
               // $scope.map.data.loadGeoJson("modules/core/client/map-data/freeWifi.json");
            } else if (!showMarkers.freeWifi) {
               // console.log("5");
-              cBay();
+              clickFree();
            }
         } else {
           // console.log("throw err or do something else");
@@ -170,24 +150,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
         var ctrl = this;
         var norm = "norm";
-        var overreactive = "highlighted";
 
-        $scope.whippingBoy = function(fnName) {
-          // console.log(fnName);
-          if (fnName === "freeWifi") {
-            // console.log("Case: freeWifi");
-            // callback()
-          } else if (fnName === "customerWifi") {
-            // console.log("Case: customerWifi")
-          } else if (fnName === "dayClasses") {
-            // console.log("Case: dayClasses")
-          } else if (fnName === "eveningClasses") {
-            // console.log("Case: eveningClasses");
-            // console.log(t4);
-            // t4.removeClass(proverreactive);
-            // t4.addClass(overreactive);
-          }
-        };
 
 
 
@@ -271,13 +234,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             }
         };
 
-        // var checkVisibility = function(status) {
-        //   if (!status.publicComputers) {
-            // console.log("peaceful shadows");
-        //     div.style.display = 'hidden';
-        //   }
-        // }
-
         // Implement draw
         MarkerLabel.prototype.draw = function() {
 
@@ -286,7 +242,6 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             var div = this.div;
             var checkVisibility = function(status) {
               if (!status.publicComputers) {
-                // console.log("peaceful shadows");
                 return 'none';
               }
             }
@@ -348,39 +303,25 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
 
        $scope.clickMe = function(clickEvent) {
-
-          // $scope.clickEvent = simpleKeys(clickEvent);
           console.log(clickEvent);
         };
-        $scope.pickMe = function(clickEvent) {
-          // $scope.clickEvent = simpleKeys(clickEvent);
-          console.log(clickEvent);
-        };
+       
 
-
-        var crayCray = function(type) {
+        var clickPCs = function(type) {
 
           $scope.map.data.forEach(function (feature) {
-
-              // console.log(type);
               var str = feature.H.category;
-              // console.log(str);
-              // if type == tmpStr
               var tmpStr = "computerAccess";
               var sv = "computerRetail";
 
               if (str === tmpStr) {
-                // console.log("remove this");
-                // console.l
                 $scope.map.data.remove(feature);
               } else {
-                // console.log("do not remove this");
               }
-              // $scope.map.data.remove(feature);
           });
         }
 
-        var rayRay = function() {
+        var clickRetail = function() {
           // console.log("calling fn ");
           $scope.map.data.forEach(function(feature) {
             // console.log("7");
@@ -395,22 +336,20 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
           })
         }
 
-        var cBay = function() {
+        var clickFree = function() {
           // console.log("");
           $scope.map.data.forEach(function(feature) {
             var a = feature.H.category;
             var b = "freeWifi-public";
             var c = "freeWifi-customer";
             if (a == b || a == c) {
-              // console.log("6");
               $scope.map.data.remove(feature);
             } else {
-              // console.log("fail");
             }
           })
         }
 
-        var fBay = function() {
+        var clickTrain = function() {
           console.log("");
           $scope.map.data.forEach(function(feature) {
             var a = feature.H.category;
@@ -422,14 +361,12 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             } else if (a==c) {
               $scope.map.data.remove(feature);
             } else {
-              // console.log('fail');
-            }
+                        }
           })
         }
 
 
-        var eYotz = function() {
-          // console.log("otch");
+        var clickEvt = function() {
           $scope.map.data.setStyle(function(feature) {
               var cat = feature.H.category;
               var iconUrl;
@@ -498,6 +435,10 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
             var iconSize = new google.maps.Size(30, 30);
             var iconAnchor = new google.maps.Point(15, 30);
 
+            $scope.input = document.getElementById('pac-input');
+			$scope.searchBox = new google.maps.places.SearchBox($scope.input);
+			$scope.map.controls[google.maps.ControlPosition.TOP_LEFT].push($scope.input);
+
             $scope.visitor = new Marker({
                 map: $scope.map,
                 position: new google.maps.LatLng($scope.lat, $scope.lng),
@@ -527,28 +468,15 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
 
            $scope.map.data.addListener('click', function(event) {
-                //show an infowindow on click
-                // console.log(event.feature.H);
-                // infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">'+
-                //                             event.feature.H.name +"<br/>Feature Value = Zone " + event.feature.getProperty("value") + "</div>");
                 var anchor = new google.maps.MVCObject();
                 anchor.set("position",event.latLng);
-                // infoWindow.open($scope.map,anchor);
                 document.getElementById('info-box0').textContent = event.feature.H.category;
                 document.getElementById('info-box2').textContent = event.feature.H.name;
                 document.getElementById('info-box3').textContent = event.feature.H.street;
             });
-            eYotz();
+            clickEvt();
             $scope.$apply();
         };
-
-        // $scope.showMap();
-
-        $scope.checkV = function(data) {
-          // console.log("v check");
-          // console.log(data);
-        }
-
 
         $scope.showError = function (error) {
             switch (error.code) {
@@ -570,12 +498,9 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
         $scope.getLocation = function () {
             if (navigator.geolocation) {
-                console.log("supported");
-                console.log()
                 navigator.geolocation.getCurrentPosition($scope.showMap, $scope.showError);
             }
             else {
-                // console.log("not supported");
                 $scope.error = "Geolocation is not supported by this browser.";
             }
         }

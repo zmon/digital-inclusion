@@ -1,33 +1,51 @@
-<section ng-controller="HomeController">
-  <p ng-include="'/modules/core/client/views/logo.client.view.html'"></p>
-    <div class="main-container">
-        <div class="main wrapper clearfix">
-
-        <div id="tab-container" class="tab-container">
-            <section ng-include="'/modules/core/client/views/partials/tab/training.client.view.html'"></section>
-            <div id="tab-data-wrap">
-
-              <!-- Resume Tab Data -->
-                <div id="resume">
-                    <section class="clearfix">
-                        <div class="g2">
-                          
-
-                        </div>
-                        <div class="g1 cont-box">
-                              
-
-                        </div>
-                    </section>
+<main ng-controller="HomeController">
+  <aside ng-include="'/modules/core/client/views/logo.client.view.html'"></aside>
+  <div class="main-container">
+    <div class="main wrapper clearfix" ng-app="CustomMap">
+      <div id="tab-container" class="tab-container">
+        <section ng-include="'/modules/core/client/views/partials/tab/training.client.view.html'"></section>
+        <div id="tab-data-wrap">
+          <div id="about">
+            <section class="clearfix">
+              <div class="g2">
+                <div class="info">
+                  <h2>Training </h2>
                 </div>
-              <!-- End Resume Tab Data -->
-
-            </div>
+              
+                <!-- <div ng-include="'/modules/core/client/views/partials/map/controls.client.view.html'"></div> -->
+              </div>
+              <div class="g1">
+                <div class="main-links sidebar">
+                  <!-- <div ng-include="'/modules/core/client/views/partials/map/legend.client.view.html'"></div> -->
+                </div>
+              </div>
+              <div class="break"></div>
+              <div class="contact-info">
+                <div class="g1 sa-a">
+                  <div class="item-box clearfix">
+                    <i class="icon-envelope"></i>
+                    <div class="item-data">
+                      <h3><a href=""></a></h3>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="g1 super-c">
+                  <div class="item-box clearfix">
+                    <i class="icon-twitter"></i>
+                    <div class="item-data">
+                      <h3></h3>
+                      <h5></h5>
+                      <p></p>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-        <!-- End Tab Container -->
-       <section ng-include="'/modules/core/client/views/footer.client.view.html'"></section>
-    </div><!-- #main -->
-</div><!-- #main-container -->
-
-
-</section>
+      </div>
+    <section ng-include="'/modules/core/client/views/footer.client.view.html'"></section>
+  </div>
+</main>
