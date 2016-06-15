@@ -1,20 +1,13 @@
-### Digital Inclusion App 
+## Digital Inclusion App 
 Visit live site at [http://getonlinekc.org](http://getonlinekc.org/)  
 
-#### For developers
+### For developers
 * [Contributing](https://github.com/clintecum/digital-inclusion/blob/master/CONTRIBUTING.md)
-* [Getting Started](#getting-started)
+* [Getting started](#getting-started)
 * [Data](#data) 
 
-#getting-started
-* [Mac](#mac)
-* [Windows](#windows)
-* [Linux](#linux)
-
-need useful information here
-
-#data
-#### _Real Example_
+# Data
+#### _Example_
 ###### Geojson file formatted for client-side:
 ```javascript
 {
@@ -24,7 +17,7 @@ need useful information here
 			   "type":       "Feature",
 			   "geometry":   {
 						      "type":"Point",
-						      "coordinates":[lng, lat]
+						      "coordinates": [lng,lat]
 					   	     },
 			   "properties": {
 						      "name": string,
@@ -36,3 +29,17 @@ need useful information here
 			 ]
 }
 ```
+
+###Getting started
+Instructions
+* [Mac / Linux](#unix)
+* [Windows](#windows)
+
+##### Windows 
+no information available 
+
+##### Unix  
+_Mac or linux users_
+ * Setup Instructions:
+   - Clone repository
+   - npm install
