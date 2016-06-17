@@ -1,19 +1,4 @@
 var                              fs           = require('fs-extra'),
-                                 path         = "../modules/core/client/map-data/import/isp.csv",
-                                 dst1         = "../modules/core/client/map-data/freeWifi-public.json",
-                                 dst2         = "../modules/core/client/map-data/freeWifi-customer.json",
-                                 dst3         = "../modules/core/client/map-data/computerTraining-day.json",
-                                 dst4         = "../modules/core/client/map-data/computerTraining-night.json",
-                                 dst5         = "../modules/core/client/map-data/computerAccess.json",
-                                 dst6         = "../modules/core/client/map-data/computerRetail.json",
-                                 dst7         = "../modules/core/client/map-data/ispList.json",
-                                 f1           = "../modules/core/client/map-data/export/freeWifi-public.json",
-                                 f2           = "../modules/core/client/map-data/export/freeWifi-customer.json",
-                                 f3           = "../modules/core/client/map-data/export/computerTraining-day.json",
-                                 f4           = "../modules/core/client/map-data/export/computerTraining-night.json",
-                                 f5           = "../modules/core/client/map-data/export/computerAccess.json",
-                                 f6           = "../modules/core/client/map-data/export/computerRetail.json",
-                                 f7           = "../modules/core/client/map-data/export/ispList.json",
                                  readLine     = require('readline'),
                                  lineByLine   = require('line-by-line'),
                                  async        = require('async'),
@@ -23,109 +8,57 @@ var                              fs           = require('fs-extra'),
                                  jsontool     = require('json'),
                                  csvString    = require('csv-string'),
                                  geocoder     = require('geocoder'),
+                                 path         = "../modules/core/client/map-data/import/tmp.csv",
+                                 dst1         = "../modules/core/client/map-data/tmp/wifi-public.json",
+                                 dst2         = "../modules/core/client/map-data/tmp/wifi-customer.json",
+                                 dst3         = "../modules/core/client/map-data/tmp/training-day.json",
+                                 dst4         = "../modules/core/client/map-data/tmp/training-night.json",
+                                 dst5         = "../modules/core/client/map-data/tmp/computer-access.json",
+                                 dst6         = "../modules/core/client/map-data/tmp/computer-reseller.json",
+                                 dst7         = "../modules/core/client/map-data/tmp/isp-list.json",
+                                 // f1           = "../modules/core/client/map-data/export/wifi-public.json",
+                                 // f2           = "../modules/core/client/map-data/export/wifi-customer.json",
+                                 // f3           = "../modules/core/client/map-data/export/training-day.json",
+                                 // f4           = "../modules/core/client/map-data/export/training-night.json",
+                                 // f5           = "../modules/core/client/map-data/export/computer-access.json",
+                                 // f6           = "../modules/core/client/map-data/export/computer-reseller.json",
+                                 // f7           = "../modules/core/client/map-data/export/isp-list.json",
                                  upstream     = fs.createReadStream(path),
                                  stringify    = require('stringify-stream'),
                                  GooglePlaces = require('googleplaces'),
                                  googlePlaces = new GooglePlaces("AIzaSyBP-nR1enubXspfTSfSit1tYwT4ZSwRi-s", "json"),
                                  finalPath    = fs.createReadStream('../modules/core/client/map-data/data.json'),
-                                 lineReader   = require('readline').createInterface({
-                                                                              input: upstream
-                                                                            }),
-                                 Converter = require("csvtojson").Converter,
-                                 converter = new Converter({
-                                                        constructResult:true,
-                                                        workerNum:4,
-                                                        quote: false,
-                                                        toArrayString: true
-                                                      }),
-                                Queue = require('better-queue'),
-                                queue = new Queue(function (input, cb) {
-                                                                        cb(null, result);
-                                                                      }),
-                                 pipe = fs.createReadStream(path).pipe(converter),
-                                count = 0,
-                            locations = [],
-                                 tmp1 = [],
-                                 tmp2 = [],
-                                 tmp3 = [],
-                           downstream = fs.createReadStream(dst1),
-                          lineReader2 = require('readline').createInterface({
-                                                                             input: downstream
-                                                                            }),
-                          lineReader3 = require('line-reader'),
-                                        index,
-                                        query,
-                                        object,
-                                        foo,
-                                        bar,
-                                        ready;
+                                 lineReader   = require('readline').createInterface({ input: upstream }),
+                                 Converter    = require("csvtojson").Converter,
+                                 converter    = new Converter({
+                                                                constructResult: true,
+                                                                workerNum: 4,
+                                                                quote: false,
+                                                                delimiter: '#',
+                                                                toArrayString: true
+                                                              }),
+                                 Queue        = require('better-queue'),
+                                 queue        = new Queue(function (input, cb) {cb(null, result)}),
+                                 pipe         = fs.createReadStream(path).pipe(converter),
+                                 downstream   = fs.createReadStream(dst1),
+                                 lineReader2  = require('readline').createInterface({ input: downstream }),
+                                 lineReader3  = require('line-reader'),
+                                 ri           = 0,
+                                 c            = 0,
+                                 count        = 0,
+                                 locations    = [],
+                                 tmp1         = [],
+                                 tmp2         = [],
+                                 tmp3         = [],
+                                 index,
+                                 query,
+                                 object,
+                                 foo,
+                                 bar,
+                                 ready;
 
 
 
-
-// fs = require('fs');
-// parse = require('..');
-
-// Using the first line of the CSV data to discover the column names
-// rs = fs.createReadStream(path);
-// parser = parse({columns: true}, function(err, data){
-//   console.log(data);
-// })
-// rs.pipe(parser);
-
-/*
-`node samples/header-based-columns.js`
-[ { Foo: 'first', Bar: 'row', Baz: 'items' },
-  { Foo: 'second', Bar: 'row', Baz: 'items' } ]
-*/
-
-// var ;
-
-// var
-
-// q.push(1)
-// q.push({ x: 1 })
-
-
-// var log = require('simple-node-logger').createSimpleLogger();
-// create a rolling file logger based on date/time
-// var opts = {
-//     logDirectory:'/mylogfiles',
-//     fileNamePattern:'roll-<DATE>.log',
-//     dateFormat:'YYYY.MM.DD'
-// };
-var ri = 0;
-// lineReader.on('line', function(line) {
-  // console.log('**function-scope: lineReader on event-triggered callback: printing line to console');
-//   ri += 1;
-//   console.log(ri + ": " + line);
-
-//   tmp1.push(line);
-//   callback(tmp1, ri);
-
-// });
-
-// lineReader2.on('line', function(line) {
-//   console.log("linereader2");
-//     var ck = delayPublish(c);
-//     if (ck) {
-//       console.log('then treue');
-//     } else {
-//       console.log("then flase");
-//       console.log('writing to current');
-//     console.log(line);
-//     }
-// });
-
-
-// lineReader3.eachLine('modules/core/client/map-data/data.json', function(line) {
-//   console.log("^^^^^^^");
-//   console.log(line);
-// });
-
-
-
-var c = 0;
 var increment = function(num) {
   // console.log('increment ' + (num+1));
   index = (num+1);
@@ -136,8 +69,8 @@ var increment = function(num) {
 converter.on("end_parsed", function (arr) {
   console.log("ready?");
 
-
-  for (i=0;i<arr.length;i++){
+  var len = arr.length;
+  for (i=0;i<len;i++){
     foo = JSON.stringify(arr[i]);
     c += 1;
     encode(c, foo);
@@ -157,7 +90,7 @@ var callback = function(arr) {
 
 
 
-var limit = 2;
+var limit = 7;
 
 var delayPublish = function(num) {
   if (num === limit) {
@@ -194,9 +127,13 @@ var geocode = function(arr) {
   forEach(arr, function(item, index) {
     var parsedJson = JSON.parse(item);
     console.log("parsed");
+    // console.log(parsedJson);
+    var td = parsedJson.Priority;
+
+    parsedJson.readableAddress = (parsedJson.Thoroughfare + ", " + parsedJson.Locality + ", " + parsedJson.AdministrativeArea + ", " + parsedJson.PostalCode);
+  
     console.log(parsedJson);
-    var td = parsedJson.pri;
-    parsedJson.readableAddress = (parsedJson.thoroughfare + ", " + parsedJson.locality + ", " + parsedJson.administrativeArea + ", " + parsedJson.postalCode);
+    console.log(td);
     geocoder.geocode(parsedJson.readableAddress, function (err, res) {
                                                                         // console.log("geocode res");
                                                                         // console.log(res.results[0]);
@@ -208,9 +145,9 @@ var geocode = function(arr) {
                                                                         // res.name = {"name": parsedJson.name);
                                                                         // var tm = JSON.parse(res);
                                                                         // console.log(res);
-                                                                        var name = parsedJson.name;
-                                                                        var tres = {name: name};
-                                                                        console.log(tres);
+                                                                        // var name = parsedJson.Name;
+                                                                        var tres = {name: parsedJson.Name};
+                                                                        // console.log(tres);
                                                                         // console.log(res);
                                                                         if (td === 1) {
                                                                           fs.appendFile(dst1,(JSON.stringify(tres)+'\n'),function(err){});

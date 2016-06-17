@@ -2,7 +2,7 @@
 'use strict';
 
 // Configuring the Places module
-angular.module('places').run(['Menus',
+angular.module('digitalInclusion.places').run(['Menus',
   function (Menus) {
     // Add the places dropdown item
     Menus.addMenuItem('topbar', {

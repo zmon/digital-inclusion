@@ -1,11 +1,22 @@
+<main ng-controller="HomeController">
+  <aside ng-include="'/modules/core/client/views/logo.client.view.html'"></aside>
+  <div class="main-container">
+    <div class="main wrapper clearfix" ng-app="CustomMap">
+      <div id="tab-container" class="tab-container">
 
-                <section ng-controller="PlacesController" ng-init="findOne()">
+        <div id="tab-data-wrap">
+          <div id="about">
+            <section class="clearfix">
+
+
+
+<section ng-controller="PlacesController" ng-init="findOne()">
   <div class="page-header">
     <h1>Edit Place</h1>
   </div>
   <div class="col-md-12">
     <form name="placeForm" class="form-horizontal" ng-submit="update(placeForm.$valid)" novalidate>
-      <fieldset class="edit-place">
+      <fieldset>
         <div class="form-group" show-errors>
           <label for="title">Title</label>
           <input name="title" type="text" ng-model="place.title" id="title" class="form-control" placeholder="Title" required>
@@ -29,3 +40,10 @@
 </section>
 
 
+            </section>
+          </div>
+        </div>
+      </div>
+    <section ng-include="'/modules/core/client/views/footer.client.view.html'"></section>
+  </div>
+</main>

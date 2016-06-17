@@ -1,0 +1,87 @@
+.edit-place {
+    position: relative;
+    left: -33.25em;
+    height: 37.15em;
+    width: 46.15em;
+    color: #5f5c5c;
+    top: 1.125em;
+    background: radial-gradient(#fdfdfd,#efefef);
+    box-shadow: inset 0 0 300px #e6e6e6;
+    border: 1px solid #cccccc;
+}
+p.irak a.ng-binding {
+    color: #2596bb;
+    line-height: 15px;
+}
+
+p.irak a.ng-binding:hover {
+	cursor: pointer;
+}
+
+.remain {
+    margin-left: 2.5em;
+    width: 41.25em;
+    border: 1px solid lightgray;
+    padding-left: 1.25em;
+}
+
+p.irak {
+    line-height: 14px;
+    margin-bottom: 6px;
+    margin-left: 1.7em;
+    margin-top: 6px;
+}
+
+input.btn.tree.btn-redonkey {
+    position: relative;
+    top: 69.35em;
+    left: 11em;
+}
+.bfor {
+    margin-left: 2.5em;
+    /* border-left: 1px solid lightgray; */
+    padding-left: 1.3em;
+    width: 41.2em;
+    border: 1px solid #dedddd;
+    background: radial-gradient(#f1f1f1,#f7f7f7);
+    border-top: none;
+    position: relative;
+    box-shadow: 0 1px 1px #ececec;
+    height: 22.5em;
+}
+
+.btn-chg {
+	background: radial-gradient(silver,gray);
+}
+
+.yung {
+    position: relative;
+    top: 32em;
+    left: -3.7em;
+}
+em.text-muted {
+    margin-left: 4.2em;
+}
+.ak-su {
+    position: relative;
+    top: 4.84em;
+    z-index: 9999;
+    height: 2.675em;
+}
+
+.ref-btn {
+    position: absolute;
+    top: .48em;
+    left: -4em;
+    position: sticky;
+}
+.ref-btn:hover{
+	cursor: pointer;
+}
+.cld-dwn {
+    /* margin-top: .65em; */
+    position: relative;
+    top: 1em;
+    left: 1em;
+    /* padding-top: 1em; */
+}

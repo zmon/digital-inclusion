@@ -1,7 +1,7 @@
 'use strict';
 
 // Setting up route
-angular.module('core').config(['$stateProvider', '$urlRouterProvider',
+angular.module('digitalInclusion.core').config(['$stateProvider', '$urlRouterProvider',
   function ($stateProvider, $urlRouterProvider) {
 
     // Redirect to 404 when route not found
@@ -42,6 +42,10 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
     .state('training', {
       url: '/training',
       templateUrl: 'modules/core/client/views/training.client.view.html'
+    })
+    .state('confirm-location-details', {
+      url: '/confirm-location-details/:placeId',
+      templateUrl: 'modules/core/client/views/verify.client.view.html'
     })
     .state('not-found', {
       url: '/not-found',

@@ -1,4 +1,4 @@
-angular.module('core').controller('ModalController', function ($scope, $uibModal, $log) {
+angular.module('digitalInclusion.core').controller('ModalController', function ($scope, $uibModal, $log) {
 
 
   var newPlace = "<form name='placeForm' class='form-horizontal' ng-submit='create(placeForm.$valid)' novalidate><fieldset><div class'form-group' show-errors><label for='title'>Title</label><input name='title' type='text' ng-model='title' id='title' class='form-control' placeholder='Title' required><div ng-messages='placeForm.title.$error' role='alert'><p class='help-block error-text' ng-message='required'>Place title is required.</p></div></div><div class='form-group'><label for='desc'>Description</label><textarea name='desc' ng-model='desc' id='desc' class='form-control' cols='30' rows='10' placeholder='Description (200 characters or less)'></textarea></div><div class='form-group'><input type='submit' class='btn btn-default'></div><div ng-show='error' class='text-danger'><strong ng-bind='error'></strong></div></fieldset></form>";

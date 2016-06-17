@@ -29,7 +29,7 @@ angular.module('places').config(['$stateProvider',
         url: '/:placeId/edit',
         templateUrl: 'modules/places/client/views/edit-place.client.view.html',
         data: {
-          roles: ['user', 'admin']
+          roles: ['guest','user', 'admin']
         }
       });
   }

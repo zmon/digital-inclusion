@@ -37,7 +37,7 @@ exports.invokeRolesPolicies = function () {
       permissions: ['get', 'post']
     }, {
       resources: '/api/places/:placeId',
-      permissions: ['get']
+      permissions: '*'
     }]
   }]);
 };

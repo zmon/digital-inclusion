@@ -39,31 +39,34 @@ exports.read = function (req, res) {
  */
 
 exports.update = function (req, res) {
+  console.log("update **");
+    console.log(req.body);
 
   var place = req.place;
 
-  place.name = req.body.name;
-  place.url = req.body.url;
-  place.caption = req.body.caption;
-  place.category = req.body.category;
-  place.description = req.body.description;
-  place.address1 = req.body.address1;
-  place.address2 = req.body.address2;
-  place.city = req.body.city;
-  place.zip = req.body.zip;
-  place.state = req.body.state;
-  place.lat = req.body.lat;
-  place.lng = req.body.lng;
-  place.phone = req.body.phone;
-  place.contactName = req.body.contactName;
-  place.contactEmail = req.body.contactEmail;
-  place.contactPhone = req.body.contactPhone;
-  place.hoursOpen = req.body.hoursOpen;
-  place.offersWifi = req.body.offersWifi;
-  place.wifiTerms = req.body.wifiTerms;
-  place.offersCourses = req.body.offersCourses;
-  place.computerReseller = req.body.computerReseller;
-  place.iconMatcher = req.body.iconMatcher;
+  // place.name = req.body.name;
+  // place.url = req.body.url;
+  // place.caption = req.body.caption;
+  // place.category = req.body.category;
+  // place.description = req.body.description;
+  // place.address1 = req.body.address1;
+  // place.address2 = req.body.address2;
+  // place.city = req.body.city;
+  // place.zip = req.body.zip;
+  // place.state = req.body.state;
+  // place.lat = req.body.lat;
+  // place.lng = req.body.lng;
+  place.location = req.body.location;
+  // place.phone = req.body.phone;
+  // place.contactName = req.body.contactName;
+  // place.contactEmail = req.body.contactEmail;
+  // place.contactPhone = req.body.contactPhone;
+  // place.hoursOpen = req.body.hoursOpen;
+  // place.offersWifi = req.body.offersWifi;
+  // place.wifiTerms = req.body.wifiTerms;
+  // place.offersCourses = req.body.offersCourses;
+  // place.computerReseller = req.body.computerReseller;
+  // place.iconMatcher = req.body.iconMatcher;
 
 
   place.save(function (err) {

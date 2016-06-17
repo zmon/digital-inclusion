@@ -1,19 +1,19 @@
 var                                fs = require('fs-extra'),
-                                 path = "modules/core/client/map-data/import/test-warni.csv",
-                                 dst1 = "modules/core/client/map-data/freeWifi-public.json",
-                                 dst2 = "modules/core/client/map-data/freeWifi-customer.json",
-                                 dst3 = "modules/core/client/map-data/computerTraining-day.json",
-                                 dst4 = "modules/core/client/map-data/computerTraining-night.json",
-                                 dst5 = "modules/core/client/map-data/computerAccess.json",
-                                 dst6 = "modules/core/client/map-data/computerRetail.json",
-                                 dst7 = "modules/core/client/map-data/ispList.json",
-                                 f1 = "modules/core/client/map-data/export/freeWifi-public.json",
-                                 f2 = "modules/core/client/map-data/export/freeWifi-customer.json",
-                                 f3 = "modules/core/client/map-data/export/computerTraining-day.json",
-                                 f4 = "modules/core/client/map-data/export/computerTraining-night.json",
-                                 f5 = "modules/core/client/map-data/export/computerAccess.json",
-                                 f6 = "modules/core/client/map-data/export/computerRetail.json",
-                                 f7 = "modules/core/client/map-data/export/ispList.json",
+                                 // path = "modules/core/client/map-data/import/test-warni.csv",
+                                 src1 = "modules/core/client/map-data/tmp/wifi-public.json",
+                                 src2 = "modules/core/client/map-data/tmp/wifi-customer.json",
+                                 src3 = "modules/core/client/map-data/tmp/training-day.json",
+                                 src4 = "modules/core/client/map-data/tmp/training-night.json",
+                                 src5 = "modules/core/client/map-data/tmp/computer-access.json",
+                                 src6 = "modules/core/client/map-data/tmp/computer-retail.json",
+                                 src7 = "modules/core/client/map-data/tmp/isp-list.json",
+                                 f1 = "modules/core/client/map-data/export/d/wifi-public.json",
+                                 f2 = "modules/core/client/map-data/export/d/wifi-customer.json",
+                                 f3 = "modules/core/client/map-data/export/d/training-day.json",
+                                 f4 = "modules/core/client/map-data/export/d/training-night.json",
+                                 f5 = "modules/core/client/map-data/export/d/computer-access.json",
+                                 f6 = "modules/core/client/map-data/export/d/computer-retail.json",
+                                 f7 = "modules/core/client/map-data/export/d/isp-list.json",
                              readLine = require('readline'),
                            lineByLine = require('line-by-line'),
                                 async = require('async'),
@@ -31,13 +31,13 @@ var                                fs = require('fs-extra'),
                                  tmp1 = [],
                                  tmp2 = [],
                                  tmp3 = [],
-                                  ds1 = fs.createReadStream(dst1),
-                                  ds2 = fs.createReadStream(dst2),
-                                  ds3 = fs.createReadStream(dst3),
-                                  ds4 = fs.createReadStream(dst4),
-                                  ds5 = fs.createReadStream("modules/core/client/map-data/computerAccess.json"),
-                                  ds6 = fs.createReadStream(dst6),
-                                  ds7 = fs.createReadStream(dst7),
+                                  ds1 = fs.createReadStream(src1),
+                                  ds2 = fs.createReadStream(src2),
+                                  ds3 = fs.createReadStream(src3),
+                                  ds4 = fs.createReadStream(src4),
+                                  ds5 = fs.createReadStream(src5),
+                                  ds6 = fs.createReadStream(src6),
+                                  ds7 = fs.createReadStream(src7),
                           lineReader1 = require('readline').createInterface({
                                                                              input: ds1
                                                                             }),
@@ -265,7 +265,7 @@ var ref1 = function(json1,json2) {
                   "geometry": {"type":"Point", "coordinates":[lng,lat]},
                   "properties": {
                     "name": name,
-                    "category": "freeWifi-public",
+                    "category": "Public WiFi",
                     "street": add,
                     "google_id": pid
                   }
@@ -291,7 +291,7 @@ var ref2 = function(json1,json2) {
                   "geometry": {"type":"Point", "coordinates":[lng,lat]},
                   "properties": {
                     "name": name,
-                    "category": "freeWifi-customer",
+                    "category": "Customer WiFi",
                     "street": add,
                     "google_id": pid
                   }
@@ -319,7 +319,7 @@ var ref3 = function(json1,json2) {
                   "geometry": {"type":"Point", "coordinates":[lng,lat]},
                   "properties": {
                     "name": name,
-                    "category": "computerTraining-day",
+                    "category": "Daytime Training",
                     "street": add,
                     "google_id": pid
                   }
@@ -345,7 +345,7 @@ var ref4 = function(json1,json2) {
                   "geometry": {"type":"Point", "coordinates":[lng,lat]},
                   "properties": {
                     "name": name,
-                    "category": "computerTraining-night",
+                    "category": "Evening Training",
                     "street": add,
                     "google_id": pid
                   }
@@ -371,7 +371,7 @@ var ref5 = function(json1,json2) {
                   "geometry": {"type":"Point", "coordinates":[lng,lat]},
                   "properties": {
                     "name": name,
-                    "category": "computerAccess",
+                    "category": "Computer Access",
                     "street": add,
                     "google_id": pid
                   }
@@ -397,7 +397,7 @@ var ref6 = function(json1,json2) {
                   "geometry": {"type":"Point", "coordinates":[lng,lat]},
                   "properties": {
                     "name": name,
-                    "category": "computerRetail",
+                    "category": "Low Cost or Refurbished Computers",
                     "street": add,
                     "google_id": pid
                   }
@@ -423,7 +423,7 @@ var ref7 = function(json1,json2) {
                   "geometry": {"type":"Point", "coordinates":[lng,lat]},
                   "properties": {
                     "name": name,
-                    "category": "ispList",
+                    "category": "Internet Service Provider",
                     "street": add,
                     "google_id": pid
                   }

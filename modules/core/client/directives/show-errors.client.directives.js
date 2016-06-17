@@ -4,7 +4,7 @@
  * Edits by Ryan Hutchison
  * Credit: https://github.com/paulyoder/angular-bootstrap-show-errors */
 
-angular.module('core')
+angular.module('digitalInclusion.core')
   .directive('showErrors', ['$timeout', '$interpolate', function ($timeout, $interpolate) {
     var linkFn = function (scope, el, attrs, formCtrl) {
       var inputEl, inputName, inputNgEl, options, showSuccess, toggleClasses,

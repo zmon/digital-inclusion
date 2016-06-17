@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   angular
-      .module('core').controller('AppCtrl', AppCtrl);
+      .module('digitalInclusion.core').controller('AppCtrl', AppCtrl);
 
   function AppCtrl ($scope, $log) {
     var tabs = [

@@ -1,22 +1,51 @@
 <section ng-controller="PlacesController" ng-init="findOne()">
-  <div class="page-header">
-    <h1 ng-bind="place.title"></h1>
-  </div>
-  <div class="pull-right" ng-show="authentication.user._id == place.user._id">
-    <a class="btn btn-primary" ui-sref="places.edit({placeId: place._id})">
-      <i class="glyphicon glyphicon-edit"></i>
-    </a>
-    <a class="btn btn-primary" ng-click="remove();">
-      <i class="glyphicon glyphicon-trash"></i>
-    </a>
-  </div>
-  <small>
-    <em class="text-muted">
-      Posted on
-      <span ng-bind="place.created | date:'mediumDate'"></span>
-      by
-      <span ng-bind="place.user.displayName"></span>
-    </em>
-  </small>
-  <p class="lead" ng-bind="place.title"></p>
+  <main class="edit-place">
+    <div class="page-header">
+      <!-- <h2 ng-bind="place.title">Confirm Location: {{place.title}}</h2> -->
+    </div>
+    <div class="pull-right yung">
+   <!--    <a class="btn btn-primary" ui-sref="places.edit({placeId: place._id})">
+        <i class="glyphicon glyphicon-edit"></i>
+      </a> -->
+      <a class="btn btn-chg" ng-click="remove();">
+<!--       <i class="ti-fire"></i>
+<span class="ti-user"></span> -->
+        <i class="glyphicon glyphicon-trash"></i>
+      </a>
+    </div>
+    <small>
+      <em class="text-muted">
+        Posted on
+        <span ng-bind="place.created | date:'mediumDate'"></span>
+
+      </em>
+    </small>
+    <aside class="remain">
+      <h2 class="cld-dwn"><strong>Confirm location details</strong></h2>
+      <article class="ak-su">
+      <p class="irak">Name: <a ng-href="">{{place.title}}</a></p>
+      <p class="irak">Address:  <a ng-href="">{{place.address1}}, {{place.address2}}</a>, <a ng-href="">{{place.city}}</a>, <a ng-href=""> {{place.state}}</a>, <a ng-href="">{{place.zip}}</a></p>
+      <p class="irak">Phone: <a ng-href="">{{place.phone}}</a></p>
+      <p class="irak">Website: <a ng-href="">{{place.url}}</a></p>
+      <p class="irak">Category: <a ng-href="">{{place.category}}-{{place.subcategory}}</a></p>
+      <p class="irak">Services: <a ng-href="">{{place.services}}</a></p>
+      </article>
+    </aside>
+    <form name='placeForm' class='bfor form-horizontal' ng-submit="geocode(placeForm.$valid, place._id)" novalidate>
+  
+      <div class="form-group invi">
+        
+        <input name="location" type="text" ng-model="location" value="[39.99, 94.44]">
+      </div>
+     
+      <div class="form-group mnc">
+        <input class="btn tree btn-redonkey" type="submit" ng-click="geocode(); showme=true">
+        <button class="btn btn-armed btn-cn" type="button" ng-click="cancel()">Cancel</button>
+      </div>
+
+   </form>  
+    <!-- <p class="lead" ng-bind="place.title"></p> -->
+  </main>
 </section>
+
+2

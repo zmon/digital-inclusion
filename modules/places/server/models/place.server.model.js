@@ -25,6 +25,9 @@ var PlaceSchema = new Schema({
     default: '',
     trim: true
   },
+  location: {
+    type: Array
+  },
   description: {
     type: String,
     default: '',
@@ -37,6 +40,11 @@ var PlaceSchema = new Schema({
   },
   url: {
     type: String,
+    trim: true
+  },
+  readableAddress: {
+    type: String,
+    default: '',
     trim: true
   },
   address1: {

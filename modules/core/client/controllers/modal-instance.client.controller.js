@@ -1,4 +1,4 @@
-angular.module('core').controller('ModalInstanceController', function ($scope, $uibModalInstance, items) {
+angular.module('digitalInclusion.core').controller('ModalInstanceController', function ($scope, $uibModalInstance, items) {
 
   $scope.items = items;
   $scope.selected = {
@@ -17,9 +17,13 @@ angular.module('core').controller('ModalInstanceController', function ($scope, $
   };
 
   $scope.ok = function () {
-  	console.log("loggoofodf");
+  	console.log("log");
   	$scope.dry();
     $uibModalInstance.close($scope.selected.item);
+  };
+
+  $scope.encode = function() {
+
   };
 
   $scope.cancel = function () {

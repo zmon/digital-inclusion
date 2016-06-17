@@ -10,22 +10,103 @@ var showMarkers = {
 var tmp = {};
 
 function onGoogleReady() {
-  angular.bootstrap(document.getElementById("customMap"), ['core.map']);
+  angular.bootstrap(document.getElementById("customMap"), ['digitalInclusion.core.map']);
   showMarkers.freeWifi = true;
   showMarkers.publicComputers = false;
   showMarkers.computerRetail = false;
   showMarkers.trainingClasses = false;
 }
 
-angular.module('core.map', ['ngResource']).controller('MapController', ['$scope', '$timeout', '$http', '$state', '$stateParams', 'Authentication', 'getCoursesService',  'getPlacesService', '$location',
+angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapController', ['$scope', '$timeout', '$http', '$state', '$stateParams', 'Authentication', 'getCoursesService',  'getPlacesService', '$location',
     function ($scope, $timeout, $http, $state, $stateParams, Authentication, getCoursesService, getPlacesService, $location) {
 
-      $scope.markers = {
-                          freeWifi: [],
-                          computerTraining: [],
-                          publicComputers: [],
-                          computerRetail: []
+
+  //     $scope.goData = function(){
+	 //     myService.getResponders.then(function(data){
+	 //          $scope.gotData = data;
+	 //     });
+
+	 // };
+	 // var placesData = getPlacesService.getPlaces;
+
+      // $scope.places = function() {
+      // 	getPlacesService.getPlaces.then(function(data){
+      // 		console.log(data);
+      // 		$scope.places = data;
+      // 	})
+      // };
+      // var placesData = getPlacesService.getPlaces;
+      // console.log("places");
+      // console.log(placesData);
+
+
+      getPlacesService.getPlaces(function(places) {
+          $scope.places = places;
+
+	        var i;
+	        for (i = 0; i < $scope.places.length; i++){
+	            console.log($scope.places[i]);
+	            // createMarker($scope.courses[i]);
+	        }
+	  });
+	  
+      $scope.markers = {  
+      					  wifi: 
+			                        {
+			                             public: [],
+			                             customer: []
+			                        },
+                          computers: 
+                                    {
+                                    	retail: [],
+                                    	access: []
+                                    },
+                          training: 
+                          			{
+                          				day: [],
+                          				evening: []
+                          			}
                        };
+
+
+      var createPublicWifiMarker = function(info) {
+            // console.log('wifi-createMarker');
+            // console.log(info);
+
+
+            // var icon = getIcon(info.iconMatcher);
+            var marker = new Marker({
+                map: $scope.map,
+                position: new google.maps.LatLng(info.lat, info.lng),
+                title: info.title,
+                caption: info.caption
+                // map_icon_label: '<span class="map-icon map-icon-cafe mil-green"></span>'
+                // map_icon_label: '<span class="map-icon map-icon-point-of-interest"></span>'
+            });
+            marker.content = '<div class="infoWindowContent">' + '<h3>' + info.caption + '</h3><h4>' +info.phone+'</h4>'+info.address1+', '+info.city+', '+info.state+', '+info.zip+'<br>' +'<br><a ng-click="">More Details</a></div>';
+            google.maps.event.addListener(marker, 'click', function(){
+                infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
+                infoWindow.open($scope.map, marker);
+            });
+            $scope.markers.wifi.public.push(marker);
+        }
+
+
+
+        $scope.openInfoWindow = function(e, selectedMarker){
+            e.preventDefault();
+            google.maps.event.trigger(selectedMarker, 'click');
+        }
+
+
+
+
+
+
+
+
+
+      
 
       var pattern1 = new RegExp("norm");
       var pattern2 = new RegExp("highlighted");
@@ -93,9 +174,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
         var cqP = event.toElement.className;
         var cqC = event.target.parentElement.className;
-        console.log("event");
-        console.log(event);
-        console.log(cqC);
+   
         if (pattern1.test(cqP) || pattern1.test(cqC)) {
           t4.removeClass('norm');
           t4.addClass('highlighted');
@@ -340,7 +419,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
           // console.log("");
           $scope.map.data.forEach(function(feature) {
             var a = feature.H.category;
-            var b = "freeWifi-public";
+            var b = "Public WiFi";
             var c = "freeWifi-customer";
             if (a == b || a == c) {
               $scope.map.data.remove(feature);
@@ -377,7 +456,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
                   iconUrl = "modules/core/client/img/userOrange.png";
               } else if (cat === "computerTraining-night") {
                   iconUrl = "modules/core/client/img/userBlue.png";
-              } else if (cat === "freeWifi-public") {
+              } else if (cat === "Public WiFi") {
                  iconUrl = "modules/core/client/img/wifiFree-2.png";
               } else if (cat === "freeWifi-customer") {
                   iconUrl = "modules/core/client/img/wifiCustomerOnly.png";
@@ -416,7 +495,26 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
         }
 
-        $scope.showMap = function (position) {
+
+
+
+        function setMapOnAllHotspots(map) {
+		  for (var i = 0; i < markers.length; i++) {
+		    $scope.markers.wifi.public[i].setMap(map);
+		  }
+		}
+
+		// Removes the markers from the map, but keeps them in the array.
+		function clearMarkers() {
+		  setMapOnAll(null);
+		}
+
+		// Shows any markers currently in the array.
+		function showMarkers() {
+		  setMapOnAll(map);
+		}
+
+        $scope.showMap = function(position) {
 
             $scope.lat = position.coords.latitude;
             $scope.lng = position.coords.longitude;
@@ -424,7 +522,7 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 
             $scope.mapOptions = {
                 center: {lat: $scope.lat, lng: $scope.lng},
-                zoom: 12,
+                zoom: 16,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
@@ -439,29 +537,23 @@ angular.module('core.map', ['ngResource']).controller('MapController', ['$scope'
 			$scope.searchBox = new google.maps.places.SearchBox($scope.input);
 			$scope.map.controls[google.maps.ControlPosition.TOP_LEFT].push($scope.input);
 
-            $scope.visitor = new Marker({
+      
+            var initialLocation = new google.maps.LatLng($scope.lat, $scope.lng);
+            var marker = new google.maps.Marker({
+                position: initialLocation,
+                animation: google.maps.Animation.DROP,
                 map: $scope.map,
-                position: new google.maps.LatLng($scope.lat, $scope.lng),
-                icon: {
-                    path: MAP_PIN,
-                    fillColor: 'transparent',
-                    fillOpacity: 1,
-                    strokeColor: 'none',
-                    strokeWeight: 0
-                },
-                map_icon_label: '<span class="map-icon milb map-icon-circle"></span>'
+                icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
             });
 
 
            // $scope.map.data.loadGeoJson("modules/core/client/map-data/computerRetail.json");
-           $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/ispList.json");
-        
+           $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/freeWifi-customer.json");
+           $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/freeWifi-public.json");
 
 
 
 
-              console.log("markers.publicComputers");
-              console.log($scope.markers.publicComputers);
            //    var iconoriginx = null;
          
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('core').controller('HeaderController', ['$scope', '$state', 'Authentication', 'Menus',
+angular.module('digitalInclusion.core').controller('HeaderController', ['$scope', '$state', 'Authentication', 'Menus',
   function ($scope, $state, Authentication, Menus) {
     // Expose view variables
     $scope.$state = $state;
