@@ -49,15 +49,9 @@
     <section ng-include="'/modules/core/client/views/footer.client.view.html'"></section>
   </div>
 </main> -->
-<header ng-include="'modules/core/client/views/header.client.view.html'"></header>
- <div ng-include="'modules/core/client/views/logo.client.view.html'"></div>
+
 <main class="tcx">
-  <span ng-controller="LogoController">
-<p class="old">Digital Inclusion KC
-  <!-- <span class="tagz">{{tagline}}</span> -->
-</p>
-</span>
-	<!-- <aside ng-include="'/modules/core/client/views/logo.client.view.html'"></aside> -->
+	<aside ng-include="'/modules/core/client/views/logo.client.view.html'"></aside>
   <div class="mein-container">
     <div class="mein trapper tearfix" ng-app="CustomMap">
       <div id="tab-container" class="blob-container">
@@ -124,9 +118,10 @@
 
 
   </div>
-</div> --><div id="parent" ng-controller="HomeController">
+</div> -->
+<div id="parent" ng-controller="HomeController">
 <!-- <a ng-click=""><span ></span></a> -->
- <!--  <span uib-dropdown on-toggle="toggled(open)">
+<span uib-dropdown on-toggle="toggled(open)">
       <a class="glyphicon glyphicon-menu-hamburger xb" aria-hidden="true" href id="simple-dropdown" uib-dropdown-toggle>
       
       </a>
@@ -135,35 +130,37 @@
           <a ng-click="clicked(choice)" href>{{choice}}</a>
         </li>
       </ul>
-    </span> -->
+    </span>
 
-  <aside class="oil">
+  <h3 class="di-line">Digital Inclusion</h3>
+  <h1 class="free">Free Services in Kansas City</h1>
+	<aside class="oil">
 
-  <div class="r-btns">
-    <button id="tgz1" class="brue highlighted"><span class="arb">Free WiFi</span></button>
-    <button id="tgz2" class="tu st brue norm"><span class="arb">Computer Training</span></button>
-  </div>
-    <div class="pc-btns">
-   <!--  <a button-controls class="push_button rue day">Day Courses</a> -->
-    <button id="tgz3" class="brue norm"><span class="arb">Public Computers</span></button>
-    <button id="tgz4" class="tu brue norm"><span class="arb">Low Cost Computers</span></button>
-   <!--  <button class="rue" ng-click="count = count + 1" ng-init="count=0">
-      Increment
-    </button>
-    <span>
-      count: {{count}}
-    </span> -->
-  </div>
-  </aside>
+	<div class="r-btns">
+	  <button id="tgz1" class="brue highlighted"><span class="arb">Free WiFi</span></button>
+	  <button id="tgz2" class="tu st brue norm"><span class="arb">Computer Training</span></button>
+	</div>
+		<div class="pc-btns">
+	 <!--  <a button-controls class="push_button rue day">Day Courses</a> -->
+	  <button id="tgz3" class="brue norm"><span class="arb">Public Computers</span></button>
+	  <button id="tgz4" class="tu brue norm"><span class="arb">Low Cost Computers</span></button>
+	 <!--  <button class="rue" ng-click="count = count + 1" ng-init="count=0">
+	    Increment
+	  </button>
+	  <span>
+	    count: {{count}}
+	  </span> -->
+	</div>
+	</aside>
 
   <div id="child2">
 
-       <section id="crMap">
-    <div ui-map="map" ui-options="mapOptions" class="cvmap" ui-event="{'map-click': 'addMarker($event, $params)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }"></div>
-      <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
-      <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="controlCtrl" index="1"></ui-gmap-map-control>
-      <!-- </ui-gmap-google-map> -->
-      </section>
+  	   <section id="crMap">
+		<div ui-map="map" ui-options="mapOptions" class="cvmap" ui-event="{'map-click': 'addMarker($event, $params)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }"></div>
+    	<ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+    	<ui-gmap-map-control template="control.tpl.html" position="top-right" controller="controlCtrl" index="1"></ui-gmap-map-control>
+    	<!-- </ui-gmap-google-map> -->
+    	</section>
 
   </div>
 </div>

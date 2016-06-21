@@ -21,11 +21,11 @@ angular.module('digitalInclusion.core').controller('ModalController', function (
 
     var modalInstance = $uibModal.open({
       animation: $scope.animationsEnabled,
-      backdrop: false,
+      // backdrop: true,
       bindToController: true,
       controllerAs: 'ModalInstanceController',
       templateUrl: 'aModal.html',
-      backdropUrl: '/modules/core/client/views/templates/backdrop.html',
+      backdrop: 'bdrop.html',
       windowTemplateUrl: '/modules/core/client/views/templates/window.html',
       windowTopClass: 'wintop',
       controller: 'ModalInstanceController',

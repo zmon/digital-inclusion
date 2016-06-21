@@ -45,7 +45,7 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
 
 	        var i;
 	        for (i = 0; i < $scope.places.length; i++){
-	            console.log($scope.places[i]);
+	            // console.log($scope.places[i]);
 	            // createMarker($scope.courses[i]);
 	        }
 	  });
@@ -526,7 +526,7 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
-            $scope.map = new google.maps.Map(document.getElementById('customMap'), $scope.mapOptions);
+            $scope.map = new google.maps.Map(document.getElementById('rcMap'), $scope.mapOptions);
 
             var iconoriginx = null;
             var iconoriginy = null;
@@ -562,9 +562,11 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
            $scope.map.data.addListener('click', function(event) {
                 var anchor = new google.maps.MVCObject();
                 anchor.set("position",event.latLng);
-                document.getElementById('info-box0').textContent = event.feature.H.category;
-                document.getElementById('info-box2').textContent = event.feature.H.name;
-                document.getElementById('info-box3').textContent = event.feature.H.street;
+                document.getElementById('info-box00').textContent = event.feature.H.category;
+                document.getElementById('info-box01').textContent = event.feature.H.description;
+                document.getElementById('info-box02').textContent = event.feature.H.name;
+                document.getElementById('info-box04').textContent = event.feature.H.phone;
+                document.getElementById('info-box03').textContent = event.feature.H.street;
             });
             clickEvt();
             $scope.$apply();

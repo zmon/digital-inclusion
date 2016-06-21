@@ -21,6 +21,10 @@ angular.module('digitalInclusion.core').config(['$stateProvider', '$urlRouterPro
       url: '/tabs',
       templateUrl: 'modules/core/client/views/tabs.client.view.html'
     })
+    .state('redo', {
+      url: '/redo',
+      templateUrl: 'modules/core/client/views/redo.client.view.html'
+    })
     .state('about', {
       url: '/about',
       templateUrl: 'modules/core/client/views/about.client.view.html'
@@ -33,12 +37,18 @@ angular.module('digitalInclusion.core').config(['$stateProvider', '$urlRouterPro
       url: '/map-resources',
       templateUrl: 'modules/core/client/views/map-resources.client.view.html'
     })
-
+    .state('coalition-resources', {
+      url: '/coalition-resources',
+      templateUrl: 'modules/core/client/views/no-page-design.client.view.html'
+    })
+    .state('join', {
+      url: '/join',
+      templateUrl: 'modules/core/client/views/no-page-design.client.view.html'
+    })
     .state('isps', {
       url: '/isps',
       templateUrl: 'modules/core/client/views/isps.client.view.html'
     })
-
     .state('training', {
       url: '/training',
       templateUrl: 'modules/core/client/views/training.client.view.html'

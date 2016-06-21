@@ -1,1 +1,12 @@
-<i class="fa fa-bars" aria-hidden="true"></i>
+<section class="mini-head" ng-controller="HomeController">
+   <span uib-dropdown on-toggle="toggled(open)">
+      <a class="glyphicon glyphicon-menu-hamburger xb" aria-hidden="true" href id="simple-dropdown" uib-dropdown-toggle>
+      
+      </a>
+      <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+        <li ng-repeat="choice in items">
+          <a ng-click="clicked(choice)" href>{{choice}}</a>
+        </li>
+      </ul>
+    </span>
+</section>

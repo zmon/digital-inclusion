@@ -1,12 +1,131 @@
 @media(max-width: 768px) {
-  .content {
-    padding: 0;
-    margin: 0;
+
+  .etabs {
+  	display: none;
   }
-  main.ng-scope {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    left: -2.5em;
+
 }
+
+@media(min-width: 769px) {
+
+	.main {
+	    padding-top: 140px;
+	    /* max-width: 760px; */
+	    margin-left: -1.5em;
+    }
+
+.main-container {
+    /* max-width: 768px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0; */
+}
+
+    .etabs {
+    margin: 0;
+    padding: 5.5px 9.5px 0 0;
+    background: radial-gradient(#e6e6e6,#ffffff,#fdfdfd, #f3f3f3);
+    text-align: center;
+    width: 765px;
+    /* height: 5em; */
+    border: 1px solid #b6b9bb;
+    box-shadow: 1px 1px 6px #a2a2a2;
+    margin-left: .01em;
+    border-radius: 6px 6px 0 0;
+    margin-right: auto;
+    border-bottom: none;
+}
+
+
+.tab a.active {
+    padding-top: 22px;
+    color: #BADDF5;
+    color: #f7f3f3;
+    /* color: #00FF08; */
+    text-shadow: 0 0 31px #FFD912;
+    background: radial-gradient(#c1fff3,#c8ffe4);
+    -webkit-text-stroke-width: none;
+    -webkit-text-stroke-color: transparent;
+    font-weight: 500;
+    box-shadow: 0 0 5px #525151;
+    border: none;
+    padding: .2em 3em .09em 3em;
+    /* margin-bottom: 10px; */
+    border: 3px solid blue;
+    font-size: 90%;
+    border: none;
+    /* border-top: none; */
+    padding-left: 1.18em;
+    padding-right: 1.18em;
+    /* height: 15.1em; */
+    height: .07em;
+    border-top-right-radius: .6em;
+    border-top-left-radius: .6em;
+    /* border-right: none; */
+    /* border-right: 8.5px solid #A4A4A4; */
+    /* border-left: 8.5px solid #A4A4A4; */
+    /* border-bottom: none; */
+}
+#tab-data-wrap {
+    padding: 10px 12px 716px 18px;
+    /* background: #fff; */
+    /* background-image: url(modules/core/client/img/kcmo-xl.jpg); */
+    border: .41em solid #4C4A4A;
+    border: .12em double #c7c7c7;
+    /* box-shadow: inset 0 0px 200px #ECE8E8; */
+    border-radius: 0 0 8px 8px;
+    /* border-top: none; */
+    /* border-top: 3px solid silver; */
+    /* background: radial-gradient(#FFFEFE,#FDFDFD,#FFF7F7); */
+    /* background: #EAEAEA; */
+    height: 43.5em;
+    /* background: radial-gradient(snow,#EAE9E9); */
+    box-shadow: 0px 6px #E6E6E6;
+    box-shadow: inset 0 0 200px #211F1F;
+    box-shadow: 0 0 1px #888888;
+    /* background: radial-gradient(#EFEFEF,#F4F4F4, #FFFFFF); */
+    /* background: linear-gradient(#e4e4e4,#dedede,#dcd9d9, #d4d4d4); */
+    background: #e8e8e8;
+    /* background-color: #464747; */
+    background-image: url("http://www.transparenttextures.com/patterns/brilliant.png");
+    max-width: 760px;
+    /* background: snow; */
+}
+.srl {
+    background: radial-gradient(#EFF6F8,#E6EBF4,#EAF1F5);
+    background: radial-gradient(#ffffff,#ffffff,#f3f3f3);
+    box-shadow: 0 0 6px #b3b3b3;
+    position: relative;
+    left: -1.465em;
+    border: .1035215em double #bfbfbf;
+    width: 725px;
+    height: 9em;
+    border-bottom: none;
+    /* background-color: #bdbdbd; */
+    /* background-image: url("http://www.transparenttextures.com/patterns/light-paper-fibers.png"); */
+    background-color: #efefef;
+    /* background-image: url("http://www.transparenttextures.com/patterns/ag-square.png"); */
+    /* background: none; */
+    border: none;
+    border-radius: 4px;
+    top: -.83em;
+    /* background-color: #ffffff; */
+    /* background-image: url("http://www.transparenttextures.com/patterns/brushed-alum.png"); */
+    /* box-shadow: none; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
