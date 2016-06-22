@@ -446,6 +446,8 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
 
 
         var clickEvt = function() {
+          // resizeMap();
+          // resyzeMap();
           $scope.map.data.setStyle(function(feature) {
               var cat = feature.H.category;
               var iconUrl;
@@ -514,6 +516,23 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
 		  setMapOnAll(map);
 		}
 
+    var mapKanvas = document.getElementById("rcMap");
+    var sideWindow = document.getElementById("sw");
+    var wndBtn = document.getElementById("winCtrl");
+    function rmvWindow() {
+      sideWindow.style.display = "none";
+      mapKanvas.style.width = "750px";
+    }
+    var resizeMap = function() {
+      mapKanvas.style.width = "420px";
+      sideWindow.style.display = "initial";
+      console.log("it was clicked-------------------");
+    }
+
+    function resyzeMap() {
+      console.log("it was clycked+++++++++++++++++++");
+    }
+
         $scope.showMap = function(position) {
 
             $scope.lat = position.coords.latitude;
@@ -533,9 +552,9 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
             var iconSize = new google.maps.Size(30, 30);
             var iconAnchor = new google.maps.Point(15, 30);
 
-            $scope.input = document.getElementById('pac-input');
-			$scope.searchBox = new google.maps.places.SearchBox($scope.input);
-			$scope.map.controls[google.maps.ControlPosition.TOP_LEFT].push($scope.input);
+            $scope.input = document.getElementById('plac');
+			      $scope.searchBox = new google.maps.places.SearchBox($scope.input);
+			      $scope.map.controls[google.maps.ControlPosition.TOP_LEFT].push($scope.input);
 
       
             var initialLocation = new google.maps.LatLng($scope.lat, $scope.lng);
@@ -552,7 +571,11 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
            $scope.map.data.loadGeoJson("modules/core/client/map-data/export/c/freeWifi-public.json");
 
 
-
+           $scope.removeWindow = function(event) {
+              console.log("clicked and now this");
+              console.log(event);
+              rmvWindow();
+           }
 
            //    var iconoriginx = null;
          
@@ -560,8 +583,12 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
 
 
            $scope.map.data.addListener('click', function(event) {
+              resizeMap();
+                resyzeMap();
                 var anchor = new google.maps.MVCObject();
                 anchor.set("position",event.latLng);
+                console.log("event inspect");
+                console.log(event.feature);
                 document.getElementById('info-box00').textContent = event.feature.H.category;
                 document.getElementById('info-box01').textContent = event.feature.H.description;
                 document.getElementById('info-box02').textContent = event.feature.H.name;

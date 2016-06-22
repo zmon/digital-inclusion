@@ -1,13 +1,13 @@
  <article ng-controller="MapController as map">
   <aside class="oval">
     <div class="rbtns">
-      <button id="tgz1" class="brue highlighted"><span class="arb">Free WiFi</span></button>
-      <button id="tgz2" class="tu st brue norm"><span class="arb">Computer Training</span></button>
+      <button id="tgz1" class="btr highlighted"><span class="arb">Free WiFi</span></button>
+      <button id="tgz2" class="tu st btr norm"><span class="arb">Computer Training</span></button>
     </div>
     <div class="pcbtns">
      <!--  <a button-controls class="push_button rue day">Day Courses</a> -->
-      <button id="tgz3" class="brue norm"><span class="arb">Public Computers</span></button>
-      <button id="tgz4" class="tu brue norm"><span class="arb">Low Cost Computers</span></button>
+      <button id="tgz3" class="btr norm"><span class="arb">Public Computers</span></button>
+      <button id="tgz4" class="tu btr norm"><span class="arb">Low Cost Computers</span></button>
      <!--  <button class="rue" ng-click="count = count + 1" ng-init="count=0">
         Increment
       </button>
@@ -22,7 +22,7 @@
   <div class="wrap-in">
     <!-- <input type="text" placeholder="Search"> -->
     <div class="input-group">
-      <input type="text" class="form-control x-re">
+      <input id="pac" type="text" class="form-control x-re">
       <span class="input-group-btn">
         <button class="btn btn-default btn-go" type="button">Search</button>
       </span>
@@ -36,21 +36,21 @@
    <!-- <input id="pac-input" class="controls rcs" type="text" placeholder="Search Box"> -->
 
 
-   <section id="crMap" class="fullmap">
+<!--    <section id="crMap" class="fullmap">
 
 
     <div ui-map="map" ui-options="mapOptions" class="map-canvas" ui-event="{'map-click': 'addMarker($event, $params)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }"></div>
 
     <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
 
-    <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="controlCtrl" index="1"></ui-gmap-map-control>
+    <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="controlCtrl" index="1"></ui-gmap-map-control> -->
 
     <!--  <div id="class" ng-repeat="marker in mapMarkers | orderBy : 'title'">
          <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
     </div> -->
 
 
-  </section>
+  <!-- </section> -->
 
 
 
@@ -69,5 +69,11 @@
 
 
   </section>
-  <section ng-include="'/modules/core/client/views/partials/map/panel-redo.client.view.html'"></section>
+  <section id="sw" class="full-side sidewin-ctrl">
+  <a id="winCtrl" ng-click="removeWindow()" class="rmv">
+    <span id="rmv-glyph" class="glyphicon glyphicon-remove"></span>
+    </a>
+      <section ng-include="'/modules/core/client/views/partials/map/panel-redo.client.view.html'"></section>
+  </section>
+
 </article>
