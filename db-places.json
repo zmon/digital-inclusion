@@ -1,0 +1,4463 @@
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5dea"), 
+    "url" : "http://www.kansascityymca.org/locations/locations-map/cleaver-family-ymca", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816.285.9622", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "7000 Troost Avenue", 
+    "readableAddress" : "7000 Troost Ave, Kansas City, MO 64131, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5769646", 
+            "lat" : "39.0002249"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Cleaver Family YMCA", 
+    "created" : ISODate("2016-06-23T16:08:59.112+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5deb"), 
+    "url" : "https://www.att.com/shop/internet.html", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4015 Mill St", 
+    "readableAddress" : "4015 Mill St, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "isp"
+    ], 
+    "primaryCategory" : "isp", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.59414970000002", 
+            "lat" : "39.05450159999999"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "AT&T", 
+    "created" : ISODate("2016-06-23T16:08:59.150+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5dec"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "550 Westport Road", 
+    "readableAddress" : "550 Westport Rd, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "isp"
+    ], 
+    "primaryCategory" : "isp", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.593102", 
+            "lat" : "39.0525429"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Time Warner Cable", 
+    "created" : ISODate("2016-06-23T16:08:59.152+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5ded"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1941 Warren Street", 
+    "readableAddress" : "1941 Warren St, Kansas City, MO 64116, USA", 
+    "categories" : [
+        "computers-retail"
+    ], 
+    "primaryCategory" : "computers-retail", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.550038", 
+            "lat" : "39.143407"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Synetic Technologies", 
+    "created" : ISODate("2016-06-23T16:08:59.188+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5dee"), 
+    "url" : "http://www.connectingforgood.org", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "(913) 730-0677", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Sunday: Closed, Monday: Closed, Tuesday: Closed, Wednesday: 10:00-13:00, Thursday: Closed, Friday: 10:00-13:00, Saturday: Closed"
+    ], 
+    "address2" : "", 
+    "address1" : "3101 Troost Ave", 
+    "readableAddress" : "3101 Troost Ave, Kansas City, MO 64109, USA", 
+    "categories" : [
+        "wifi-free", 
+        "training-day", 
+        "isp", 
+        "computers-retail"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Along with second floor administrative offices, the facility on Troost is home to the refurbishing workshop and has a fourth floor classroom where they conduct free digital life skills classes on Wednesdays and Fridays.  Connecting for Good also offer the Internet equivalent of a pay-as-you-go cell phone plan. For just $10 a month, low income individuals, schools and nonprofit organizations in the Kansas City area can connect with fast, unlimited 4G wireless Internet. No credit checks, no long term contracts. They will accept cash payments for those without bank accounts. Learn more »", 
+    "location" : [
+        {
+            "lng" : "-94.57103289999999", 
+            "lat" : "39.07033870000001"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Connecting for Good - Headquarters", 
+    "created" : ISODate("2016-06-23T16:08:59.214+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5df0"), 
+    "url" : "http://www.kclibrary.org/north-east", 
+    "offersCourses" : true, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "Saturday: 10:30-11:30", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Monday to Friday: 9 a.m. - 8 p.m., Saturday: 10 a.m. - 5 p.m., Sunday: 1 p.m. - 5 p.m."
+    ], 
+    "address2" : "", 
+    "address1" : "6000 Wilson Road", 
+    "readableAddress" : "6000 Wilson Ave, Kansas City, MO 64123, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Courses on computer basics, internet use or office software delivered most Saturdays at 10:30 a.m. and occasional other days", 
+    "location" : [
+        {
+            "lng" : "-94.5113344", 
+            "lat" : "39.1065264"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Kansas City Public Library - North-East Branch", 
+    "created" : ISODate("2016-06-23T16:08:59.224+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c11556b3447163d3c5dfc"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1100 Walnut St", 
+    "readableAddress" : "1100 Walnut St, Kansas City, MO 64106, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5824186", 
+            "lat" : "39.1005173"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Town Pavilion", 
+    "created" : ISODate("2016-06-23T16:41:57.011+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5def"), 
+    "url" : "http://www.ci.independence.mo.us/parksandrec/Palmer.aspx", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "(816) 325-6200", 
+    "state" : "MO", 
+    "city" : "Independence", 
+    "hoursOpen" : [
+        "Sunday: Closed, Monday: 8:00-19:00, Tuesday: 8:00-19:00, Wednesday: 8:00-19:00, Thursday: 8:00-19:00, Friday: 8:00-17:00, Saturday: 13:00-17:00"
+    ], 
+    "address2" : "", 
+    "address1" : "218A N. Pleasant St", 
+    "readableAddress" : "218 N Pleasant St, Independence, MO 64050, USA", 
+    "categories" : [
+        "computers-access"
+    ], 
+    "primaryCategory" : "computers-access", 
+    "description" : "If you have not taken advantage of the computer lab at the Palmer Center, it’s available for any registered participant of the Palmer Center (must be 50 years or older). We have a Windows XP operating system. All users must have an Information Form on file in our front office. The Internet is offered as a courtesy to 50+ participants, however some website categories that are deemed inappropriate are blocked. Prints are $.20 per sheet. Users are expected to abide by the Computer Lab policies located in the lab.", 
+    "location" : [
+        {
+            "lng" : "-94.4216256", 
+            "lat" : "39.0934556"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "The Palmer Center", 
+    "created" : ISODate("2016-06-23T16:08:59.221+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5df1"), 
+    "url" : "http://www.kclibrary.org/plaza", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "Tuesday: 9:30-10:30", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Monday - Friday: 9 a.m. - 9 p.m., Saturday: 10 a.m. - 6 p.m., Sunday: 1 p.m. - 6 p.m."
+    ], 
+    "address2" : "", 
+    "address1" : "4801 Main Street", 
+    "readableAddress" : "4801 Main St, Kansas City, MO 64112, USA", 
+    "categories" : [
+        "wifi-free", 
+        "training-day", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Courses on computer basics, internet use or office software delivered most Tuesdays at 9:30 a.m. and occasional other days Check the schedule » Free computer access during open hours", 
+    "location" : [
+        {
+            "lng" : "-94.5864386", 
+            "lat" : "39.0393551"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Kansas City Public Library - Plaza Branch", 
+    "created" : ISODate("2016-06-23T16:08:59.240+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5df2"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "305 Main St", 
+    "readableAddress" : "305 Main St, Kansas City, MO 64105, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.58316119999999", 
+            "lat" : "39.1095657"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "City Market Coffee House", 
+    "created" : ISODate("2016-06-23T16:08:59.245+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c099b6b3447163d3c5df3"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1713 Summit St", 
+    "readableAddress" : "1713 Summit St, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5930673", 
+            "lat" : "39.0925896"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Chez Elle Creperie & Coffeehouse", 
+    "created" : ISODate("2016-06-23T16:08:59.250+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c0ab66b3447163d3c5df4"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "251 E 55th St", 
+    "readableAddress" : "251 E 55th St, Kansas City, MO 64113, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5837389", 
+            "lat" : "39.0271245"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Aixois French Restaurant and Coffee Bar", 
+    "created" : ISODate("2016-06-23T16:13:42.229+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c0ab66b3447163d3c5df5"), 
+    "url" : "https://www.feckc.org", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1740 Paseo Boulevard", 
+    "readableAddress" : "1740 The Paseo, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "training-day"
+    ], 
+    "primaryCategory" : "training-day", 
+    "description" : "How to use a computer is essential for today’s job seeker. Learn the basic computer skills necessary to search and apply for jobs. This workshop includes everything from using the keyboard to accessing the internet to creating and saving files. Call 816-471-2330 for class offerings.\"", 
+    "location" : [
+        {
+            "lng" : "-94.56525549999999", 
+            "lat" : "39.0915451"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Full Employment Council", 
+    "created" : ISODate("2016-06-23T16:13:42.246+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c0ab66b3447163d3c5df6"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816-461-0201", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1522 Holmes Street", 
+    "readableAddress" : "1522 Holmes St, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "training-day", 
+        "computers-retail"
+    ], 
+    "primaryCategory" : "training-day", 
+    "description" : "ArtsTech’s mission is to better the lives of underserved urban youth through the development of marketable artistic and technical skills. ArtsTech offers a Computer Redistribution Program for disadvantaged, handicapped and \"at-risk\" populations as well as the organizations that serve them. They also offer courses on website development. please call for more information.", 
+    "location" : [
+        {
+            "lng" : "-94.5756238", 
+            "lat" : "39.0948548"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "ArtsTech", 
+    "created" : ISODate("2016-06-23T16:13:42.269+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c0ab66b3447163d3c5df7"), 
+    "url" : "https://www.crowncenter.com", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        ""
+    ], 
+    "address2" : "", 
+    "address1" : "2450 Grand Blvd", 
+    "readableAddress" : "2450 Grand Blvd, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Free public wifi is available in the Crown Center Shops Atrium and on Crown Center Square. Various shops, restaurants, attractions and Crown Center's hotels also offer WiFi access.", 
+    "location" : [
+        {
+            "lng" : "-94.58244619999999", 
+            "lat" : "39.0826589"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Crown Center", 
+    "created" : ISODate("2016-06-23T16:13:42.275+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c0ab66b3447163d3c5df8"), 
+    "url" : "http://www.bluespringsgov.com/1353/50-Computer-Classes", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816-228-0181", 
+    "state" : "MO", 
+    "city" : "Blue Springs", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "400 NW Vesper St.", 
+    "readableAddress" : "400 NW Vesper St, Blue Springs, MO 64014, USA", 
+    "categories" : [
+        "training-day"
+    ], 
+    "primaryCategory" : "training-day", 
+    "description" : "Regular classes are offered for a fee for persons age 50 and over. Fees range from $19 to $37.50.  Beginning Microsoft Excel, Beginning Microsoft Word, Computer Basics, Computers - Private Lessons, Craigslist, Getting the Most from your iPad, Intermediate Microsoft Word, Navigating the Internet / Email", 
+    "location" : [
+        {
+            "lng" : "-94.2684285", 
+            "lat" : "39.0203381"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Blue Springs Senior Services / Vesper Hall", 
+    "created" : ISODate("2016-06-23T16:13:42.281+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c11556b3447163d3c5dfa"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4010 Pennsylvania", 
+    "readableAddress" : "4010 Pennsylvania Ave, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.59303919999999", 
+            "lat" : "39.0545554"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Westport Coffee House", 
+    "created" : ISODate("2016-06-23T16:41:57.004+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c11556b3447163d3c5dfd"), 
+    "url" : "http://www.duboislc.org/", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "(816) 523-3339", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4510 E Linwood Blvd", 
+    "readableAddress" : "4510 Linwood Blvd, Kansas City, MO 64128, USA", 
+    "categories" : [
+        "training-day"
+    ], 
+    "primaryCategory" : "training-day", 
+    "description" : "The DuBois Center offers regular courses on Robotics and web development. Please see the website or call (816) 523-3339 for details", 
+    "location" : [
+        {
+            "lng" : "-94.530457", 
+            "lat" : "39.068481"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "W.E.B. DuBois Learning Center", 
+    "created" : ISODate("2016-06-23T16:41:57.015+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c131d6b3447163d3c5e00"), 
+    "url" : "http://www.unionstation.org/", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "(816) 460-2020", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "30 W Pershing Rd", 
+    "readableAddress" : "30 W Pershing Rd, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5861078", 
+            "lat" : "39.08537490000001"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Union Station", 
+    "created" : ISODate("2016-06-23T16:49:33.739+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c140e6b3447163d3c5e01"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "516 NW Englewood Rd", 
+    "readableAddress" : "516 NW Englewood Rd, Kansas City, MO 64118, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5874246", 
+            "lat" : "39.1957358"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Wings Cafe", 
+    "created" : ISODate("2016-06-23T16:53:34.233+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c140e6b3447163d3c5e02"), 
+    "url" : "http://kcparks.org/facility/westport-roanoke-community-center/", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Sunday: 9 a.m.-6 p.m., Monday-Friday: 7:30 a.m.-9 p.m., Saturday: 9 a.m.-6 p.m."
+    ], 
+    "address2" : "", 
+    "address1" : "3601 Roanoke Road", 
+    "readableAddress" : "3601 Roanoke Rd, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Free Public Computer Access", 
+    "location" : [
+        {
+            "lng" : "-94.6000097", 
+            "lat" : "39.0603379"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Westport Roanoke Community Center", 
+    "created" : ISODate("2016-06-23T16:53:34.243+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c140e6b3447163d3c5e03"), 
+    "url" : "http://www.whatsoevercenter.org/", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816-231-0227", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1201 Ewing Ave.", 
+    "readableAddress" : "1201 Ewing Ave, Kansas City, MO 64126, USA", 
+    "categories" : [
+        "computers-access"
+    ], 
+    "primaryCategory" : "computers-access", 
+    "description" : "Open Computer Lab where one-on-one help is offered.", 
+    "location" : [
+        {
+            "lng" : "-94.5030531", 
+            "lat" : "39.0966377"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Whatsoever Community Center", 
+    "created" : ISODate("2016-06-23T16:53:34.244+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c15756b3447163d3c5e04"), 
+    "url" : "http://www.kansascityymca.org/locations/locations-map/quality-hill-ymca", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816.842.9622", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1051 Washington", 
+    "readableAddress" : "1051 Washington St, Kansas City, MO 64105, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5896376", 
+            "lat" : "39.10168460000001"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Quality Hill YMCA", 
+    "created" : ISODate("2016-06-23T16:59:33.067+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c15756b3447163d3c5e05"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1020 Westport Rd", 
+    "readableAddress" : "1020 Westport Rd, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.59938559999999", 
+            "lat" : "39.0503381"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "RecordBar", 
+    "created" : ISODate("2016-06-23T16:59:33.086+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c15756b3447163d3c5e06"), 
+    "url" : "http://www.kansascityymca.org/locations/locations-map/red-bridge-family-ymca", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816.942.2020", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11300 Holmes Road", 
+    "readableAddress" : "11300 Holmes Rd, Kansas City, MO 64131, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5846359", 
+            "lat" : "38.9208638"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Red Bridge Family YMCA", 
+    "created" : ISODate("2016-06-23T16:59:33.090+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c15756b3447163d3c5e07"), 
+    "url" : "http://www.rs3101.org/", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "(816) 931-4751", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Sunday: Closed, Monday: Closed, Tuesday: Closed, Wednesday: 13:00-17:00, Thursday: Closed, Friday: 13:00-17:00,Saturday: Closed"
+    ], 
+    "address2" : "", 
+    "address1" : "3101 Troost Ave.", 
+    "readableAddress" : "3101 Troost Ave, Kansas City, MO 64109, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Reconciliation Services offers Wi-Fi covering all the bus stops at 31st and Troost. Their Internet cafe (1st floor) offers PCs and computer assistance  on Wednesdays and Fridays from 1-5 p.m.", 
+    "location" : [
+        {
+            "lng" : "-94.57103289999999", 
+            "lat" : "39.07033870000001"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Reconciliation Services", 
+    "created" : ISODate("2016-06-23T16:59:33.094+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c15756b3447163d3c5e08"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "423 Southwest Blvd", 
+    "readableAddress" : "423 Southwest Blvd, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5899543", 
+            "lat" : "39.0867858"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Rhythm & Booze", 
+    "created" : ISODate("2016-06-23T16:59:33.096+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c15756b3447163d3c5e09"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "412 Delaware", 
+    "readableAddress" : "412 Delaware St, Kansas City, MO 64105, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.584417", 
+            "lat" : "39.10840200000001"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Quay Coffee", 
+    "created" : ISODate("2016-06-23T16:59:33.108+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e0a"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Overland Park", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11319 W 95th St", 
+    "readableAddress" : "11319 W 95th St, Overland Park, KS 66214, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.71754419999999", 
+            "lat" : "38.9564537"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.614+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e0b"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Overland Park", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "8803 W 75th St", 
+    "readableAddress" : "8803 W 75th St, Overland Park, KS 66204, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.68771640000001", 
+            "lat" : "38.9924662"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.635+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e0c"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Mission", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "7070 Martway St", 
+    "readableAddress" : "7070 Martway St, Mission, KS 66202, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6669326", 
+            "lat" : "39.0207233"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.641+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e0d"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Shawnee", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "10606 Shawnee Mission Pkwy", 
+    "readableAddress" : "10606 Shawnee Mission Pkwy, Shawnee, KS 66203, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.7085874", 
+            "lat" : "39.0152685"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.676+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e0e"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Olathe", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "15108 W 119th St", 
+    "readableAddress" : "15108 W 119th St, Olathe, KS 66062, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.76177159999999", 
+            "lat" : "38.9133391"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.689+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e0f"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Olathe", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "20120 W 153rd St", 
+    "readableAddress" : "20120 W 153rd St, Olathe, KS 66062, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.8183956", 
+            "lat" : "38.8517381"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.691+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e10"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Lenexa", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "15221 W 87th St", 
+    "readableAddress" : "15221 W 87th St, Lenexa, KS 66219, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.7625616", 
+            "lat" : "38.9700696"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.693+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e11"), 
+    "url" : "http://www.kansascityymca.org/locations/locations-map/paul-henson-family-ymca", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "913.642.6800", 
+    "state" : "KS", 
+    "city" : "Prairie Village", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4200 W 79th Street", 
+    "readableAddress" : "4200 W 79th St, Prairie Village, KS 66208, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.63374979999999", 
+            "lat" : "38.9864758"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Paul Henson Family YMCA", 
+    "created" : ISODate("2016-06-23T17:05:21.698+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e12"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Lenexa", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "14335 W 100th St", 
+    "readableAddress" : "14335 W 100th St, Lenexa, KS 66215, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.75305589999999", 
+            "lat" : "38.9469135"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.721+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e13"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1811 Village W Pkwy", 
+    "readableAddress" : "1811 Village W Pkwy, Kansas City, KS 66111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.82410349999999", 
+            "lat" : "39.1258348"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.722+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e14"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4936 Main St", 
+    "readableAddress" : "4936 Main St, Kansas City, MO 64112, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.587552", 
+            "lat" : "39.037106"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Planet Sub", 
+    "created" : ISODate("2016-06-23T17:05:21.724+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e2f"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "7700 E 87th St", 
+    "readableAddress" : "7700 E 87th St, Raytown, MO 64138, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.498868", 
+            "lat" : "38.966839"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.671+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c16d16b3447163d3c5e15"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Overland Park", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11022 Metcalf Ave", 
+    "readableAddress" : "11022 Metcalf Ave, Overland Park, KS 66210, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.66893669999999", 
+            "lat" : "38.9286587"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T17:05:21.726+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1b766b3447163d3c5e16"), 
+    "url" : "http://www.mymcpl.org/locations/camden-point", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Camden Point", 
+    "hoursOpen" : [
+        "Mon. 9 - 9, Tue. - Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "401 Hardesty St.", 
+    "readableAddress" : "401 Hardesty St, Camden Point, MO 64018, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "View upcoming computer classes on website", 
+    "location" : [
+        {
+            "lng" : "-94.7433298", 
+            "lat" : "39.4543265"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Camden Point Branch", 
+    "created" : ISODate("2016-06-23T17:25:10.572+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1b766b3447163d3c5e17"), 
+    "url" : "http://www.mymcpl.org/locations/claycomo", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Claycomo", 
+    "hoursOpen" : [
+        "Mon. & Thur. 9 - 9, Tue., Wed., & Fri. 9 - 6, Sat, 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "309 NE 69 Hwy.", 
+    "readableAddress" : "309 US-69, Kansas City, MO 64119, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.4987251", 
+            "lat" : "39.1993898"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Claycomo Branch", 
+    "created" : ISODate("2016-06-23T17:25:10.579+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1b766b3447163d3c5e18"), 
+    "url" : "http://www.mymcpl.org/locations/dearborn", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Dearborn", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "206 Maple Leaf Ave.", 
+    "readableAddress" : "206 W Maple Leaf Ave, Dearborn, MO 64439, USA", 
+    "categories" : [
+        "computers-access"
+    ], 
+    "primaryCategory" : "computers-access", 
+    "description" : "View course schedule on website", 
+    "location" : [
+        {
+            "lng" : "-94.7713605", 
+            "lat" : "39.5217587"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Dearborn Branch", 
+    "created" : ISODate("2016-06-23T17:25:10.611+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1b766b3447163d3c5e19"), 
+    "url" : "http://www.kansascityymca.org/locations/locations-map/providence-ymcaball-family", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "913.378.9622", 
+    "state" : "KS", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "8601 Parallel Parkway", 
+    "readableAddress" : "8601 Parallel Pkwy, Kansas City, KS 66112, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.7800034", 
+            "lat" : "39.1272895"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Providence YMCA / Ball Family Center", 
+    "created" : ISODate("2016-06-23T17:25:10.617+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1b766b3447163d3c5e1a"), 
+    "url" : "http://www.mymcpl.org/locations/colbern-road", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Lee's Summit", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "1000 NE Colbern Road", 
+    "readableAddress" : "1000 NE Colbern Rd, Lee's Summit, MO 64086, USA", 
+    "categories" : [
+        "computers-access"
+    ], 
+    "primaryCategory" : "computers-access", 
+    "description" : "View upcoming computer classes on website", 
+    "location" : [
+        {
+            "lng" : "-94.35700779999999", 
+            "lat" : "38.9469811"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Colbern Road Branch", 
+    "created" : ISODate("2016-06-23T17:25:10.629+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1b766b3447163d3c5e1b"), 
+    "url" : "http://www.mymcpl.org/locations/edgerton", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Edgerton", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "404 Frank St.", 
+    "readableAddress" : "404 W Frank St, Edgerton, MO 64444, USA", 
+    "categories" : [
+        "computers-access"
+    ], 
+    "primaryCategory" : "computers-access", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.63244259999999", 
+            "lat" : "39.5054174"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Edgerton Branch", 
+    "created" : ISODate("2016-06-23T17:25:10.634+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1b766b3447163d3c5e1c"), 
+    "url" : "http://www.mymcpl.org/locations/excelsior-springs", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Excelsior Springs", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "1460 Kearney Road", 
+    "readableAddress" : "1460 Kearney Rd, Excelsior Springs, MO 64024, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Public Computer Access", 
+    "location" : [
+        {
+            "lng" : "-94.2441003", 
+            "lat" : "39.3405739"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Excelsior Springs Branch", 
+    "created" : ISODate("2016-06-23T17:25:10.642+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1d716b3447163d3c5e1e"), 
+    "url" : "http://www.mymcpl.org/locations/boardwalk", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "8656 N. Ambassador Drive", 
+    "readableAddress" : "8656 N Ambassador Dr, Kansas City, MO 64154, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6504969", 
+            "lat" : "39.2502503"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Boardwalk Branch", 
+    "created" : ISODate("2016-06-23T17:33:37.378+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1d716b3447163d3c5e1f"), 
+    "url" : "http://www.mymcpl.org/locations/grain-valley", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Grain Valley", 
+    "hoursOpen" : [
+        "Mon. & Thur. 9 - 9, Tue., Wed., & Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "101 SW Eagles Pkwy.", 
+    "readableAddress" : "101 SW Eagles Pkwy, Grain Valley, MO 64029, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Public Computer Access", 
+    "location" : [
+        {
+            "lng" : "-94.2006478", 
+            "lat" : "39.0094609"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Grain Valley Branch", 
+    "created" : ISODate("2016-06-23T17:33:37.400+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1d716b3447163d3c5e20"), 
+    "url" : "http://www.mymcpl.org/locations/buckner", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Buckner", 
+    "hoursOpen" : [
+        "Mon. & Thur. 9 - 9, Tue., Wed., & Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "19 E. Jefferson St.", 
+    "readableAddress" : "19 E Jefferson St, Buckner, MO 64016, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "View upcoming courses on website", 
+    "location" : [
+        {
+            "lng" : "-94.1984738", 
+            "lat" : "39.1352923"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Buckner Branch", 
+    "created" : ISODate("2016-06-23T17:33:37.407+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c1d716b3447163d3c5e21"), 
+    "url" : "http://www.mymcpl.org/locations/blue-springs-south", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Blue Springs", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "2220 S. 7 Hwy.", 
+    "readableAddress" : "2220 MO-7, Blue Springs, MO 64014, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.2724222", 
+            "lat" : "38.9970765"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Blue Springs South Branch", 
+    "created" : ISODate("2016-06-23T17:33:37.413+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e22"), 
+    "url" : "http://www.mymcpl.org/locations/grandview", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "Thursday: 14:00-16:00", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Grandview", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "12930 Booth Lane", 
+    "readableAddress" : "12930 Booth Ln, Grandview, MO 64030, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "Tech Talks - Thursdays at 2 p.m.", 
+    "location" : [
+        {
+            "lng" : "-94.52175899999999", 
+            "lat" : "38.8893739"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Grandview Branch", 
+    "created" : ISODate("2016-06-23T17:48:12.274+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e23"), 
+    "url" : "http://www.mymcpl.org/locations/kearney", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kearney", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "100 S. Platte Clay Way", 
+    "readableAddress" : "100 Platte Clay Way, Kearney, MO 64060, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.36815229999999", 
+            "lat" : "39.3710966"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Kearney Branch", 
+    "created" : ISODate("2016-06-23T17:48:12.285+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e24"), 
+    "url" : "http://www.mymcpl.org/locations/blue-springs-north", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Blue Springs", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "850 NW Hunter Drive", 
+    "readableAddress" : "850 NW Hunter Dr, Blue Springs, MO 64015, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.27323340000001", 
+            "lat" : "39.0502423"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Blue Springs North Branch", 
+    "created" : ISODate("2016-06-23T17:48:12.288+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e25"), 
+    "url" : "MCC offers several computer and technology classes for a fee each semester. Please visit their website for current classes or call 816.604.3011", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "http://mcckc.edu/classes/commed/maplewoods/computerclasses.asp", 
+    "state" : "64156", 
+    "city" : "MO", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "Kansas City", 
+    "readableAddress" : "Kansas City, MO 64156, USA", 
+    "categories" : [
+        "training-day", 
+        "training-night"
+    ], 
+    "primaryCategory" : "training-night", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.53150289999999", 
+            "lat" : "39.2638207"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Metropolitan Community College - Maple Woods Campus", 
+    "created" : ISODate("2016-06-23T17:48:12.292+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e26"), 
+    "url" : "http://www.mymcpl.org/locations/blue-ridge", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816.454.1306", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "9253 Blue Ridge Blvd.", 
+    "readableAddress" : "9253 Blue Ridge Blvd, Kansas City, MO 64138, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "View upcoming computer classes on website", 
+    "location" : [
+        {
+            "lng" : "-94.5043178", 
+            "lat" : "38.9563819"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Blue Ridge Branch", 
+    "created" : ISODate("2016-06-23T17:48:12.296+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e27"), 
+    "url" : "http://www.mymcpl.org/locations/antioch", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Gladstone", 
+    "hoursOpen" : [
+        "Mon. - Thurs. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "6060 N. Chestnut Ave.", 
+    "readableAddress" : "6060 N Chestnut Ave, Gladstone, MO 64119, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "View all upcoming computer classes on website", 
+    "location" : [
+        {
+            "lng" : "-94.546595", 
+            "lat" : "39.2040086"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Antioch Branch", 
+    "created" : ISODate("2016-06-23T17:48:12.300+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e28"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "", 
+    "city" : "", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1000 Kent St.,Liberty,MO,64068,United States", 
+    "readableAddress" : "1000 Kent St, Liberty, MO 64068, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.4333412", 
+            "lat" : "39.2349375"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Liberty Branch", 
+    "created" : ISODate("2016-06-23T17:48:12.304+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e29"), 
+    "url" : "http://mcckc.edu/classes/commed/longview/classes.asp", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Lee's Summit", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "500 SW Longview Road", 
+    "readableAddress" : "500 SW Longview Rd, Lee's Summit, MO 64081, USA", 
+    "categories" : [
+        "training-day", 
+        "training-night"
+    ], 
+    "primaryCategory" : "training-night", 
+    "description" : "MCC offers several computer and technology classes for a fee each semester. Please visit their website for current classes.", 
+    "location" : [
+        {
+            "lng" : "-94.45360149999999", 
+            "lat" : "38.909328"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Metropolitan Community College - Longview", 
+    "created" : ISODate("2016-06-23T17:48:12.305+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c20dc6b3447163d3c5e2a"), 
+    "url" : "http://www.mymcpl.org/locations/lees-summit", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "Tuesdays at 11 a.m.", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Lee's Summit", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "150 NW Oldham Pkwy.", 
+    "readableAddress" : "150 NW Oldham Pkwy, Lee's Summit, MO 64081, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "View all upcoming computer classes on website", 
+    "location" : [
+        {
+            "lng" : "-94.40108699999999", 
+            "lat" : "38.9156057"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Lee's Summit Branch", 
+    "created" : ISODate("2016-06-23T17:48:12.892+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e2b"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6305 NE Antioch Rd", 
+    "readableAddress" : "6305 NE Antioch Rd, Gladstone, MO 64119, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5484791", 
+            "lat" : "39.2078608"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.645+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e2c"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6996 Eastwood Trafficway", 
+    "readableAddress" : "6996 Eastwood Trafficway, Kansas City, MO 64129, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5035922", 
+            "lat" : "39.0313564"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.666+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e2d"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "812 Minnesota Ave", 
+    "readableAddress" : "812 Minnesota Ave, Kansas City, KS 66101, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6306863", 
+            "lat" : "39.1157968"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.668+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e30"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11001 Hickman Mills Dr", 
+    "readableAddress" : "11001 Hickman Mills Dr, Kansas City, MO 64134, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.52366470000001", 
+            "lat" : "38.92478029999999"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.674+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e31"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4002 N Oak Trafficway", 
+    "readableAddress" : "4002 N Oak Trafficway, Kansas City, MO 64116, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.57704070000001", 
+            "lat" : "39.1674234"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.676+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e32"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "3741 Broadway St", 
+    "readableAddress" : "3741 Broadway St, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.59017010000001", 
+            "lat" : "39.0666421"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.677+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e33"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1421 Prospect Ave", 
+    "readableAddress" : "1421 Prospect Ave, Kansas City, MO 64127, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5510564", 
+            "lat" : "39.0954622"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.679+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c22016b3447163d3c5e34"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "3725 State Ave", 
+    "readableAddress" : "3725 State Ave, Kansas City, KS 66102, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.672337", 
+            "lat" : "39.1162224"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:53:05.703+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23046b3447163d3c5e35"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6300 N Oak Trafficway", 
+    "readableAddress" : "6300 N Oak Trafficway, Kansas City, MO 64118, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.57680049999999", 
+            "lat" : "39.2085208"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T17:57:24.089+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e36"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Roeland Park", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "5103 Roe Ave", 
+    "readableAddress" : "5103 Roe Ave, Roeland Park, KS 66205, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6396936", 
+            "lat" : "39.0355763"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.213+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e37"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Leawood", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "3860 W 95th St", 
+    "readableAddress" : "3860 W 95th St, Leawood, KS 66206, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.62997299999999", 
+            "lat" : "38.9571946"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.228+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e38"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6701 Front St", 
+    "readableAddress" : "6701 Front St, Kansas City, MO 64120, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5035396", 
+            "lat" : "39.1296839"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.230+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e39"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "3405 Independence Ave", 
+    "readableAddress" : "3405 Independence Ave, Kansas City, MO 64124, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.54160739999999", 
+            "lat" : "39.1057941"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mesob Pikliz", 
+    "created" : ISODate("2016-06-23T18:00:16.231+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e3a"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4427 Shawnee Dr", 
+    "readableAddress" : "4427 Shawnee Dr, Kansas City, KS 66106, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6805347", 
+            "lat" : "39.0521122"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.233+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e3b"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4101 Kansas Ave", 
+    "readableAddress" : "4101 Kansas Ave, Kansas City, KS 66106, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6759977", 
+            "lat" : "39.08903189999999"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.235+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e3c"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Independence", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4226 S Noland Rd", 
+    "readableAddress" : "4226 S Noland Rd, Independence, MO 64055, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.4157365", 
+            "lat" : "39.0431591"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.236+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e3d"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "13301 State Line Rd", 
+    "readableAddress" : "13301 State Line Rd, Kansas City, MO 64145, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6073923", 
+            "lat" : "38.8861432"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.241+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e3e"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Independence", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11801 E US Highway 40", 
+    "readableAddress" : "11801 E US Hwy 40, Independence, MO 64055, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.441177", 
+            "lat" : "39.045815"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.244+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c23b06b3447163d3c5e3f"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11115 E 23rd St S", 
+    "readableAddress" : "11115 East 23rd St S, Independence, MO 64052, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.4465656", 
+            "lat" : "39.0798681"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:00:16.246+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e40"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "605 South 7th Street", 
+    "readableAddress" : "605 S 7th St, Kansas City, KS 66105, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6253486", 
+            "lat" : "39.0872825"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.192+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e41"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4400 NE Chouteau Trafficway", 
+    "readableAddress" : "4400 NE Chouteau Trafficway, Kansas City, MO 64117, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.53647289999999", 
+            "lat" : "39.1739068"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.219+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e42"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "3255 Main St", 
+    "readableAddress" : "3255 Main St, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5850411", 
+            "lat" : "39.0669553"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.232+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e43"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "8304 Hickman Mills Dr", 
+    "readableAddress" : "8304 Hickman Mills Dr, Kansas City, MO 64132, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.55554269999999", 
+            "lat" : "38.9759299"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.258+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e44"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Overland Park", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "7700 Metcalf Ave", 
+    "readableAddress" : "7700 Metcalf Ave, Overland Park, KS 66204, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6681385", 
+            "lat" : "38.9891394"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.259+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e45"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Liberty", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "918 Missouri 291", 
+    "readableAddress" : "918 MO-291, Liberty, MO 64068, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.4334216", 
+            "lat" : "39.2369694"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.261+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e46"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Overland Park", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "7124 W 119th St", 
+    "readableAddress" : "7124 W 119th St, Overland Park, KS 66213, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.67009399999999", 
+            "lat" : "38.9138341"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.262+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e47"), 
+    "url" : "", 
+    "offersCourses" : true, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "Mission", 
+    "city" : "", 
+    "hoursOpen" : [
+        ""
+    ], 
+    "address2" : "", 
+    "address1" : "6767 Johnson Dr", 
+    "readableAddress" : "6767 Johnson Dr, Mission, KS 66202, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6632794", 
+            "lat" : "39.0218617"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.263+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e48"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "3051 Van Brunt Blvd", 
+    "readableAddress" : "3051 Van Brunt Blvd, Kansas City, MO 64128, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.52006399999999", 
+            "lat" : "39.0691619"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.266+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c24996b3447163d3c5e49"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Parkville", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6830 NW 83rd Ter", 
+    "readableAddress" : "6830 NW 83 Terrace, Kansas City, MO 64152, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6597366", 
+            "lat" : "39.2455276"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:04:09.267+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e4a"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "150 NW Barry Rd", 
+    "readableAddress" : "150 NW Barry Rd, Kansas City, MO 64155, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.582848", 
+            "lat" : "39.2468972"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.288+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e4b"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "9551 N McGee St", 
+    "readableAddress" : "9551 N McGee St, Kansas City, MO 64155, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5764916", 
+            "lat" : "39.2654786"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.290+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e4c"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11290 Holmes Rd", 
+    "readableAddress" : "11290 Holmes Rd, Kansas City, MO 64131, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5841243", 
+            "lat" : "38.9215657"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.292+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e4d"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "7887 State Line Rd", 
+    "readableAddress" : "7887 State Line Rd, Kansas City, MO 64114, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6076732", 
+            "lat" : "38.9859936"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.293+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e4e"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "5347 Independence Ave", 
+    "readableAddress" : "5347 Independence Ave, Kansas City, MO 64124, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5196957", 
+            "lat" : "39.10497609999999"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.294+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e50"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "2200 Vernon St", 
+    "readableAddress" : "2200 Vernon St, Kansas City, MO 64116, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.556868", 
+            "lat" : "39.1462878"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.296+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e51"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6406 Troost Ave", 
+    "readableAddress" : "6406 Troost Ave, Kansas City, MO 64131, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5752514", 
+            "lat" : "39.0109949"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.298+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e52"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "5353 NW 64th St", 
+    "readableAddress" : "5353 NW 64th St, Kansas City, MO 64151, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.64223469999999", 
+            "lat" : "39.2099423"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.299+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c25e56b3447163d3c5e53"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Sugar Creek", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11700 W US Highway 24", 
+    "readableAddress" : "11700 E US Hwy 24, Sugar Creek, MO 64054, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.4365109", 
+            "lat" : "39.102492"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:09:41.300+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e54"), 
+    "url" : "http://www.mymcpl.org/locations/parkville", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "Classes on Wednesdays at 2:30 p.m. to 5:30 p.m.", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Parkville", 
+    "hoursOpen" : [
+        "Public Computer Access: Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "8815 Tom Watson Pkwy.", 
+    "readableAddress" : "8815 Tom Watson Pkwy, Parkville, MO 64152, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6831393", 
+            "lat" : "39.2099415"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Parkville Branch", 
+    "created" : ISODate("2016-06-23T18:25:24.523+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e55"), 
+    "url" : "http://www.mymcpl.org/locations/north-oak", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Public Computer Access Hours: Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "8700 N. Oak Trfy.", 
+    "readableAddress" : "8700 N Oak Trafficway, Kansas City, MO 64155, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5763873", 
+            "lat" : "39.2516801"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - North Oak Branch", 
+    "created" : ISODate("2016-06-23T18:25:24.543+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e56"), 
+    "url" : "http://www.mymcpl.org/locations/red-bridge", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "Classes most Tuesdays at 9:30 a.m. to 10:30 a.m.", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Public Computer Access: Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "11140 Locust St.", 
+    "readableAddress" : "11140 Locust St, Kansas City, MO 64131, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5867846", 
+            "lat" : "38.9244473"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Red Bridge Branch", 
+    "created" : ISODate("2016-06-23T18:25:24.610+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e57"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "8326 Wornall Rd", 
+    "readableAddress" : "8326 Wornall Rd, Kansas City, MO 64114, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.595289", 
+            "lat" : "38.976342"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "McDonald's", 
+    "created" : ISODate("2016-06-23T18:25:24.612+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e58"), 
+    "url" : "http://www.mymcpl.org/locations/raytown", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Raytown", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "6131 Raytown Road", 
+    "readableAddress" : "6131 Raytown Rd, Raytown, MO 64133, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.4623684", 
+            "lat" : "39.01087920000001"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Raytown Branch", 
+    "created" : ISODate("2016-06-23T18:25:24.614+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e5a"), 
+    "url" : "http://www.mymcpl.org/locations/lone-jack", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Lone Jack", 
+    "hoursOpen" : [
+        "Mon. & Thur. 9-9, Tue., Wed. & Fri. 9-6, Sat. 9-5"
+    ], 
+    "address2" : "", 
+    "address1" : "211 N. Bynum Road", 
+    "readableAddress" : "211 N Bynum Rd, Lone Jack, MO 64070, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.1725165", 
+            "lat" : "38.8724803"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Lone Jack Branch", 
+    "created" : ISODate("2016-06-23T18:25:24.620+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e5b"), 
+    "url" : "http://www.mymcpl.org/locations/oak-grove", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Oak Grove", 
+    "hoursOpen" : [
+        "Public Computer Access Hours: Mon. & Thur. 9 - 9, Tue., Wed., & Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "2320 S. Broadway St.", 
+    "readableAddress" : "2320 N Broadway St, Oak Grove, MO 64075, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "View all upcoming computer classes on website", 
+    "location" : [
+        {
+            "lng" : "-94.1286538", 
+            "lat" : "39.0166329"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Oak Grove Branch", 
+    "created" : ISODate("2016-06-23T18:25:24.622+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e5c"), 
+    "url" : "http://www.mymcpl.org/locations/platte-city", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Platte City", 
+    "hoursOpen" : [
+        "Public Computer Access Hours: Mon. & Thur. 9 - 9, Tue., Wed., & Fri. 9 - 6, Sat. 9 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "2702 NW Prairie View Road", 
+    "readableAddress" : "2702 NW Prairie View Rd, Platte City, MO 64079, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.75850729999999", 
+            "lat" : "39.3482429"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Platte City Branch", 
+    "created" : ISODate("2016-06-23T18:25:24.623+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c29946b3447163d3c5e5d"), 
+    "url" : "http://www.mymcpl.org/locations/north-independence", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "Classes held most Wednesdays at 10 a.m.", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Independence", 
+    "hoursOpen" : [
+        "Mon. - Thur. 9 - 9, Fri. 9 - 6, Sat. 9 - 5, Sun. 1 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "317 W. 24 Hwy.", 
+    "readableAddress" : "317 W US Hwy 24, Independence, MO 64050, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "View all upcoming computer classes", 
+    "location" : [
+        {
+            "lng" : "-94.41885409999999", 
+            "lat" : "39.1005562"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - North Independence Branch", 
+    "created" : ISODate("2016-06-23T18:25:24.660+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e5e"), 
+    "url" : "http://www.kansascityymca.org/locations/locations-map/olathe-family-ymca", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "913.393.9622", 
+    "state" : "KS", 
+    "city" : "Olathe", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "21400 W 153rd Street", 
+    "readableAddress" : "21400 W 153rd St, Olathe, KS 66061, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.8325481", 
+            "lat" : "38.8503177"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Olathe Family YMCA", 
+    "created" : ISODate("2016-06-23T18:40:47.801+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e5f"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1821 Wyandotte St", 
+    "readableAddress" : "1821 Wyandotte St, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5858307", 
+            "lat" : "39.091076"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mildred's Coffeehouse", 
+    "created" : ISODate("2016-06-23T18:40:47.826+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e60"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1615 W 39th St", 
+    "readableAddress" : "1615 W 39th St, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.60450089999999", 
+            "lat" : "39.0570022"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mud Pie Vegan Bakery & Coffeehouse", 
+    "created" : ISODate("2016-06-23T18:40:47.829+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e61"), 
+    "url" : "", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "Free basic computer skills offered on Sat., 1pm - 2pm.", 
+    "phone" : "(816) 921-0022", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        ""
+    ], 
+    "address2" : "", 
+    "address1" : "3802 Agnes Ave", 
+    "readableAddress" : "3802 Agnes Ave, Kansas City, MO 64128, USA", 
+    "categories" : [
+        "training-day"
+    ], 
+    "primaryCategory" : "training-day", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.548907", 
+            "lat" : "39.0568339"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Palestine Community Outreach Center", 
+    "created" : ISODate("2016-06-23T18:40:47.831+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e62"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "500 Walnut St", 
+    "readableAddress" : "500 Walnut St, Kansas City, MO 64106, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5818005", 
+            "lat" : "39.1083806"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Opera House Coffee and Food Emporium", 
+    "created" : ISODate("2016-06-23T18:40:47.833+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e63"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "7408 Wornall Rd", 
+    "readableAddress" : "7408 Wornall Rd, Kansas City, MO 64114, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.59449579999999", 
+            "lat" : "38.9935698"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "One More Cup", 
+    "created" : ISODate("2016-06-23T18:40:47.834+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e64"), 
+    "url" : "http://www.kansascityymca.org/locations/locations-map/north-kansas-city-ymca", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816.300.0531", 
+    "state" : "MO", 
+    "city" : "North Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1999 Iron Street", 
+    "readableAddress" : "1999 Iron St, North Kansas City, MO 64116, USA", 
+    "categories" : [
+        "wifi-free"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5702378", 
+            "lat" : "39.1427184"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "North Kansas City YMCA", 
+    "created" : ISODate("2016-06-23T18:40:47.835+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e65"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "5105 Main St", 
+    "readableAddress" : "5105 Main St, Kansas City, MO 64112, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.58708299999999", 
+            "lat" : "39.03463259999999"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Minsky’s Pizza", 
+    "created" : ISODate("2016-06-23T18:40:47.837+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e66"), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "3940 Main", 
+    "readableAddress" : "3940 Main St, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.58635570000001", 
+            "lat" : "39.055478"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Oddly Correct", 
+    "created" : ISODate("2016-06-23T18:40:47.838+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2d2f6b3447163d3c5e67"), 
+    "url" : "http://www.nearlynewshop.org/", 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "(816)-453-3063", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4710 NE Vivion Road", 
+    "readableAddress" : "4710 NE Vivion Rd, Kansas City, MO 64119, USA", 
+    "categories" : [
+        "computers-retail"
+    ], 
+    "primaryCategory" : "computers-retail", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5243461", 
+            "lat" : "39.1885409"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Nearly New Shop", 
+    "created" : ISODate("2016-06-23T18:40:47.839+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2eaa6b3447163d3c5e68"), 
+    "url" : "http://www.mymcpl.org/locations/woodneath-library-center", 
+    "zip" : NumberInt(64157), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Public Computer Access: Mon. - Thurs. 9 - 9, Fri. 9 - 6, Sat. 9 - 5, Sun. 1 - 5"
+    ], 
+    "address2" : "", 
+    "address1" : "8900 NE Flintlock Road", 
+    "readableAddress" : "8900 NE Flintlock Rd, Kansas City, MO 64157, USA", 
+    "categories" : [
+        "wifi-free", 
+        "computers-access", 
+        "training-day"
+    ], 
+    "primaryCategory" : "wifi-free", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.46744389999999", 
+            "lat" : "39.2536359"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Mid-Continent Public Library - Woodneath", 
+    "created" : ISODate("2016-06-23T18:47:06.933+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e69"), 
+    "zip" : NumberInt(64154), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6145 NW Barry Rd", 
+    "readableAddress" : "6145 NW Barry Rd, Kansas City, MO 64154, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6496665", 
+            "lat" : "39.2462792"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.431+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e6a"), 
+    "zip" : NumberInt(64108), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "2405 Grand Blvd", 
+    "readableAddress" : "2405 Grand Blvd, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.58125969999999", 
+            "lat" : "39.0832916"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.455+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e6b"), 
+    "zip" : NumberInt(64118), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "311 NE Englewood Rd", 
+    "readableAddress" : "311 NE Englewood Rd, Kansas City, MO 64118, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5778206", 
+            "lat" : "39.1953191"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.457+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e6c"), 
+    "zip" : NumberInt(66223), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Overland Park", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6800 W 135th St", 
+    "readableAddress" : "6800 W 135th St, Overland Park, KS 66223, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.66437959999999", 
+            "lat" : "38.8855248"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.460+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e6d"), 
+    "zip" : NumberInt(64111), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4117 Mill St", 
+    "readableAddress" : "4117 Mill St, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.59182709999999", 
+            "lat" : "39.0520208"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.467+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e6e"), 
+    "zip" : NumberInt(64113), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "6301 Brookside Blvd", 
+    "readableAddress" : "6301 Brookside Blvd, Kansas City, MO 64113, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.59148929999999", 
+            "lat" : "39.0139946"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.474+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e6f"), 
+    "zip" : NumberInt(64114), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1128 W 103 St", 
+    "readableAddress" : "1128 W 103rd St, Kansas City, MO 64114, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.6061857", 
+            "lat" : "38.9423568"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.478+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e70"), 
+    "zip" : NumberInt(64055), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Independence", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "18800 E US Highway 40", 
+    "readableAddress" : "18800 E US Hwy 40, Independence, MO 64055, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.3596984", 
+            "lat" : "39.0333775"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.481+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e71"), 
+    "zip" : NumberInt(66211), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "KS", 
+    "city" : "Leawood", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "11751 Nall Ave", 
+    "readableAddress" : "11751 Nall Ave, Leawood, KS 66211, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.64702469999999", 
+            "lat" : "38.9153204"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.511+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c2f216b3447163d3c5e72"), 
+    "zip" : NumberInt(64157), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "8580 N Church Rd", 
+    "readableAddress" : "8580 N Church Rd, Kansas City, MO 64158, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.45965319999999", 
+            "lat" : "39.2462776"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Panera", 
+    "created" : ISODate("2016-06-23T18:49:05.717+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c30ba6b3447163d3c5e73"), 
+    "zip" : NumberInt(64111), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "424 Westport Rd", 
+    "readableAddress" : "424 Westport Rd, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.59126599999999", 
+            "lat" : "39.053381"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "The Foundry", 
+    "created" : ISODate("2016-06-23T18:55:54.426+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c30ba6b3447163d3c5e74"), 
+    "zip" : NumberInt(64108), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1801 Baltimore Ave", 
+    "readableAddress" : "1801 Baltimore Ave, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.584418", 
+            "lat" : "39.091693"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "The Art of Pizza", 
+    "created" : ISODate("2016-06-23T18:55:54.454+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c30ba6b3447163d3c5e75"), 
+    "zip" : NumberInt(64108), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "2050 Central St", 
+    "readableAddress" : "2050 Central St, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5879799", 
+            "lat" : "39.0877247"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "The Jacobson", 
+    "created" : ISODate("2016-06-23T18:55:54.456+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c30ba6b3447163d3c5e77"), 
+    "url" : "http://www.thebrickkcmo.com/", 
+    "zip" : NumberInt(64108), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "816-421-1634", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+        "Sunday: Closed, Monday: 11:00-3:00, Tuesday: 11:00-1:00, Wednesday: 11:00-1:00, Thursday: 11:00-1:00, Friday: 11:00-3:00, Saturday: 9:00-3:00"
+    ], 
+    "address2" : "", 
+    "address1" : "1727 McGee St", 
+    "readableAddress" : "1727 McGee St, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.57974779999999", 
+            "lat" : "39.0922921"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "The Brick", 
+    "created" : ISODate("2016-06-23T18:55:54.461+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c30ba6b3447163d3c5e78"), 
+    "zip" : NumberInt(64111), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "4111 Pennsylvania Ave", 
+    "readableAddress" : "4111 Pennsylvania Ave, Kansas City, MO 64111, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.5909061", 
+            "lat" : "39.052446"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Tea Drops", 
+    "created" : ISODate("2016-06-23T18:55:54.485+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("576c30bf6b3447163d3c5e79"), 
+    "zip" : NumberInt(64108), 
+    "offersCourses" : false, 
+    "wifiTerms" : "", 
+    "contactEmail" : "", 
+    "contactName" : "", 
+    "courseSchedule" : "", 
+    "phone" : "", 
+    "state" : "MO", 
+    "city" : "Kansas City", 
+    "hoursOpen" : [
+
+    ], 
+    "address2" : "", 
+    "address1" : "1526 Walnut St", 
+    "readableAddress" : "1526 Walnut St, Kansas City, MO 64108, USA", 
+    "categories" : [
+        "wifi-customer"
+    ], 
+    "primaryCategory" : "wifi-customer", 
+    "description" : "", 
+    "location" : [
+        {
+            "lng" : "-94.58265449999999", 
+            "lat" : "39.0949066"
+        }
+    ], 
+    "caption" : "", 
+    "title" : "Tannin Wine Bar and Kitchen", 
+    "created" : ISODate("2016-06-23T18:55:59.343+0000"), 
+    "__v" : NumberInt(0)
+}
