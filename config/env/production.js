@@ -8,7 +8,7 @@ module.exports = {
   },
   port: 8556,
   db: {
-    uri: 'mongodb://golf:SiMpli31flyejsave3@candidate.18.mongolayer.com:11302,candidate.41.mongolayer.com:10779/59Online-DB1?replicaSet=set-55b13d3e4f573e6875000f11',
+    uri: 'mongodb://localhost/digital-inclusion-production',
     options: {
       user: '',
       pass: ''
