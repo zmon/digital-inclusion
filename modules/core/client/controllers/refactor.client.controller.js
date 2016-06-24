@@ -10,7 +10,7 @@ var showMarkers = {
 var tmp = {};
 
 function onGoogleReady() {
-  angular.bootstrap(document.getElementById("customMap"), ['digitalInclusion.core.map']);
+  angular.bootstrap(document.getElementById("rcMap"), ['digitalInclusion.core.map']);
   showMarkers.freeWifi = true;
   showMarkers.publicComputers = false;
   showMarkers.computerRetail = false;
@@ -46,22 +46,25 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
                 // map_icon_label: '<span class="map-icon map-icon-cafe mil-green"></span>'
                 // map_icon_label: '<span class="map-icon map-icon-point-of-interest"></span>'
           
-        // $scope.places = places;
-        return places;
-        // var lng = $scope.places.length;
-        // console.log("count: " + lng);
-        // var i;
-        // for (i = 0; i < lng; i++) {
-        //     // console.log($scope.places[i]);
-        //     var loc = $scope.places[i];
-        //     createMarker(loc);
-        // }
+        $scope.places = places;
+        // return places;
+        var lng = $scope.places.length;
+        console.log("count: " + lng);
+        var i;
+        for (i = 0; i < lng; i++) {
+            // console.log($scope.places[i]);
+            var loc = $scope.places[i];
+            console.log("loco");
+            console.log(loc);
+            createMarker(loc);
+        }
 	  });
 
     // place object retrieved from Angularjs service
     function createMarker(json) {
       // console.log(json);
-      
+
+
       var cat = json.primaryCategory;
       var iconUrl;
       if (cat === "computers-access") {
@@ -75,21 +78,35 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
          iconUrl = "modules/core/client/img/wifiFree-2.png";
       } else if (cat === "wifi-customer") {
           iconUrl = "modules/core/client/img/wifiCustomerOnly.png";
-      } else if (cat === "computer-retail") {
+      } else if (cat === "computers-retail") {
           iconUrl = "modules/core/client/img/computerRetail.png";
       } else if (cat === "isp") {
           iconUrl = "modules/core/client/img/internetService.png";
       };
       
-      var image = {
-        url: iconUrl,
-        size: new google.maps.Size(20, 32),
-        origin: new google.maps.Point(0, 0),
-        anchor: new google.maps.Point(0, 32)
-      };
+      // var image = {
+      //   url: iconUrl,
+      //   size: new google.maps.Size(20, 32),
+      //   origin: new google.maps.Point(0, 0),
+      //   anchor: new google.maps.Point(0, 32)
+      // };
+      var image = new google.maps.MarkerImage(
+                                             iconUrl,
+                                              new google.maps.Size(71, 71),
+                                              new google.maps.Point(0, 0),
+                                              new google.maps.Point(17, 34),
+                                              new google.maps.Size(25, 25)
+                                             );
+
+
+      console.log('consolelog');
+      console.log(json.location[0].lat);
+      console.log(json.location[0].lng);
+      console.log(image);
       var marker = new Marker({
           map: $scope.map,
-          position: new google.maps.LatLng(json.location.lat, json.location.lng),
+          position: new google.maps.LatLng(json.location[0].lat, json.location[0].lng),
+          icon: image,
           title: json.title
       });
       marker.content = '<div class="infoWindowContent">' + '<h3>' + json.caption + '</h3><h4>' + json.phone + '</h4>'+ json.address1+', '+ json.city+', '+ json.state+', '+ json.zip+'<br>' +'<br><a ng-click="">More Details</a></div>';
@@ -97,7 +114,7 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
           infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
           infoWindow.open($scope.map, marker);
       });
-      // console.log(marker);
+      console.log(marker.position);
       // console.log(iconUrl);
       // var iconoriginx = null;
       // var iconoriginy = null;
@@ -120,21 +137,21 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
       //         }
       //     });
       // });
-      addMarker(marker.position, $scope.map);
+      // addMarker(marker.position, $scope.map);
     };
 	  
-    function addMarker(location, map) {
-      // Add the marker at the clicked location, and add the next-available label
-      // from the array of alphabetical characters.
-      console.log("add");
-      console.log(location);
-      console.log(map);
-      var marker = new google.maps.Marker({
-        position: location,
-        // label: labels[labelIndex++ % labels.length],
-        map: map
-      });
-    }
+    // function addMarker(location, map) {
+    //   // Add the marker at the clicked location, and add the next-available label
+    //   // from the array of alphabetical characters.
+    //   console.log("add");
+    //   console.log(location);
+    //   console.log(map);
+    //   var marker = new google.maps.Marker({
+    //     position: location,
+    //     // label: labels[labelIndex++ % labels.length],
+    //     map: map
+    //   });
+    // }
 
 
 
@@ -639,6 +656,27 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
       console.log("it was clycked+++++++++++++++++++");
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         $scope.showMap = function(position) {
 
             $scope.lat = position.coords.latitude;
@@ -663,32 +701,16 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
 			      $scope.map.controls[google.maps.ControlPosition.TOP_LEFT].push($scope.input);
 
       
-            var initialLocation = new google.maps.LatLng($scope.lat, $scope.lng);
+            $scope.initialLocation = new google.maps.LatLng($scope.lat, $scope.lng);
             var marker = new google.maps.Marker({
-                position: initialLocation,
+                position: $scope.initialLocation,
                 animation: google.maps.Animation.DROP,
                 map: $scope.map,
                 icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
             });
 
 
-            $scope.places = getPlacesService.getPlaces(function(places) {
-
-                  // caption: info.caption
-                        // map_icon_label: '<span class="map-icon map-icon-cafe mil-green"></span>'
-                        // map_icon_label: '<span class="map-icon map-icon-point-of-interest"></span>'
-                  
-                $scope.places = places;
-        
-                var lng = $scope.places.length;
-                console.log("count: " + lng);
-                var i;
-                for (i = 0; i < lng; i++) {
-                    // console.log($scope.places[i]);
-                    var loc = $scope.places[i];
-                    createMarker(loc);
-                }
-            });
+            
 
 
            // $scope.map.data.loadGeoJson("modules/core/client/map-data/computerRetail.json");

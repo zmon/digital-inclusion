@@ -13,6 +13,12 @@ var path = require('path'),
  */
 exports.create = function (req, res) {
   var place = new Place(req.body);
+  console.log("creating place");
+  
+  console.log("req.body");
+  console.log(req.body);
+  console.log("place inspect");
+  console.log(place);
   place.user = req.user;
 
   place.save(function (err) {

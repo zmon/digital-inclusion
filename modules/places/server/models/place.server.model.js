@@ -33,10 +33,13 @@ var PlaceSchema = new Schema({
     default: '',
     trim: true
   },
-  category: {
+  primaryCategory: {
     type: String,
     default: '',
     trim: true
+  },
+  categories:{
+    type: Array
   },
   url: {
     type: String,
@@ -78,12 +81,10 @@ var PlaceSchema = new Schema({
     default: '',
     trim: true
   },
-  lat: {
-    type: Number
-  },
-  lng: {
-    type: Number
-  },
+  courseSchedule: {
+    type: String, 
+    default: ''
+  },  
   contactName: {
     type: String,
     default: '',
@@ -97,7 +98,7 @@ var PlaceSchema = new Schema({
   offersWifi: {
     type: Boolean
   },
-  offersTraining: {
+  offersCourses: {
     type: Boolean
   },
   wifiTerms: {

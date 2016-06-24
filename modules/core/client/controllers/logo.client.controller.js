@@ -6,8 +6,8 @@ angular.module('digitalInclusion.core').controller('LogoController', ['$scope', 
     $scope.authentication = Authentication;
 
     var getTagline = function(url) {
-    	console.log("getTagline");
-    	console.log(url.$$path);
+    	// console.log("getTagline");
+    	// console.log(url.$$path);
     	if (url.$$path === "/map-resources") {
     		return "Add Map Resources";
     	} else if (url.$$path === "/isps") {

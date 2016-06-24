@@ -1,0 +1,18 @@
+Sync steps
+
+1. load csv with columns ==>   
+	name   categories   priority   services  thoroughfare  locality  adminArea   postCode   country    classes?   purc?   phone   url  desc  hours   courSchd
+
+2.  parse objects to new format: 
+	  End result:
+		
+		{
+		 "type":"Feature",
+		 "geometry":{"type":"Point","coordinates":[-94.56734929999999,38.9788034]},
+		 "properties":{"name":"Marlborough Community Center","category":"computerAccess","street":"8200 The Paseo, Kansas City, MO 64131, USA","google_id":"ChIJXW9lhqvowIcRRHQDvrESv9w"}
+		}
+
+	   Steps to end result:
+
+3.  store parsed in files by category
+
