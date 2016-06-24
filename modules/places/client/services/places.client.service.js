@@ -68,6 +68,22 @@ angular.module('digitalInclusion.places').factory('getPlacesService', function($
 
 
 
+// angular.module('digitalInclusion.places').factory('getAllPlaces', function($http) {
+//   var allPlaces = function(callback) {
+//     $http.get('/api/places').success(function(data) {
+//       console.log("service");
+//       console.log(data);
+//       callback(data);
+//     });
+//   };
+
+//   return {
+//     allPlaces: allPlaces
+//   };
+// });
+
+
+
 angular.module('digitalInclusion.places').factory('gservice', function($rootScope, $http) {
   var googleMapService = {};
   googleMapService.clickLat = 0;

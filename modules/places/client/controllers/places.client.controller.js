@@ -179,6 +179,12 @@ angular.module('digitalInclusion.places').controller('PlacesController', ['$scop
       });
     };
 
+    $scope.findCategory = function(string) {
+      $scope.places = Places.get({
+        primaryCategory: string
+      });
+    }
+
     $scope.findById = function(id) {
       $scope.place = Places.get({
         placedId: id
