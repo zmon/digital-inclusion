@@ -955,8 +955,8 @@ angular.module('digitalInclusion.core.map', ['ngResource']).controller('MapContr
             });
 
 
-            console.log('thef');
-            console.log($scope.markers);
+            // console.log('thef');
+            // console.log($scope.markers);
 
             setWifiMarkers();
            // $scope.map.data.loadGeoJson("modules/core/client/map-data/computerRetail.json");

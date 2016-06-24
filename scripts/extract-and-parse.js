@@ -26,8 +26,9 @@ var                              fs           = require('fs-extra'),
                                  upstream     = fs.createReadStream(path),
                                  stringify    = require('stringify-stream'),
                                  GooglePlaces = require('googleplaces'),
-                                 googlePlaces = new GooglePlaces("AIzaSyBqZ_zfcyUUJDi6OuXq4QYpkdHPeaqFkms", "json"),
+                                 // googlePlaces = new GooglePlaces("AIzaSyBqZ_zfcyUUJDi6OuXq4QYpkdHPeaqFkms", "json"),
                                  // googlePlaces = new GooglePlaces("AIzaSyBP-nR1enubXspfTSfSit1tYwT4ZSwRi-s", "json"),
+                                 googlePlaces = new GooglePlaces("AIzaSyBqZ_zfcyUUJDi6OuXq4QYpkdHPeaqFkms", "json"),
                                  finalPath    = fs.createReadStream('../modules/core/client/map-data/data.json'),
                                  lineReader   = require('readline').createInterface({ input: upstream }),
                                  Converter    = require("csvtojson").Converter,
@@ -292,7 +293,7 @@ var callback = function(arr) {
 
 
 
-var limit = 2;
+var limit = 7;
 
 var delayPublish = function(num) {
   if (num === limit) {
@@ -329,6 +330,8 @@ var encode = function(index, obj) {
 //arg2 -- google response
 function prettify(arg1,arg2) {
   console.log("prettification");
+  console.log("arg2");
+  console.log(arg2);
   // console.log("arg1");
   // console.log(arg1);
   // console.log("arg2");
